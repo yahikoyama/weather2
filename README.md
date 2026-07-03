@@ -8,7 +8,7 @@ You will research for cool area in the world
 This system is Client/Server System using
 Windows11 japanse(task schduler)
 Powershell
-SQLServer Exppress2022
+SQLServer Express2022
 Python ODBC
 
 contact information
