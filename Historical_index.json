@@ -1,0 +1,64 @@
+{
+    "files":  [
+                  {
+                      "date":  "2026-06-26",
+                      "path":  "Historical/jp_result_mail_20260626.txt",
+                      "name":  "jp_result_mail_20260626.txt"
+                  },
+                  {
+                      "date":  "2026-06-27",
+                      "path":  "Historical/jp_result_mail_20260627.txt",
+                      "name":  "jp_result_mail_20260627.txt"
+                  },
+                  {
+                      "date":  "2026-06-28",
+                      "path":  "Historical/jp_result_mail_20260628.txt",
+                      "name":  "jp_result_mail_20260628.txt"
+                  },
+                  {
+                      "date":  "2026-06-29",
+                      "path":  "Historical/jp_result_mail_20260629.txt",
+                      "name":  "jp_result_mail_20260629.txt"
+                  },
+                  {
+                      "date":  "2026-06-30",
+                      "path":  "Historical/jp_result_mail_20260630.txt",
+                      "name":  "jp_result_mail_20260630.txt"
+                  },
+                  {
+                      "date":  "2026-07-01",
+                      "path":  "Historical/jp_result_mail_20260701.txt",
+                      "name":  "jp_result_mail_20260701.txt"
+                  },
+                  {
+                      "date":  "2026-07-02",
+                      "path":  "Historical/jp_result_mail_20260702.txt",
+                      "name":  "jp_result_mail_20260702.txt"
+                  },
+                  {
+                      "date":  "2026-07-03",
+                      "path":  "Historical/jp_result_mail_20260703.txt",
+                      "name":  "jp_result_mail_20260703.txt"
+                  },
+                  {
+                      "date":  "2026-06-29",
+                      "path":  "Historical/jp_result_mail_2_20260629.txt",
+                      "name":  "jp_result_mail_2_20260629.txt"
+                  },
+                  {
+                      "date":  "2026-06-14",
+                      "path":  "Historical/weekly_20260614_20260620.txt",
+                      "name":  "weekly_20260614_20260620.txt"
+                  },
+                  {
+                      "date":  "2026-06-15",
+                      "path":  "Historical/weekly_20260615_20260621.txt",
+                      "name":  "weekly_20260615_20260621.txt"
+                  },
+                  {
+                      "date":  "2026-06-22",
+                      "path":  "Historical/weekly_20260622_20260628.txt",
+                      "name":  "weekly_20260622_20260628.txt"
+                  }
+              ]
+}
