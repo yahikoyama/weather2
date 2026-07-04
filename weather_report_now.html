@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>天気・不快指数レポート</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px 40px 40px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        .timestamp {
+            font-size: 13px;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+        h2 {
+            font-size: 18px;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding-left: 8px;
+            border-left: 4px solid #3498db;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #f8fafc;
+            color: #475569;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #f8fafc;
+        }
+        .num {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+        .center {
+            text-align: center;
+        }
+        .row-hot {
+            background-color: #fff5f5;
+        }
+        .row-cold {
+            background-color: #f0f7ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>気象・不快指数 観測レポート</h1>
+        <div class="timestamp">取得時間JST 2026-07-04 20:00:10</div>
+
+        <h2>国内（JP）</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>地名</th>
+                    <th class="num">温度(℃)</th>
+                    <th class="num">湿度(%)</th>
+                    <th>天気</th>
+                    <th class="num">不快指数</th>
+                    <th>評価</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ><td>根室</td><td class='num'>12.00</td><td class='num'>93%</td><td>快晴</td><td class='num'>53.77</td><td>寒い</td></tr>
+<tr ><td>釧路</td><td class='num'>12.84</td><td class='num'>93%</td><td>快晴</td><td class='num'>55.22</td><td>肌寒い</td></tr>
+<tr ><td>帯広</td><td class='num'>12.87</td><td class='num'>94%</td><td>快晴</td><td class='num'>55.26</td><td>肌寒い</td></tr>
+<tr ><td>草津温泉</td><td class='num'>15.38</td><td class='num'>86%</td><td>曇り</td><td class='num'>59.55</td><td>肌寒い</td></tr>
+<tr ><td>稚内</td><td class='num'>16.52</td><td class='num'>93%</td><td>快晴</td><td class='num'>61.59</td><td>何も感じない</td></tr>
+<tr ><td>網走</td><td class='num'>16.63</td><td class='num'>89%</td><td>快晴</td><td class='num'>61.70</td><td>何も感じない</td></tr>
+<tr ><td>菅平</td><td class='num'>17.74</td><td class='num'>96%</td><td>曇り</td><td class='num'>63.80</td><td>何も感じない</td></tr>
+<tr ><td>盛岡</td><td class='num'>18.15</td><td class='num'>99%</td><td>快晴</td><td class='num'>64.63</td><td>何も感じない</td></tr>
+<tr ><td>旭川</td><td class='num'>18.40</td><td class='num'>79%</td><td>快晴</td><td class='num'>64.30</td><td>何も感じない</td></tr>
+<tr ><td>伊香保温泉</td><td class='num'>18.81</td><td class='num'>86%</td><td>曇り</td><td class='num'>65.25</td><td>快適</td></tr>
+<tr ><td>高山</td><td class='num'>18.86</td><td class='num'>98%</td><td>曇り</td><td class='num'>65.86</td><td>快適</td></tr>
+<tr ><td>札幌</td><td class='num'>19.12</td><td class='num'>48%</td><td>薄い雲</td><td class='num'>64.01</td><td>何も感じない</td></tr>
+<tr ><td>那須高原</td><td class='num'>19.17</td><td class='num'>99%</td><td>曇り</td><td class='num'>66.46</td><td>快適</td></tr>
+<tr ><td>北茨城</td><td class='num'>19.49</td><td class='num'>97%</td><td>曇り</td><td class='num'>66.93</td><td>快適</td></tr>
+<tr ><td>軽井沢</td><td class='num'>19.74</td><td class='num'>76%</td><td>曇り</td><td class='num'>66.27</td><td>快適</td></tr>
+<tr ><td>水上温泉</td><td class='num'>20.72</td><td class='num'>97%</td><td>曇り</td><td class='num'>69.11</td><td>快適</td></tr>
+<tr ><td>青森</td><td class='num'>21.07</td><td class='num'>81%</td><td>快晴</td><td class='num'>68.68</td><td>快適</td></tr>
+<tr ><td>秋田</td><td class='num'>22.02</td><td class='num'>85%</td><td>薄い雲</td><td class='num'>70.51</td><td>不快感出始め</td></tr>
+<tr ><td>新潟</td><td class='num'>22.35</td><td class='num'>80%</td><td>曇り</td><td class='num'>70.66</td><td>不快感出始め</td></tr>
+<tr ><td>勝浦</td><td class='num'>22.48</td><td class='num'>90%</td><td>曇り</td><td class='num'>71.67</td><td>不快感出始め</td></tr>
+<tr ><td>京都</td><td class='num'>22.82</td><td class='num'>95%</td><td>小雨</td><td class='num'>72.66</td><td>不快感出始め</td></tr>
+<tr ><td>東京</td><td class='num'>25.01</td><td class='num'>79%</td><td>曇り</td><td class='num'>74.82</td><td>不快感出始め</td></tr>
+<tr class='row-cold'><td>ウットキアグビクバロウ</td><td class='num'>0.80</td><td class='num'>88%</td><td>曇り</td><td class='num'>35.06</td><td>寒くてたまらない</td></tr>
+<tr class='row-cold'><td>ヌーク</td><td class='num'>5.54</td><td class='num'>86%</td><td>曇り</td><td class='num'>43.21</td><td>寒くてたまらない</td></tr>
+<tr class='row-cold'><td>ロングイヤービーエン</td><td class='num'>8.13</td><td class='num'>79%</td><td>曇り</td><td class='num'>47.95</td><td>寒くてたまらない</td></tr>
+<tr ><td>トロムソ</td><td class='num'>9.92</td><td class='num'>91%</td><td>曇り</td><td class='num'>50.26</td><td>寒い</td></tr>
+<tr ><td>シドニー</td><td class='num'>9.96</td><td class='num'>61%</td><td>快晴</td><td class='num'>51.66</td><td>寒い</td></tr>
+<tr ><td>オイミヤコン</td><td class='num'>10.79</td><td class='num'>89%</td><td>小雨</td><td class='num'>51.82</td><td>寒い</td></tr>
+<tr ><td>イエローナイフ</td><td class='num'>12.83</td><td class='num'>99%</td><td>曇りがち</td><td class='num'>55.11</td><td>肌寒い</td></tr>
+<tr ><td>バンクーバー</td><td class='num'>14.27</td><td class='num'>87%</td><td>快晴</td><td class='num'>57.71</td><td>肌寒い</td></tr>
+<tr ><td>ベルホヤンスク</td><td class='num'>16.99</td><td class='num'>49%</td><td>雲</td><td class='num'>61.30</td><td>何も感じない</td></tr>
+<tr ><td>ウランバートル</td><td class='num'>17.19</td><td class='num'>70%</td><td>曇り</td><td class='num'>62.13</td><td>何も感じない</td></tr>
+<tr ><td>ケアンズ</td><td class='num'>19.85</td><td class='num'>92%</td><td>快晴</td><td class='num'>67.30</td><td>快適</td></tr>
+<tr ><td>リマ</td><td class='num'>20.62</td><td class='num'>85%</td><td>曇り</td><td class='num'>68.20</td><td>快適</td></tr>
+<tr ><td>ノリリスク</td><td class='num'>21.79</td><td class='num'>26%</td><td>曇りがち</td><td class='num'>65.84</td><td>快適</td></tr>
+<tr ><td>ハルビン</td><td class='num'>23.62</td><td class='num'>84%</td><td>曇りがち</td><td class='num'>73.06</td><td>不快感出始め</td></tr>
+<tr ><td>ホノルルハワイ</td><td class='num'>23.77</td><td class='num'>83%</td><td>小雨</td><td class='num'>73.22</td><td>不快感出始め</td></tr>
+<tr class='row-hot'><td>リオデジャネイロ</td><td class='num'>25.24</td><td class='num'>88%</td><td>曇り</td><td class='num'>76.15</td><td>半数が不快</td></tr>
+<tr ><td>ソウル</td><td class='num'>25.34</td><td class='num'>70%</td><td>曇り</td><td class='num'>74.38</td><td>不快感出始め</td></tr>
+<tr ><td>クアラルンプール</td><td class='num'>28.49</td><td class='num'>39%</td><td>曇りがち</td><td class='num'>74.80</td><td>不快感出始め</td></tr>
+
+            </tbody>
+        </table>
+
+        <h2>海外（NOTJP）</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>地名</th>
+                    <th class="num">温度(℃)</th>
+                    <th class="num">湿度(%)</th>
+                    <th>天気</th>
+                    <th class="center">国</th>
+                    <th class="num">不快指数</th>
+                    <th>評価</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class='row-cold'><td>ウットキアグビクバロウ</td><td class='num'>0.80</td><td class='num'>88%</td><td>曇り</td><td class='center'>US</td><td class='num'>35.06</td><td>寒くてたまらない</td></tr>
+<tr class='row-cold'><td>ヌーク</td><td class='num'>5.54</td><td class='num'>86%</td><td>曇り</td><td class='center'>GL</td><td class='num'>43.21</td><td>寒くてたまらない</td></tr>
+<tr class='row-cold'><td>ロングイヤービーエン</td><td class='num'>8.13</td><td class='num'>79%</td><td>曇り</td><td class='center'>SJ</td><td class='num'>47.95</td><td>寒くてたまらない</td></tr>
+<tr ><td>トロムソ</td><td class='num'>9.92</td><td class='num'>91%</td><td>曇り</td><td class='center'>NO</td><td class='num'>50.26</td><td>寒い</td></tr>
+<tr ><td>シドニー</td><td class='num'>9.96</td><td class='num'>61%</td><td>快晴</td><td class='center'>AU</td><td class='num'>51.66</td><td>寒い</td></tr>
+<tr ><td>オイミヤコン</td><td class='num'>10.79</td><td class='num'>89%</td><td>小雨</td><td class='center'>RU</td><td class='num'>51.82</td><td>寒い</td></tr>
+<tr ><td>イエローナイフ</td><td class='num'>12.83</td><td class='num'>99%</td><td>曇りがち</td><td class='center'>CA</td><td class='num'>55.11</td><td>肌寒い</td></tr>
+<tr ><td>バンクーバー</td><td class='num'>14.27</td><td class='num'>87%</td><td>快晴</td><td class='center'>CA</td><td class='num'>57.71</td><td>肌寒い</td></tr>
+<tr ><td>ベルホヤンスク</td><td class='num'>16.99</td><td class='num'>49%</td><td>雲</td><td class='center'>RU</td><td class='num'>61.30</td><td>何も感じない</td></tr>
+<tr ><td>ウランバートル</td><td class='num'>17.19</td><td class='num'>70%</td><td>曇り</td><td class='center'>MN</td><td class='num'>62.13</td><td>何も感じない</td></tr>
+<tr ><td>ケアンズ</td><td class='num'>19.85</td><td class='num'>92%</td><td>快晴</td><td class='center'>AU</td><td class='num'>67.30</td><td>快適</td></tr>
+<tr ><td>リマ</td><td class='num'>20.62</td><td class='num'>85%</td><td>曇り</td><td class='center'>PE</td><td class='num'>68.20</td><td>快適</td></tr>
+<tr ><td>ノリリスク</td><td class='num'>21.79</td><td class='num'>26%</td><td>曇りがち</td><td class='center'>RU</td><td class='num'>65.84</td><td>快適</td></tr>
+<tr ><td>ハルビン</td><td class='num'>23.62</td><td class='num'>84%</td><td>曇りがち</td><td class='center'>CN</td><td class='num'>73.06</td><td>不快感出始め</td></tr>
+<tr ><td>ホノルルハワイ</td><td class='num'>23.77</td><td class='num'>83%</td><td>小雨</td><td class='center'>US</td><td class='num'>73.22</td><td>不快感出始め</td></tr>
+<tr class='row-hot'><td>リオデジャネイロ</td><td class='num'>25.24</td><td class='num'>88%</td><td>曇り</td><td class='center'>BR</td><td class='num'>76.15</td><td>半数が不快</td></tr>
+<tr ><td>ソウル</td><td class='num'>25.34</td><td class='num'>70%</td><td>曇り</td><td class='center'>KR</td><td class='num'>74.38</td><td>不快感出始め</td></tr>
+<tr ><td>クアラルンプール</td><td class='num'>28.49</td><td class='num'>39%</td><td>曇りがち</td><td class='center'>MY</td><td class='num'>74.80</td><td>不快感出始め</td></tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
