@@ -8,10 +8,16 @@ You will research for cool area in the world
 If you want to add area , insert CityMaster tabel 
 
 This system is Client/Server System using
+
 Windows11 pro japanse(task schduler)
+
 Powershell 5.1
+
 SQLServer Express 2022 (max size 10GB)
-Python ODBC
+
+Python3.14
+pip install pyodbc
+ODBC
 
 weather.zip contains the source code and the database backup
 
