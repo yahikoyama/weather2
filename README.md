@@ -21,6 +21,6 @@ and Import task schduler xml file
 contact information
 yahikoyama.777@gmail.com
 
-Auto Updating
+Updating
 https://yahikoyama.github.io/weather2/weather_report_now.html
 
