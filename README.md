@@ -3,7 +3,7 @@ For Studying  Database System SQL and Programing by using weather data
 
 You will get weather data(temperature, humidity)  using API and calc discomfort index
 
-You will research for cool area in the world
+You will research for cool area in the world and help stop global warming.
 
 If you want to add area , insert CityMaster tabel 
 
