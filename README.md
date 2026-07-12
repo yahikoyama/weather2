@@ -1,7 +1,7 @@
 # weather2
 For Studying  Database System SQL and Programing by using weather data
 
-You will get weather data(temperature, humidity)  using OpenWeatherMap API and calc discomfort index
+You will get weather data(temperature, humidity  using OpenWeatherMap API and calc discomfort index
 
 You will find for cool area in the world and help stop global warming.
 
