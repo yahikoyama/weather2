@@ -5,6 +5,14 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/weekly_20260615_20260621.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/weekly_20260622_20260628.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260626.html</loc>
     <priority>0.5</priority>
   </url>
@@ -15,6 +23,10 @@
   <url>
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260628.html</loc>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/weekly_20260629_20260705.html</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260629.html</loc>
@@ -43,6 +55,10 @@
   <url>
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260705.html</loc>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/weekly_20260706_20260712.html</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260706.html</loc>
@@ -74,6 +90,10 @@
   </url>
   <url>
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260713.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260714.html</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
