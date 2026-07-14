@@ -31,3 +31,7 @@ Every 4 hours, updated daily
 
 https://yahikoyama.github.io/weather2/weather_report_now.html
 
+## Weather Reports (GitHub Pages)
+https://yahikoyama.github.io/weather2/Historical/
+
+
