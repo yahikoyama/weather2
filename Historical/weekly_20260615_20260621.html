@@ -1,67 +1,138 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>Weekly 20260615-20260621</title>
-    <style>
-        body {
-            font-family: Consolas, "Meiryo", sans-serif;
-            white-space: pre-wrap;
-            line-height: 1.5;
-            margin: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Weekly 20260615-20260621</title>
+<style>
+body {
+    font-family: 'Helvetica Neue', Arial, Meiryo, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px 40px 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 18px;
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    border-left: 4px solid #3498db;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+}
+.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+.row-cold {
+    background-color: #e8f4ff;
+}
+.row-hot {
+    background-color: #fff5f5;
+}
+</style>
 </head>
 <body>
-2026/6/15 から 2026/6/21 平均気温と平均湿度
+<div class="container">
 
-【国内（JP）】
-地名             AvgTemp(℃)   AvgHum(%)
--------------------------------------------
-根室                   10.10      97.00
-釧路                   12.75      94.00
-稚内                   12.87      86.00
-網走                   13.91      90.00
-草津温泉                 16.42      71.00
-帯広                   17.03      85.00
-菅平                   17.37      75.00
-旭川                   19.18      70.00
-軽井沢                  19.22      68.00
-伊香保温泉                19.31      71.00
-盛岡                   19.45      79.00
-那須高原                 19.47      80.00
-北茨城                  20.03      88.00
-札幌                   20.06      60.00
-高山                   20.10      81.00
-秋田                   20.37      76.00
-青森                   20.74      75.00
-水上温泉                 21.13      76.00
-勝浦                   21.22      85.00
-新潟                   21.50      76.00
-東京                   23.49      75.00
-京都                   24.17      74.00
+<h1>Weekly 平均気温・湿度レポート（2026/6/15〜2026/6/21）</h1>
 
-【海外（NOT JP）】
-地名             AvgTemp(℃)   AvgHum(%)
--------------------------------------------
-ロングイヤービーエン            3.54      75.00
-ウットキアグビク（バロウ）         4.07      79.00
-ヌーク                   6.20      79.00
-トロムソ                 10.44      74.00
-ウランバートル              13.06      69.00
-ノリリスク                13.56      50.00
-ベルホヤンスク              13.77      53.00
-イエローナイフ              15.62      50.00
-シドニー                 15.92      65.00
-バンクーバー               18.81      63.00
-オイミヤコン               18.88      51.00
-ハルビン                 21.29      73.00
-リマ                   21.93      80.00
-ケアンズ                 22.27      77.00
-リオデジャネイロ             23.17      86.00
-ホノルル（ハワイ）            25.53      77.00
-ソウル                  26.11      53.00
-クアラルンプール             28.98      68.00
+<h2>国内（JP）</h2>
+<table>
+<thead>
+<tr>
+<th>地名</th>
+<th class="num">AvgTemp(℃)</th>
+<th class="num">AvgHum(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-cold"><td>根室</td><td class="num">10.10</td><td class="num">97</td></tr>
+<tr class="row-cold"><td>釧路</td><td class="num">12.75</td><td class="num">94</td></tr>
+<tr class="row-cold"><td>稚内</td><td class="num">12.87</td><td class="num">86</td></tr>
+<tr class="row-cold"><td>網走</td><td class="num">13.91</td><td class="num">90</td></tr>
+<tr><td>草津温泉</td><td class="num">16.42</td><td class="num">71</td></tr>
+<tr><td>帯広</td><td class="num">17.03</td><td class="num">85</td></tr>
+<tr><td>菅平</td><td class="num">17.37</td><td class="num">75</td></tr>
+<tr><td>旭川</td><td class="num">19.18</td><td class="num">70</td></tr>
+<tr><td>軽井沢</td><td class="num">19.22</td><td class="num">68</td></tr>
+<tr><td>伊香保温泉</td><td class="num">19.31</td><td class="num">71</td></tr>
+<tr><td>盛岡</td><td class="num">19.45</td><td class="num">79</td></tr>
+<tr><td>那須高原</td><td class="num">19.47</td><td class="num">80</td></tr>
+<tr><td>北茨城</td><td class="num">20.03</td><td class="num">88</td></tr>
+<tr><td>札幌</td><td class="num">20.06</td><td class="num">60</td></tr>
+<tr><td>高山</td><td class="num">20.10</td><td class="num">81</td></tr>
+<tr><td>秋田</td><td class="num">20.37</td><td class="num">76</td></tr>
+<tr><td>青森</td><td class="num">20.74</td><td class="num">75</td></tr>
+<tr><td>水上温泉</td><td class="num">21.13</td><td class="num">76</td></tr>
+<tr><td>勝浦</td><td class="num">21.22</td><td class="num">85</td></tr>
+<tr><td>新潟</td><td class="num">21.50</td><td class="num">76</td></tr>
+<tr class="row-hot"><td>東京</td><td class="num">23.49</td><td class="num">75</td></tr>
+<tr class="row-hot"><td>京都</td><td class="num">24.17</td><td class="num">74</td></tr>
+</tbody>
+</table>
 
+<h2>海外（NOT JP）</h2>
+<table>
+<thead>
+<tr>
+<th>地名</th>
+<th class="num">AvgTemp(℃)</th>
+<th class="num">AvgHum(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-cold"><td>ロングイヤービーエン</td><td class="num">3.54</td><td class="num">75</td></tr>
+<tr class="row-cold"><td>ウットキアグビク（バロウ）</td><td class="num">4.07</td><td class="num">79</td></tr>
+<tr class="row-cold"><td>ヌーク</td><td class="num">6.20</td><td class="num">79</td></tr>
+<tr class="row-cold"><td>トロムソ</td><td class="num">10.44</td><td class="num">74</td></tr>
+<tr><td>ウランバートル</td><td class="num">13.06</td><td class="num">69</td></tr>
+<tr><td>ノリリスク</td><td class="num">13.56</td><td class="num">50</td></tr>
+<tr><td>ベルホヤンスク</td><td class="num">13.77</td><td class="num">53</td></tr>
+<tr><td>イエローナイフ</td><td class="num">15.62</td><td class="num">50</td></tr>
+<tr><td>シドニー</td><td class="num">15.92</td><td class="num">65</td></tr>
+<tr><td>バンクーバー</td><td class="num">18.81</td><td class="num">63</td></tr>
+<tr><td>オイミヤコン</td><td class="num">18.88</td><td class="num">51</td></tr>
+<tr><td>ハルビン</td><td class="num">21.29</td><td class="num">73</td></tr>
+<tr><td>リマ</td><td class="num">21.93</td><td class="num">80</td></tr>
+<tr><td>ケアンズ</td><td class="num">22.27</td><td class="num">77</td></tr>
+<tr class="row-hot"><td>リオデジャネイロ</td><td class="num">23.17</td><td class="num">86</td></tr>
+<tr class="row-hot"><td>ホノルル（ハワイ）</td><td class="num">25.53</td><td class="num">77</td></tr>
+<tr class="row-hot"><td>ソウル</td><td class="num">26.11</td><td class="num">53</td></tr>
+<tr class="row-hot"><td>クアラルンプール</td><td class="num">28.98</td><td class="num">68</td></tr>
+</tbody>
+</table>
+
+</div>
 </body>
 </html>
