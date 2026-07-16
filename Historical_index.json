@@ -1,6 +1,11 @@
 {
     "files":  [
                   {
+                      "date":  null,
+                      "path":  "Historical/index_daily.html",
+                      "name":  "index_daily.html"
+                  },
+                  {
                       "date":  "2026-06-26",
                       "path":  "Historical/jp_result_mail_20260626.txt",
                       "name":  "jp_result_mail_20260626.txt"
@@ -99,6 +104,11 @@
                       "date":  "2026-07-15",
                       "path":  "Historical/jp_result_mail_20260715.txt",
                       "name":  "jp_result_mail_20260715.txt"
+                  },
+                  {
+                      "date":  "2026-07-16",
+                      "path":  "Historical/jp_result_mail_20260716.txt",
+                      "name":  "jp_result_mail_20260716.txt"
                   },
                   {
                       "date":  "2026-06-15",
