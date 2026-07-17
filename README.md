@@ -1,6 +1,11 @@
 ## Weather Report (GitHub Pages)
 https://yahikoyama.github.io/weather2/
 
+[日本語](README_ja.md) |
+[中文](README_zh.md) |
+[Français](README_fr.md) |
+[한국어](README_ko.md)
+
 This project is for studying database systems (SQL) and programming by using global weather data.
 It collects temperature, humidity, and weather conditions from the OpenWeatherMap API and calculates
 the Discomfort Index (DI) to help identify cooler areas around the world and contribute to reducing
