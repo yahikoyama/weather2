@@ -1,37 +1,36 @@
-# weather2
-For Studying  Database System SQL and Programing by using weather data
+## Weather Report (GitHub Pages)
+https://yahikoyama.github.io/weather2/
 
-You will get weather data(temperature, humidity  using OpenWeatherMap API and calc discomfort index
+This project is for studying database systems (SQL) and programming by using global weather data.
+It collects temperature, humidity, and weather conditions from the OpenWeatherMap API and calculates
+the Discomfort Index (DI) to help identify cooler areas around the world and contribute to reducing
+the effects of global warming.
 
-You will find for cool area in the world and help stop global warming.
+If you want to add additional cities, please insert records into the CityMaster table.
 
-If you want to add other area data , insert CityMaster tabel 
+---
 
-This system is Client/Server System using
+## System Overview
+This system is built as a Client/Server architecture using:
 
-Windows11 pro japanse(task schduler)
+- Windows 11 Pro (Task Scheduler)
+- PowerShell 5.1
+- Microsoft SQL Server Express 2022 (max size 10GB)
+- Python 3.14 (with pyodbc ODBC driver)
 
-Powershell 5.1
+The file **weather.zip** contains the full source code and the database backup.
 
-Microsoft SQLServer Express 2022 (max size 10GB)
+Please configure the **conf** file according to your environment and import the Task Scheduler XML file.
 
-Python3.14
-pip install pyodbc
-ODBC
+Contact: yahikoyama.777@gmail.com
 
-weather.zip contains the source code and the database backup
+---
 
-Please configure the conf file according to your environment
-and Import task schduler xml file
-
-contact information
-yahikoyama.777@gmail.com
-
-Every 4 hours, updated daily
-
+## Daily Updated Report (Every 4 Hours)
 https://yahikoyama.github.io/weather2/weather_report_now.html
 
-## Weather Reports (GitHub Pages)
+## Historical Weather Reports (GitHub Pages)
 https://yahikoyama.github.io/weather2/Historical/
+
 
 
