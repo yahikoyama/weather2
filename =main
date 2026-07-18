@@ -1,48 +1,115 @@
-<!DOCTYPE html>
-<html lang='ja'>
-<head>
-<meta charset='UTF-8'>
-<title>Weekly 20260706-20260712</title>
-<style>
-body { font-family:'Helvetica Neue',Arial,Meiryo;background:#f5f7fa;padding:30px; }
-.container { max-width:1000px;margin:0 auto;background:#fff;padding:25px 40px;border-radius:8px;
-             box-shadow:0 4px 15px rgba(0,0,0,0.05); }
-h1 { font-size:24px;color:#2c3e50;border-bottom:2px solid #3498db;padding-bottom:10px; }
-h2 { font-size:18px;color:#34495e;margin-top:30px;border-left:4px solid #3498db;padding-left:8px; }
-table { width:100%;border-collapse:collapse;margin-bottom:20px;font-size:14px; }
-th,td { padding:10px 12px;border-bottom:1px solid #e2e8f0; }
-th { background:#f8fafc;color:#475569;font-weight:600; }
-.num { text-align:right;font-variant-numeric:tabular-nums; }
-</style>
-</head>
-<body>
-<div class='container'>
-<h1>Weekly 平均気温・湿度レポート（20260706〜20260712）</h1>
-
-<h2>国内（JP）</h2>
-<table>
-<thead>
-<tr>
-<th>地名</th><th class='num'>AvgTemp</th><th class='num'>AvgHum</th><th class='num'>DI</th><th>評価</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>根室</td><td class='num'>13.96</td><td class='num'>95.00</td><td class='num'>57.16</td><td>肌寒い       </td></tr><tr><td>釧路</td><td class='num'>16.11</td><td class='num'>94.00</td><td class='num'>60.90</td><td>何も感じない    </td></tr><tr><td>稚内</td><td class='num'>18.16</td><td class='num'>91.00</td><td class='num'>64.36</td><td>何も感じない    </td></tr><tr><td>網走</td><td class='num'>18.82</td><td class='num'>87.00</td><td class='num'>65.32</td><td>快適        </td></tr><tr><td>草津温泉</td><td class='num'>19.34</td><td class='num'>77.00</td><td class='num'>65.69</td><td>快適        </td></tr><tr><td>帯広</td><td class='num'>19.97</td><td class='num'>87.00</td><td class='num'>67.24</td><td>快適        </td></tr><tr><td>菅平</td><td class='num'>20.51</td><td class='num'>78.00</td><td class='num'>67.60</td><td>快適        </td></tr><tr><td>札幌</td><td class='num'>21.68</td><td class='num'>75.00</td><td class='num'>69.24</td><td>快適        </td></tr><tr><td>旭川</td><td class='num'>21.85</td><td class='num'>81.00</td><td class='num'>69.93</td><td>快適        </td></tr><tr><td>軽井沢</td><td class='num'>22.07</td><td class='num'>73.00</td><td class='num'>69.68</td><td>快適        </td></tr><tr><td>伊香保温泉</td><td class='num'>22.13</td><td class='num'>76.00</td><td class='num'>70.00</td><td>快適        </td></tr><tr><td>那須高原</td><td class='num'>22.23</td><td class='num'>84.00</td><td class='num'>70.78</td><td>不快感出始め    </td></tr><tr><td>盛岡</td><td class='num'>22.98</td><td class='num'>83.00</td><td class='num'>71.92</td><td>不快感出始め    </td></tr><tr><td>北茨城</td><td class='num'>23.53</td><td class='num'>90.00</td><td class='num'>73.45</td><td>不快感出始め    </td></tr><tr><td>勝浦</td><td class='num'>23.57</td><td class='num'>83.00</td><td class='num'>72.89</td><td>不快感出始め    </td></tr><tr><td>青森</td><td class='num'>23.62</td><td class='num'>83.00</td><td class='num'>72.97</td><td>不快感出始め    </td></tr><tr><td>高山</td><td class='num'>23.65</td><td class='num'>81.00</td><td class='num'>72.84</td><td>不快感出始め    </td></tr><tr><td>秋田</td><td class='num'>23.92</td><td class='num'>79.00</td><td class='num'>73.08</td><td>不快感出始め    </td></tr><tr><td>新潟</td><td class='num'>24.03</td><td class='num'>80.00</td><td class='num'>73.35</td><td>不快感出始め    </td></tr><tr><td>水上温泉</td><td class='num'>24.04</td><td class='num'>81.00</td><td class='num'>73.47</td><td>不快感出始め    </td></tr><tr><td>京都</td><td class='num'>26.73</td><td class='num'>73.00</td><td class='num'>76.83</td><td>半数が不快     </td></tr><tr><td>東京</td><td class='num'>26.78</td><td class='num'>69.00</td><td class='num'>76.42</td><td>半数が不快     </td></tr>
-</tbody>
-</table>
-
-<h2>海外（NOT JP）</h2>
-<table>
-<thead>
-<tr>
-<th>地名</th><th>国</th><th class='num'>AvgTemp</th><th class='num'>AvgHum</th><th class='num'>DI</th><th>評価</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>ヌーク</td><td>GL</td><td class='num'>6.83</td><td class='num'>84.00</td><td class='num'>45.49</td><td>寒くてたまらない  </td></tr><tr><td>ウットキアグビク（バロウ）</td><td>US</td><td class='num'>8.53</td><td class='num'>65.00</td><td class='num'>49.40</td><td>寒くてたまらない  </td></tr><tr><td>ロングイヤービーエン</td><td>SJ</td><td class='num'>8.61</td><td class='num'>82.00</td><td class='num'>48.54</td><td>寒くてたまらない  </td></tr><tr><td>トロムソ</td><td>NO</td><td class='num'>12.71</td><td class='num'>81.00</td><td class='num'>55.21</td><td>肌寒い       </td></tr><tr><td>シドニー</td><td>AU</td><td class='num'>12.98</td><td class='num'>66.00</td><td class='num'>55.86</td><td>肌寒い       </td></tr><tr><td>ノリリスク</td><td>RU</td><td class='num'>12.99</td><td class='num'>68.00</td><td class='num'>55.85</td><td>肌寒い       </td></tr><tr><td>ベルホヤンスク</td><td>RU</td><td class='num'>16.34</td><td class='num'>63.00</td><td class='num'>60.72</td><td>何も感じない    </td></tr><tr><td>イエローナイフ</td><td>CA</td><td class='num'>16.69</td><td class='num'>57.00</td><td class='num'>61.09</td><td>何も感じない    </td></tr><tr><td>ウランバートル</td><td>MN</td><td class='num'>17.10</td><td class='num'>70.00</td><td class='num'>62.00</td><td>何も感じない    </td></tr><tr><td>バンクーバー</td><td>CA</td><td class='num'>18.75</td><td class='num'>67.00</td><td class='num'>64.34</td><td>何も感じない    </td></tr><tr><td>オイミヤコン</td><td>RU</td><td class='num'>19.75</td><td class='num'>57.00</td><td class='num'>65.30</td><td>快適        </td></tr><tr><td>リマ</td><td>PE</td><td class='num'>20.93</td><td class='num'>83.00</td><td class='num'>68.59</td><td>快適        </td></tr><tr><td>ケアンズ</td><td>AU</td><td class='num'>21.38</td><td class='num'>79.00</td><td class='num'>69.04</td><td>快適        </td></tr><tr><td>リオデジャネイロ</td><td>BR</td><td class='num'>22.95</td><td class='num'>80.00</td><td class='num'>71.63</td><td>不快感出始め    </td></tr><tr><td>ハルビン</td><td>CN</td><td class='num'>23.44</td><td class='num'>86.00</td><td class='num'>72.94</td><td>不快感出始め    </td></tr><tr><td>ホノルル（ハワイ）</td><td>US</td><td class='num'>25.24</td><td class='num'>77.00</td><td class='num'>74.97</td><td>不快感出始め    </td></tr><tr><td>ソウル</td><td>KR</td><td class='num'>26.75</td><td class='num'>78.00</td><td class='num'>77.47</td><td>半数が不快     </td></tr><tr><td>クアラルンプール</td><td>MY</td><td class='num'>29.66</td><td class='num'>74.00</td><td class='num'>81.47</td><td>全員不快      </td></tr>
-</tbody>
-</table>
-
-</div>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org">
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/weekly_20260615_20260621.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/weekly_20260622_20260628.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260626.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260627.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260628.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/weekly_20260629_20260705.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260629.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260630.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260701.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260702.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260703.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260704.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260705.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/weekly_20260706_20260712.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260706.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260707.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260708.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260709.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260710.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260711.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260712.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260713.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260714.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260715.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260716.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260717.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260718.html</loc>
+    <priority>0.5</priority>
+  </url>
+</urlset>
