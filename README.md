@@ -32,14 +32,29 @@ Contact: yahikoyama.777@gmail.com
 
 ---
 
-## Daily Updated Report (Every 4 Hours)
-https://yahikoyama.github.io/weather2/weather_report_now.html
-## 🌐 English Weather Report
-Daily updated Weather & Discomfort Index (English Edition)
-
-🔗 https://yahikoyama.github.io/weather2/weather_report_now_en.html
-
-Automatically updated every morning (JST).
+# 🌦️ Daily Updated Weather & Discomfort Index Report  
+Updated every 4 hours  
+🔗 https://yahikoyama.github.io/weather2/weather_report_now.html  
+---
+## 🌐 English Weather Report  
+Daily updated Weather & Discomfort Index (English Edition)  
+🔗 https://yahikoyama.github.io/weather2/weather_report_now_en.html  
+Updated automatically every morning (JST)
+---
+## 🇷🇺 Russian Weather Report  
+Ежедневно обновляемый отчет о погоде и индексе дискомфорта (русская версия)  
+🔗 https://yahikoyama.github.io/weather2/weather_report_now_ru.html  
+Обновляется автоматически каждое утро (JST)
+---
+## 🇨🇳 Chinese Weather Report（简体中文）  
+每日更新的天气与不舒适指数报告（中文简体版）  
+🔗 https://yahikoyama.github.io/weather2/weather_report_now_zh.html  
+每天早晨自动更新（JST）
+---
+## 🇰🇷 Korean Weather Report  
+매일 업데이트되는 날씨 및 불쾌지수 보고서 (한국어 버전)  
+🔗 https://yahikoyama.github.io/weather2/weather_report_now_ko.html  
+매일 아침 자동 업데이트 (JST)
 
 
 ## Historical Weather Reports (GitHub Pages)
