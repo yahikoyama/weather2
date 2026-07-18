@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Weather・Discomfort Indexレポート</title>
+<style>
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 30px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px 40px 40px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+.timestamp {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    text-align: right;
+}
+h2 {
+    font-size: 18px;
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    border-left: 4px solid #3498db;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+}
+tr:hover {
+    background-color: #f8fafc;
+}
+.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+.center {
+    text-align: center;
+}
+.row-hot {
+    background-color: #fff5f5;
+}
+.row-cold {
+    background-color: #f0f7ff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Weather & Discomfort Index Report</h1>
+<div class="timestamp">Acquisition TimeJST 2026-07-18 08:00:09</div>
+
+<h2>Domestic (JP)</h2>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th class="num">Temperature (°C)</th>
+<th class="num">Humidity (%)</th>
+<th>Weather</th>
+<th class="num">Discomfort Index</th>
+<th>Evaluation</th>
+</tr>
+</thead>
+<tbody>
+<tr ><td>Nemuro</td><td class='num'>15.98</td><td class='num'>100%</td><td>Cloudy</td><td class='num'>60.76</td><td>Neutral</td></tr>
+<tr ><td>Kusatsu Onsen</td><td class='num'>17.60</td><td class='num'>90%</td><td>Cloudy</td><td class='num'>63.37</td><td>Neutral</td></tr>
+<tr ><td>Kushiro</td><td class='num'>17.79</td><td class='num'>99%</td><td>Cloudy</td><td class='num'>63.99</td><td>Neutral</td></tr>
+<tr ><td>Wakkanai</td><td class='num'>20.04</td><td class='num'>96%</td><td>Cloudy</td><td class='num'>67.85</td><td>Comfortable</td></tr>
+<tr ><td>Obihiro</td><td class='num'>20.30</td><td class='num'>99%</td><td>Cloudy</td><td class='num'>68.48</td><td>Comfortable</td></tr>
+<tr ><td>Sugadaira</td><td class='num'>20.52</td><td class='num'>100%</td><td>Cloudy</td><td class='num'>68.94</td><td>Comfortable</td></tr>
+<tr ><td>Abashiri</td><td class='num'>21.00</td><td class='num'>94%</td><td>Cloudy</td><td class='num'>69.41</td><td>Comfortable</td></tr>
+<tr ><td>Ikaho Onsen</td><td class='num'>21.03</td><td class='num'>90%</td><td>Cloudy</td><td class='num'>69.20</td><td>Comfortable</td></tr>
+<tr ><td>Sapporo</td><td class='num'>21.86</td><td class='num'>90%</td><td>Cloudy</td><td class='num'>70.61</td><td>Slightly Uncomfortable</td></tr>
+<tr ><td>Morioka</td><td class='num'>22.33</td><td class='num'>99%</td><td>Cloudy</td><td class='num'>72.12</td><td>Slightly Uncomfortable</td></tr>
+<tr ><td>Nasu Highlands</td><td class='num'>22.48</td><td class='num'>98%</td><td>Light Rain</td><td class='num'>72.30</td><td>Slightly Uncomfortable</td></tr>
+<tr ><td>Minakami Onsen</td><td class='num'>22.94</td><td class='num'>99%</td><td>Cloudy</td><td class='num'>73.21</td><td>Slightly Uncomfortable</td></tr>
+<tr ><td>Karuizawa</td><td class='num'>23.07</td><td class='num'>78%</td><td>Cloudy</td><td class='num'>71.65</td><td>Slightly Uncomfortable</td></tr>
+<tr ><td>Kitaibaraki</td><td class='num'>23.38</td><td class='num'>100%</td><td>Cloudy</td><td class='num'>74.08</td><td>Slightly Uncomfortable</td></tr>
+<tr ><td>Asahikawa</td><td class='num'>23.55</td><td class='num'>85%</td><td>Cloudy</td><td class='num'>73.04</td><td>Slightly Uncomfortable</td></tr>
+<tr class='row-hot'><td>Takayama</td><td class='num'>24.34</td><td class='num'>92%</td><td>Cloudy</td><td class='num'>75.03</td><td>Half Feel Uncomfortable</td></tr>
+<tr class='row-hot'><td>Akita</td><td class='num'>24.79</td><td class='num'>88%</td><td>Light Rain</td><td class='num'>75.39</td><td>Half Feel Uncomfortable</td></tr>
+<tr class='row-hot'><td>Aomori</td><td class='num'>24.96</td><td class='num'>82%</td><td>Cloudy</td><td class='num'>75.05</td><td>Half Feel Uncomfortable</td></tr>
+<tr class='row-hot'><td>Niigata</td><td class='num'>25.27</td><td class='num'>89%</td><td>Cloudy</td><td class='num'>76.31</td><td>Half Feel Uncomfortable</td></tr>
+<tr class='row-hot'><td>Katsuura</td><td class='num'>25.56</td><td class='num'>85%</td><td>Cloudy</td><td class='num'>76.36</td><td>Half Feel Uncomfortable</td></tr>
+<tr class='row-hot'><td>Tokyo</td><td class='num'>27.41</td><td class='num'>80%</td><td>Cloudy</td><td class='num'>78.77</td><td>Half Feel Uncomfortable</td></tr>
+<tr class='row-hot'><td>Kyoto</td><td class='num'>29.47</td><td class='num'>76%</td><td>Cloudy</td><td class='num'>81.48</td><td>Everyone Feels Uncomfortable</td></tr>
+
+</tbody>
+</table>
+
+<h2>Overseas (NOTJP)</h2>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th class="num">Temperature (°C)</th>
+<th class="num">Humidity (%)</th>
+<th>Weather</th>
+<th class="center">Country</th>
+<th class="num">Discomfort Index</th>
+<th>Evaluation</th>
+</tr>
+</thead>
+<tbody>
+<tr class='row-cold'><td>Utqiagvik</td><td class='num'>1.55</td><td class='num'>87%</td><td>Cloudy</td><td class='center'>US</td><td class='num'>36.45</td><td>Extremely Cold</td></tr>
+<tr class='row-cold'><td>Longyearbyen</td><td class='num'>3.53</td><td class='num'>98%</td><td>Cloudy</td><td class='center'>SJ</td><td class='num'>38.57</td><td>Extremely Cold</td></tr>
+<tr class='row-cold'><td>Nuuk</td><td class='num'>6.97</td><td class='num'>98%</td><td>Light Rain</td><td class='center'>GL</td><td class='num'>44.69</td><td>Extremely Cold</td></tr>
+<tr class='row-cold'><td>Tromsø</td><td class='num'>8.85</td><td class='num'>89%</td><td>Cloudy</td><td class='center'>NO</td><td class='num'>48.54</td><td>Extremely Cold</td></tr>
+<tr ><td>Sydney</td><td class='num'>13.00</td><td class='num'>74%</td><td>Clouds</td><td class='center'>AU</td><td class='num'>55.77</td><td>肌Cold</td></tr>
+<tr ><td>Norilsk</td><td class='num'>14.64</td><td class='num'>66%</td><td>Clouds</td><td class='center'>RU</td><td class='num'>58.29</td><td>肌Cold</td></tr>
+<tr ><td>Ulaanbaatar</td><td class='num'>15.69</td><td class='num'>71%</td><td>Cloudyがち</td><td class='center'>MN</td><td class='num'>59.88</td><td>肌Cold</td></tr>
+<tr ><td>Verkhoyansk</td><td class='num'>18.11</td><td class='num'>97%</td><td>Light Rain</td><td class='center'>RU</td><td class='num'>64.49</td><td>Neutral</td></tr>
+<tr ><td>Oymyakon</td><td class='num'>18.71</td><td class='num'>62%</td><td>Cloudy</td><td class='center'>RU</td><td class='num'>64.07</td><td>Neutral</td></tr>
+<tr ><td>Vancouver</td><td class='num'>19.67</td><td class='num'>74%</td><td>Cloudyがち</td><td class='center'>CA</td><td class='num'>66.06</td><td>Comfortable</td></tr>
+<tr ><td>Seoul</td><td class='num'>20.13</td><td class='num'>95%</td><td>Heavy Rain</td><td class='center'>KR</td><td class='num'>67.95</td><td>Comfortable</td></tr>
+<tr ><td>Cairns</td><td class='num'>20.93</td><td class='num'>66%</td><td>Cloudy</td><td class='center'>AU</td><td class='num'>67.49</td><td>Comfortable</td></tr>
+<tr ><td>Lima</td><td class='num'>22.29</td><td class='num'>75%</td><td>Few Clouds</td><td class='center'>PE</td><td class='num'>70.18</td><td>Slightly Uncomfortable</td></tr>
+<tr ><td>Harbin</td><td class='num'>22.45</td><td class='num'>60%</td><td>Cloudyがち</td><td class='center'>CN</td><td class='num'>69.24</td><td>Comfortable</td></tr>
+<tr ><td>Rio de Janeiro</td><td class='num'>24.31</td><td class='num'>59%</td><td>Clear</td><td class='center'>BR</td><td class='num'>71.75</td><td>Slightly Uncomfortable</td></tr>
+<tr class='row-hot'><td>Kuala Lumpur</td><td class='num'>24.77</td><td class='num'>94%</td><td>Cloudy</td><td class='center'>MY</td><td class='num'>75.97</td><td>Half Feel Uncomfortable</td></tr>
+<tr ><td>Yellowknife</td><td class='num'>26.16</td><td class='num'>33%</td><td>Clear</td><td class='center'>CA</td><td class='num'>71.32</td><td>Slightly Uncomfortable</td></tr>
+<tr class='row-hot'><td>Honolulu, Hawaii</td><td class='num'>29.66</td><td class='num'>65%</td><td>Cloudyがち</td><td class='center'>US</td><td class='num'>80.12</td><td>Everyone Feels Uncomfortable</td></tr>
+
+</tbody>
+</table>
+
+</div>
+</body>
+</html>
