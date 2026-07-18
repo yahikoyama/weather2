@@ -34,6 +34,7 @@ Contact: yahikoyama.777@gmail.com
 
 ## Daily Updated Report (Every 4 Hours)
 https://yahikoyama.github.io/weather2/weather_report_now.html
+https://yahikoyama.github.io/weather2/weather_report_now_en.html
 
 ## Historical Weather Reports (GitHub Pages)
 https://yahikoyama.github.io/weather2/Historical/
