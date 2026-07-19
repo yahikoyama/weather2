@@ -32,7 +32,7 @@ OpenWeatherMap API를 통해 기온, 습도, 날씨 정보를 수집하고
 ---
 
 ## ■ 매일 업데이트되는 보고서 (4시간마다 자동 갱신)
-https://yahikoyama.github.io/weather2/weather_report_now.html
+https://yahikoyama.github.io/weather2/weather_report_now_ko.html
 
 ---
 
