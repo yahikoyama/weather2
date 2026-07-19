@@ -68,7 +68,7 @@ và \*\*nhập tệp XML\*\* của Task Scheduler để tự động hóa.
 
 \## ■ Báo cáo cập nhật hàng ngày (cập nhật mỗi 4 giờ)
 
-https://yahikoyama.github.io/weather2/weather\_report\_now.html
+https://yahikoyama.github.io/weather2/weather_report_now_vi.html
 
 
 
