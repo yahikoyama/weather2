@@ -35,7 +35,7 @@ et importer le fichier **XML du planificateur de tâches**.
 ---
 
 ## ■ Rapport mis à jour quotidiennement (toutes les 4 heures)
-https://yahikoyama.github.io/weather2/weather_report_now.html
+https://yahikoyama.github.io/weather2/weather_report_now_en.html
 
 ---
 
