@@ -31,7 +31,7 @@ https://yahikoyama.github.io/weather2/
 ---
 
 ## ■ 每日更新报告（每 4 小时自动更新）
-https://yahikoyama.github.io/weather2/weather_report_now.html
+https://yahikoyama.github.io/weather2/weather_report_now_zh.html
 
 ---
 
