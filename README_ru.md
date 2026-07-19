@@ -35,7 +35,7 @@ https://yahikoyama.github.io/weather2/
 ---
 
 ## ■ Ежедневный отчёт (обновляется каждые 4 часа)
-https://yahikoyama.github.io/weather2/weather_report_now.html
+https://yahikoyama.github.io/weather2/weather_report_now_ru.html
 
 ---
 
