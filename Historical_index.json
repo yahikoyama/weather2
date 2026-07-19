@@ -121,6 +121,11 @@
                       "name":  "jp_result_mail_20260718.txt"
                   },
                   {
+                      "date":  "2026-07-19",
+                      "path":  "Historical/jp_result_mail_20260719.txt",
+                      "name":  "jp_result_mail_20260719.txt"
+                  },
+                  {
                       "date":  "2026-06-15",
                       "path":  "Historical/weekly_20260615_20260621.txt",
                       "name":  "weekly_20260615_20260621.txt"
@@ -139,6 +144,11 @@
                       "date":  "2026-07-06",
                       "path":  "Historical/weekly_20260706_20260712.txt",
                       "name":  "weekly_20260706_20260712.txt"
+                  },
+                  {
+                      "date":  "2026-07-13",
+                      "path":  "Historical/weekly_20260713_20260719.txt",
+                      "name":  "weekly_20260713_20260719.txt"
                   }
               ]
 }
