@@ -73,3 +73,5 @@ Tự động cập nhật mỗi buổi sáng (JST)
 
 ## Historical Weather Reports (GitHub Pages)  
 https://yahikoyama.github.io/weather2/Historical/
+
+https://yahikoyama.github.io/weather2/Historical/index_daily.html
