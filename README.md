@@ -3,6 +3,9 @@ Automatically generated global weather reports with multilingual support.
 
 https://yahikoyama.github.io/weather2/
 
+<img width="640" height="439" alt="image" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
+
+
 [日本語](README_ja.md) | [中文](README_zh.md) | [Français](README_fr.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Tiếng Việt](README_vi.md)
 
 This project is for studying database systems (SQL) and programming by using global weather data.  
