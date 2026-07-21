@@ -1,9 +1,11 @@
 ## Weather Report (GitHub Pages)
-Automatically generated global weather reports with multilingual support.
+Automatically generated global weather reports with multilingual support,updating 4h 
 
 https://yahikoyama.github.io/weather2/
 
 <img width="640" height="439" alt="image" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
+
+https://yahikoyama.github.io/weather2/weather_report_now_en.html
 
 
 [日本語](README_ja.md) | [中文](README_zh.md) | [Français](README_fr.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Tiếng Việt](README_vi.md)
