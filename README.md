@@ -1,88 +1,96 @@
-## Weather Report (GitHub Pages)
-Automatically generated global weather reports with multilingual support,updating 4h 
+# 🌍 Weather Report (GitHub Pages)
+Automatically generates multilingual weather & discomfort index (DI) reports every 4 hours using OpenWeatherMap API.
 
+🔗 **Live Weather Report**  
 https://yahikoyama.github.io/weather2/
 
-<img width="640" height="439" alt="image" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
+<img width="640" alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
 
-https://yahikoyama.github.io/weather2/weather_report_now_en.html
+---
 
-
+## 🌐 Available Languages
 [日本語](README_ja.md) | [中文](README_zh.md) | [Français](README_fr.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Tiếng Việt](README_vi.md)
 
-This project is for studying database systems (SQL) and programming by using global weather data.  
-It collects temperature, humidity, and weather conditions from the OpenWeatherMap API and calculates the Discomfort Index (DI) to help identify cooler areas around the world and contribute to reducing the effects of global warming.
+---
+
+# 📘 Project Overview
+This project automatically collects global weather data (temperature, humidity, weather conditions) from the **OpenWeatherMap API**, calculates the **Discomfort Index (DI)**, and publishes multilingual weather reports on **GitHub Pages**.
+
+It also serves as a practical study project for:
+- SQL database systems  
+- PowerShell automation  
+- Python data processing  
+- Multilingual HTML generation  
+- GitHub Pages publishing  
 
 If you want to add additional cities, please insert records into the **CityMaster** table.
 
 ---
 
-## System Overview
+# 🏗️ System Architecture
 
-This system is built as a Client/Server architecture using:
 
-- Windows 11 Pro (Task Scheduler)
+### Technologies Used
+- Windows 11 Pro (Task Scheduler automation)
 - PowerShell 5.1
 - Microsoft SQL Server Express 2022 (max size 10GB)
-- Python 3.14 (with pyodbc ODBC driver)
+- Python 3.14 + pyodbc (ODBC driver)
 
-The file **weather.zip** contains:
-
+### Included in **weather.zip**
 - Full source code  
-- Database backup  
+- SQL Server database backup  
+- Configuration templates  
+- Task Scheduler XML (auto-execution)
 
-Please configure the **conf** file according to your environment and import the Task Scheduler XML file.
+Please configure the **conf** files according to your environment and import the Task Scheduler XML.
 
-Contact: yahikoyama.777@gmail.com
-
----
-
-# 🌦️ Daily Updated Weather & Discomfort Index Report  
-Updated every 4 hours  
-🔗 https://yahikoyama.github.io/weather2/weather_report_now.html
+📩 Contact: **yahikoyama.777@gmail.com**
 
 ---
 
-## 🌐 English Weather Report  
-Daily updated Weather & Discomfort Index (English Edition)  
-🔗 https://yahikoyama.github.io/weather2/weather_report_now_en.html  
-Updated automatically every morning (JST)
+# 🌦️ Daily Weather Reports (Auto-updated)
+
+| Language | URL | Update Frequency |
+|---------|-----|------------------|
+| 🇯🇵 Japanese | https://yahikoyama.github.io/weather2/weather_report_now.html | Every 4 hours |
+| 🇬🇧 English | https://yahikoyama.github.io/weather2/weather_report_now_en.html | Every morning (JST) |
+| 🇷🇺 Russian | https://yahikoyama.github.io/weather2/weather_report_now_ru.html | Every morning (JST) |
+| 🇨🇳 Chinese (Simplified) | https://yahikoyama.github.io/weather2/weather_report_now_zh.html | Every morning (JST) |
+| 🇰🇷 Korean | https://yahikoyama.github.io/weather2/weather_report_now_ko.html | Every morning (JST) |
+| 🇻🇳 Vietnamese | https://yahikoyama.github.io/weather2/weather_report_now_vi.html | Every morning (JST) |
 
 ---
 
-## 🇷🇺 Russian Weather Report  
-Ежедневно обновляемый отчет о погоде и индексе дискомфорта (русская версия)  
-🔗 https://yahikoyama.github.io/weather2/weather_report_now_ru.html  
-Обновляется автоматически каждое утро (JST)
+# 📜 Historical Weather Reports
+
+Daily archived weather & DI data:
+
+- 🇬🇧 English:  
+  https://yahikoyama.github.io/weather2/Historical_en/
+
+- 🇯🇵 Japanese:  
+  https://yahikoyama.github.io/weather2/Historical/
+
+- 📅 Daily Index:  
+  https://yahikoyama.github.io/weather2/Historical/index_daily.html
 
 ---
 
-## 🇨🇳 Chinese Weather Report（简体中文）  
-每日更新的天气与不舒适指数报告（中文简体版）  
-🔗 https://yahikoyama.github.io/weather2/weather_report_now_zh.html  
-每天早晨自动更新（JST）
+# 🚀 Quick Start
 
----
+### 1. Clone the repository
+```bash
+git clone https://github.com/yahikoyama/weather2
 
-## 🇰🇷 Korean Weather Report  
-매일 업데이트되는 날씨 및 불쾌지수 보고서 (한국어 버전)  
-🔗 https://yahikoyama.github.io/weather2/weather_report_now_ko.html  
-매일 아침 자동 업데이트 (JST)
-
----
-
-## 🇻🇳 Vietnamese Weather Report  
-Báo cáo thời tiết & chỉ số khó chịu (phiên bản tiếng Việt)  
-🔗 https://yahikoyama.github.io/weather2/weather_report_now_vi.html  
-Tự động cập nhật mỗi buổi sáng (JST)
-
----
-
-## Historical Weather Reports (GitHub Pages)  
-(English Edition) 
-https://yahikoyama.github.io/weather2/Historical_en/
-
-(Japanese Edition) 
-https://yahikoyama.github.io/weather2/Historical/
-
-https://yahikoyama.github.io/weather2/Historical/index_daily.html
+weather2/
+├── Historical/                # Japanese Archived weather reports 
+├── Historical_en/             # English Archived weather reports
+├── SRC_DB_SETTING/ weather.zip  # Source + DB backup  +  SQL Server conf + API conf
+├── DBBackup/                   # Daily SQL Server Backup file
+├── weather_report_now.html    # Japanese report
+├── weather_report_now_en.html # English report
+├── weather_report_now_fr.html # French report
+├── weather_report_now_ko.html # Korean report
+├── weather_report_now_ru.html # Russian report
+├── weather_report_now_zh.html # Chinese report
+├── weather_report_now_vi.html # Vietnamese report
