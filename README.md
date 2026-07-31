@@ -53,11 +53,11 @@ Please configure the **conf** files according to your environment and import the
 | Language | URL | Update Frequency |
 |---------|-----|------------------|
 | 🇯🇵 Japanese | https://yahikoyama.github.io/weather2/weather_report_now.html | Every 4 hours |
-| 🇬🇧 English | https://yahikoyama.github.io/weather2/weather_report_now_en.html | Every morning (JST) |
-| 🇷🇺 Russian | https://yahikoyama.github.io/weather2/weather_report_now_ru.html | Every morning (JST) |
-| 🇨🇳 Chinese (Simplified) | https://yahikoyama.github.io/weather2/weather_report_now_zh.html | Every morning (JST) |
-| 🇰🇷 Korean | https://yahikoyama.github.io/weather2/weather_report_now_ko.html | Every morning (JST) |
-| 🇻🇳 Vietnamese | https://yahikoyama.github.io/weather2/weather_report_now_vi.html | Every morning (JST) |
+| 🇬🇧 English | https://yahikoyama.github.io/weather2/weather_report_now_en.html | Every 4 hours (JST) |
+| 🇷🇺 Russian | https://yahikoyama.github.io/weather2/weather_report_now_ru.html | Every 4 hours (JST) |
+| 🇨🇳 Chinese (Simplified) | https://yahikoyama.github.io/weather2/weather_report_now_zh.html | Every 4 hours (JST) |
+| 🇰🇷 Korean | https://yahikoyama.github.io/weather2/weather_report_now_ko.html | Every 4 hours (JST) |
+| 🇻🇳 Vietnamese | https://yahikoyama.github.io/weather2/weather_report_now_vi.html | Every 4 hours (JST) |
 
 ---
 
