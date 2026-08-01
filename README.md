@@ -89,7 +89,6 @@ weather2/
 ├── DBBackup/                   # Daily SQL Server Backup file
 ├── weather_report_now.html    # Japanese report
 ├── weather_report_now_en.html # English report
-├── weather_report_now_fr.html # French report
 ├── weather_report_now_ko.html # Korean report
 ├── weather_report_now_ru.html # Russian report
 ├── weather_report_now_zh.html # Chinese report
