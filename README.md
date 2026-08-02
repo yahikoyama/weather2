@@ -94,6 +94,28 @@ weather2/
 ├── weather_report_now_zh.html # Chinese report
 ├── weather_report_now_vi.html # Vietnamese report
 
+unzip weather.zip
+c:\weather
+├─config        # Configuration files (DB, API, GitHub) and dictionaries
+├─Data          # cities.csv (not used if you restore the DB backup file)
+├─DBBackup      # SQL Server backup file
+├─Logs          # Not used
+├─output        # index.html, jp_result.txt (generated at JST 14:00)
+├─Script        # PowerShell scripts, batch files (calling PS1), and Python scripts
+├─Setup         # Setup instructions and environment preparation
+└─TaskScheduler # Task Scheduler XML definitions
+      ├─get-temp-data.xml
+      ├─make-txt-file.xml
+      ├─export_jp_latest_sync_html.xml
+      ├─Historicaldata_daily.xml
+      ├─calc_weekly_avg.xml
+      ├─DBbackup.xml
+      ├─DBbackupSync.xml
+      ├─reboot.xml
+      ├─historical_index_for_claude.xml
+      ├─OneDriveToGithub.xml
+
+
 📑 TaskScheduler XML — Structured Table (English, Professional Version)
 🌐 Multi‑Language Weather Reports
 XML File	Purpose	Schedule
