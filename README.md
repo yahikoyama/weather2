@@ -117,8 +117,7 @@ c:\weather
 
 
 📑 TaskScheduler XML — Structured Table (English, Professional Version)
-# 🌐 Multi‑Language Weather Reports
-
+🌐 Multi‑Language Weather Reports
 | XML File | Purpose | Schedule |
 | ------- | ------- | -------- |
 | get-temp-data.xml | Fetch weather data via API and insert into SQL Server | Trigger‑based |
