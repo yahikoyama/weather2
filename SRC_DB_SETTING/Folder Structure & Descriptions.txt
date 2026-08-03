@@ -1,3 +1,22 @@
+github upload folder and files
+
+C:\Users\winserverroot\OneDrive
+├─Historical_en  # English Weekly data (html)
+├─Historical     # Japanese Raw Data(txt)
+│   └─html      # Japanese daily and Weekly data(html)
+├─weather_report_now.html
+├─weather_report_now_en.html
+├─weather_report_now_ko.html
+├─weather_report_now_ru.html
+├─weather_report_now_vi.html
+├─weather_report_now_zh.html
+├─jp_result_latest.txt #Raw Data(txt)
+├─jp_result_mail.txt   #Raw Data(txt)
+└─weekly.txt           #Raw Data(txt)
+
+
+application and config files and Database
+
 c:\weather
 ├─config        # Configuration files (DB, API, GitHub) and dictionaries
 ├─Data          # cities.csv (not used if you restore the DB backup file)
