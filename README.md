@@ -146,13 +146,3 @@ c:\weather
 | historical_index_for_claude.xml | Generate historical index for Claude         | Scheduled |
 | OneDriveToGithub.xml        | Fetch data at 14:00 and upload to GitHub at 15:00 | Daily     |
 
-
-## 🌐 Multi‑Language Weather Reports
-
-| XML File                       | Purpose                                                   | Schedule            |
-|-------------------------------|-----------------------------------------------------------|---------------------|
-| get-temp-data.xml             | Fetch weather data via API and insert into SQL Server    | Trigger-based       |
-| make-txt-file.xml             | Generate text data every 4 hours                         | Every 4 hours       |
-| export_jp_latest_sync_html.xml| Generate multi‑language HTML reports and upload to GitHub| Every 4 hours       |
-| Historicaldata_daily.xml      | Generate daily weather data                              | Daily at 14:00 JST  |
-
