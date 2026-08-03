@@ -117,7 +117,6 @@ c:\weather
 
 
 ## 🌐 Multi‑Language Weather Reports
-
 | XML File                     | Purpose                                                   | Schedule              |
 |------------------------------|-----------------------------------------------------------|-----------------------|
 | get-temp-data.xml            | Fetch weather data via API and insert into SQL Server     | Trigger-based         |
@@ -126,13 +125,11 @@ c:\weather
 | Historicaldata_daily.xml     | Generate daily weather data                               | Daily at 14:00 JST    |
 
 ## 📜 Historical Weather Reports
-
 | XML File          | Purpose                                                        | Schedule |
 |-------------------|----------------------------------------------------------------|----------|
 | calc_weekly_avg.xml | Calculate weekly averages, generate weekly HTML reports, and upload to GitHub | Weekly   |
 
 ## 🖥️ Server Management
-
 | XML File        | Purpose                               | Schedule              |
 |-----------------|---------------------------------------|-----------------------|
 | DBbackup.xml    | SQL Server database backup            | Scheduled             |
@@ -140,7 +137,6 @@ c:\weather
 | reboot.xml      | System reboot task                    | Scheduled             |
 
 ## 🔧 Miscellaneous Tasks
-
 | XML File                    | Purpose                                      | Schedule |
 |-----------------------------|----------------------------------------------|----------|
 | historical_index_for_claude.xml | Generate historical index for Claude         | Scheduled |
