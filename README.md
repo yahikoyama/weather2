@@ -1,8 +1,8 @@
-# 🌍 Weather Report (GitHub Pages)
-Automatically generates multilingual weather & discomfort index (DI) reports every 4 hours using OpenWeatherMap API.
+# 🌍 Global Discomfort Index (Updated every 4 hours)
 
-🔗 **Live Weather Report**  
-https://yahikoyama.github.io/weather2/
+## 👉 **Live Weather Report**
+### https://yahikoyama.github.io/weather2/
+
 
 <img width="640" alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
 
