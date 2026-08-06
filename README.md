@@ -3,7 +3,7 @@
 ## 👉 **Live Weather Report**
 ### https://yahikoyama.github.io/weather2/
 
-<a href="[/weather_report_now_en.html](https://yahikoyama.github.io/weather2/weather_report_now_en.html)">
+<a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
 <img width="1280" alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
 </a>
 
