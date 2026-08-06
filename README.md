@@ -6,7 +6,10 @@
 
 <img width="960" alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
 
+
 ---
+This project visualizes global discomfort index every 4 hours.
+You can check which cities feel hot, cold, humid, or comfortable.
 
 ## 🌐 Available Languages
 [日本語](README_ja.md) | [中文](README_zh.md) | [Français](README_fr.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Tiếng Việt](README_vi.md)
