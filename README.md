@@ -15,6 +15,18 @@ You can check which cities feel hot, cold, humid, or comfortable.
 [日本語](README_ja.md) | [中文](README_zh.md) | [Français](README_fr.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Tiếng Việt](README_vi.md)
 
 ---
+## 📌 Overview  
+This project provides **automatically updated weather and discomfort index (DI) reports** using real-time data from the **OpenWeatherMap API**.  
+The discomfort index is calculated from **temperature**, **humidity**, and **weather conditions**, offering a clear indicator of how hot or humid the environment feels.
+
+- ⏱ Updates every **4 hours**  
+- 🌐 Supports **multiple languages**  
+- 📊 Includes **historical archives**  
+- ⚙️ Fully automated via **PowerShell + SQL Server + Python + GitHub Pages**
+
+This repository is designed for **weather monitoring**, **heat countermeasures**, **environmental observation**, and **automation study**.
+
+---
 
 # 📘 Project Overview
 This project automatically collects global weather data (temperature, humidity, weather conditions) from the **OpenWeatherMap API**, calculates the **Discomfort Index (DI)**, and publishes multilingual weather reports on **GitHub Pages**.
@@ -144,4 +156,20 @@ c:\weather
 |-----------------------------|----------------------------------------------|----------|
 | historical_index_for_claude.xml | Generate historical index for Claude         | Scheduled |
 | OneDriveToGithub.xml        | Fetch data at 14:00 and upload to GitHub at 15:00 | Daily     |
+
+## 🔎 SEO Keywords  
+To improve discoverability, this project focuses on the following topics:
+
+- Discomfort Index (DI)  
+- Heat Index  
+- Global Weather  
+- Japan Weather  
+- Humidity / Temperature  
+- OpenWeatherMap API  
+- Weather Visualization  
+- GitHub Pages Weather Automation  
+- PowerShell Weather Automation  
+- SQL Server Weather Database  
+
+---
 
