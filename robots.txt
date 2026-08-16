@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yahikoyama.github.io/weather2/sitemap.xml
