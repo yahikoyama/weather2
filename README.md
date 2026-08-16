@@ -73,7 +73,8 @@ Please configure the **conf** files according to your environment and import the
 | 🇨🇳 Chinese (Simplified) | https://yahikoyama.github.io/weather2/weather_report_now_zh.html | Every 4 hours (JST) |
 | 🇰🇷 Korean | https://yahikoyama.github.io/weather2/weather_report_now_ko.html | Every 4 hours (JST) |
 | 🇻🇳 Vietnamese | https://yahikoyama.github.io/weather2/weather_report_now_vi.html | Every 4 hours (JST) |
-
+| ar Arabic | https://yahikoyama.github.io/weather2/weather_report_now_ar.html | Every 4 hours (JST) |
+| br Brazilian Portuguese | https://yahikoyama.github.io/weather2/weather_report_now_ptbr.html | Every 4 hours (JST) |
 ---
 
 # 📜 Historical Weather Reports
