@@ -109,6 +109,8 @@ weather2/
 ├── weather_report_now_ru.html # Russian report
 ├── weather_report_now_zh.html # Chinese report
 ├── weather_report_now_vi.html # Vietnamese report
+├── weather_report_now_ar.html # Arabic report
+├── weather_report_now_ptbr.html # Brazilian Portuguese report
 
 unzip weather.zip
 c:\weather
