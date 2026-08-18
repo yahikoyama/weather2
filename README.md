@@ -6,7 +6,32 @@
 <a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
 <img width="1280" alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
 </a>
+# 🌦️ Daily Weather Reports (Auto-updated)
 
+| Language | URL | Update Frequency |
+|---------|-----|------------------|
+| 🇯🇵 Japanese | https://yahikoyama.github.io/weather2/weather_report_now.html | Every 4 hours |
+| 🇬🇧 English | https://yahikoyama.github.io/weather2/weather_report_now_en.html | Every 4 hours (JST) |
+| 🇷🇺 Russian | https://yahikoyama.github.io/weather2/weather_report_now_ru.html | Every 4 hours (JST) |
+| 🇨🇳 Chinese (Simplified) | https://yahikoyama.github.io/weather2/weather_report_now_zh.html | Every 4 hours (JST) |
+| 🇰🇷 Korean | https://yahikoyama.github.io/weather2/weather_report_now_ko.html | Every 4 hours (JST) |
+| 🇻🇳 Vietnamese | https://yahikoyama.github.io/weather2/weather_report_now_vi.html | Every 4 hours (JST) |
+| ar Arabic | https://yahikoyama.github.io/weather2/weather_report_now_ar.html | Every 4 hours (JST) |
+| br Brazilian Portuguese | https://yahikoyama.github.io/weather2/weather_report_now_ptbr.html | Every 4 hours (JST) |
+---
+
+# 📜 Historical Weather Reports
+
+Daily archived weather & DI data:
+
+- 🇬🇧 English:  
+  https://yahikoyama.github.io/weather2/Historical_en/
+
+- 🇯🇵 Japanese:  
+  https://yahikoyama.github.io/weather2/Historical/
+
+- 📅 Daily Index:  
+  https://yahikoyama.github.io/weather2/Historical/index_daily.html
 ---
 This project visualizes global discomfort index every 4 hours.
 You can check which cities feel hot, cold, humid, or comfortable.
@@ -63,32 +88,7 @@ Please configure the **conf** files according to your environment and import the
 
 ---
 
-# 🌦️ Daily Weather Reports (Auto-updated)
 
-| Language | URL | Update Frequency |
-|---------|-----|------------------|
-| 🇯🇵 Japanese | https://yahikoyama.github.io/weather2/weather_report_now.html | Every 4 hours |
-| 🇬🇧 English | https://yahikoyama.github.io/weather2/weather_report_now_en.html | Every 4 hours (JST) |
-| 🇷🇺 Russian | https://yahikoyama.github.io/weather2/weather_report_now_ru.html | Every 4 hours (JST) |
-| 🇨🇳 Chinese (Simplified) | https://yahikoyama.github.io/weather2/weather_report_now_zh.html | Every 4 hours (JST) |
-| 🇰🇷 Korean | https://yahikoyama.github.io/weather2/weather_report_now_ko.html | Every 4 hours (JST) |
-| 🇻🇳 Vietnamese | https://yahikoyama.github.io/weather2/weather_report_now_vi.html | Every 4 hours (JST) |
-| ar Arabic | https://yahikoyama.github.io/weather2/weather_report_now_ar.html | Every 4 hours (JST) |
-| br Brazilian Portuguese | https://yahikoyama.github.io/weather2/weather_report_now_ptbr.html | Every 4 hours (JST) |
----
-
-# 📜 Historical Weather Reports
-
-Daily archived weather & DI data:
-
-- 🇬🇧 English:  
-  https://yahikoyama.github.io/weather2/Historical_en/
-
-- 🇯🇵 Japanese:  
-  https://yahikoyama.github.io/weather2/Historical/
-
-- 📅 Daily Index:  
-  https://yahikoyama.github.io/weather2/Historical/index_daily.html
 
 ---
 
