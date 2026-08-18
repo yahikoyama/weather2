@@ -1,6 +1,6 @@
 # 🌍 Global Discomfort Index (Updated every 4 hours)
 
-## 👉 **Live Weather Report**
+## 👉 **Live Global Weather Report — EN / JP / RU / ZH / KO / VI / AR / PT‑BR**
 ### https://yahikoyama.github.io/weather2/
 
 <a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
