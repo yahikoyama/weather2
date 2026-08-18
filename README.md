@@ -36,8 +36,7 @@ Daily archived weather & DI data:
 This project visualizes global discomfort index every 4 hours.
 You can check which cities feel hot, cold, humid, or comfortable.
 
-## 🌐 Available Languages
-[日本語](README_ja.md) | [中文](README_zh.md) | [Français](README_fr.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Tiếng Việt](README_vi.md)
+
 
 ---
 ## 📌 Overview  
@@ -87,7 +86,8 @@ Please configure the **conf** files according to your environment and import the
 📩 Contact: **yahikoyama.777@gmail.com**
 
 ---
-
+## 🌐 Available Languages
+[日本語](README_ja.md) | [中文](README_zh.md) | [Français](README_fr.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Tiếng Việt](README_vi.md)
 
 
 ---
