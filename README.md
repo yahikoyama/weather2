@@ -190,4 +190,87 @@ Data-Extraction-SQL/
  ├─ weathercode_list_en.sql
  └─ weathercode_list_jp.sql
 
+📁 SQL Overview
+weather2 includes multiple SQL scripts to extract weather data in both English and Japanese.
+Each script is designed for general users, analysts, and developers.
+
+☀️ WBGT (Heat Index) — Calculated Directly in SQL
+This is one of the strongest features of weather2:
+
+WBGT (heat index) can be calculated directly using SQL.  
+No external API, no additional libraries — only temperature and humidity.
+
+WBGT is calculated using the internationally recognized simplified formula:
+
+𝑊𝐵𝐺𝑇=0.7𝑇+0.3(𝑇×𝐻/100)
+This provides practical accuracy (±1–2°C) for heat‑risk evaluation.
+
+🔗 wbgt_en.sql
+Calculates WBGT from temperature & humidity
+
+Outputs English danger levels
+
+Ideal for international users
+
+🔗 wbgt_jp.sql
+Calculates WBGT
+
+Outputs Japanese danger levels
+
+Popular during summer months
+
+😓 Discomfort Index (DI)
+🔗 discomfort_index_en.sql
+Calculates DI
+
+English comfort level classification
+
+Useful for global users
+
+🔗 discomfort_index_jp.sql
+Calculates DI
+
+Japanese comfort level classification
+
+Uses your custom DI scale
+
+🌤 Daily Weather Data
+🔗 daily_data_en.sql
+Extracts temperature, humidity, weather code
+
+English city names
+
+🔗 daily_data_jp.sql
+Same as above
+
+Japanese city names
+
+🏙 City List
+🔗 city_list_en.sql
+CityCode / CityEn / latitude / longitude / country code
+
+🔗 city_list_jp.sql
+CityCode / CityJp / latitude / longitude / country code
+
+🌦 Weather Code
+🔗 weathercode_en.sql
+Filter weather data by weather code
+
+English weather names (WeatherGroup)
+
+🔗 weathercode_jp.sql
+Same as above
+
+Japanese weather names (WeatherNameJp)
+
+🔗 weathercode_list_en.sql
+WeatherCode / English name / Japanese name
+
+Useful as a reference table
+
+🔗 weathercode_list_jp.sql
+WeatherCode / Japanese name / English name
+
+Japanese-friendly weather code dictionary
+
 
