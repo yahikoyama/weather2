@@ -176,4 +176,18 @@ To improve discoverability, this project focuses on the following topics:
 - SQL Server Weather Database  
 
 ---
+Data-Extraction-SQL/
+ ├─ daily_data_en.sql
+ ├─ daily_data_jp.sql
+ ├─ wbgt_en.sql
+ ├─ wbgt_jp.sql
+ ├─ discomfort_index_en.sql
+ ├─ discomfort_index_jp.sql
+ ├─ city_list_en.sql
+ ├─ city_list_jp.sql
+ ├─ weathercode_en.sql
+ ├─ weathercode_jp.sql
+ ├─ weathercode_list_en.sql
+ └─ weathercode_list_jp.sql
+
 
