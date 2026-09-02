@@ -1,106 +1,33 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang='ja'>
 <head>
-<meta charset="UTF-8">
-<title>Weekly 20260622-20260628</title>
+<meta charset='UTF-8'>
+<title>Weekly 20260629-20260705</title>
 <style>
-body {
-    font-family: 'Helvetica Neue', Arial, Meiryo, sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
-    margin: 0;
-    padding: 30px;
-}
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 25px 40px 40px 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-h1 {
-    font-size: 24px;
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-}
-h2 {
-    font-size: 18px;
-    color: #34495e;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    padding-left: 8px;
-    border-left: 4px solid #3498db;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-th, td {
-    padding: 10px 12px;
-    text-align: left;
-    border-bottom: 1px solid #e2e8f0;
-}
-th {
-    background-color: #f8fafc;
-    color: #475569;
-    font-weight: 600;
-}
-.num {
-    text-align: right;
-    font-variant-numeric: tabular-nums;
-}
-.row-cold {
-    background-color: #e8f4ff;
-}
-.row-hot {
-    background-color: #fff5f5;
-}
+body { font-family:'Helvetica Neue',Arial,Meiryo;background:#f5f7fa;padding:30px; }
+.container { max-width:1000px;margin:0 auto;background:#fff;padding:25px 40px;border-radius:8px;
+             box-shadow:0 4px 15px rgba(0,0,0,0.05); }
+h1 { font-size:24px;color:#2c3e50;border-bottom:2px solid #3498db;padding-bottom:10px; }
+h2 { font-size:18px;color:#34495e;margin-top:30px;border-left:4px solid #3498db;padding-left:8px; }
+table { width:100%;border-collapse:collapse;margin-bottom:20px;font-size:14px; }
+th,td { padding:10px 12px;border-bottom:1px solid #e2e8f0; }
+th { background:#f8fafc;color:#475569;font-weight:600; }
+.num { text-align:right;font-variant-numeric:tabular-nums; }
 </style>
 </head>
 <body>
-<div class="container">
-
-<h1>Weekly 平均気温・湿度レポート（2026/6/22〜2026/6/28）</h1>
+<div class='container'>
+<h1>Weekly 平均気温・湿度レポート（20260629〜20260705）</h1>
 
 <h2>国内（JP）</h2>
 <table>
 <thead>
 <tr>
-<th>地名</th>
-<th class="num">AvgTemp(℃)</th>
-<th class="num">AvgHum(%)</th>
-<th class="num">不快指数</th>
-<th>評価</th>
+<th>地名</th><th class='num'>AvgTemp</th><th class='num'>AvgHum</th><th class='num'>DI</th><th>評価</th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-cold"><td>根室</td><td class="num">10.75</td><td class="num">91</td><td class="num">51.67</td><td>寒い</td></tr>
-<tr class="row-cold"><td>釧路</td><td class="num">12.83</td><td class="num">90</td><td class="num">55.25</td><td>肌寒い</td></tr>
-<tr class="row-cold"><td>稚内</td><td class="num">13.13</td><td class="num">87</td><td class="num">55.80</td><td>肌寒い</td></tr>
-<tr class="row-cold"><td>網走</td><td class="num">13.25</td><td class="num">86</td><td class="num">56.02</td><td>肌寒い</td></tr>
-<tr class="row-cold"><td>帯広</td><td class="num">14.88</td><td class="num">89</td><td class="num">58.73</td><td>肌寒い</td></tr>
-<tr><td>草津温泉</td><td class="num">15.78</td><td class="num">79</td><td class="num">60.13</td><td>何も感じない</td></tr>
-<tr><td>菅平</td><td class="num">16.19</td><td class="num">83</td><td class="num">60.85</td><td>何も感じない</td></tr>
-<tr><td>旭川</td><td class="num">16.88</td><td class="num">81</td><td class="num">61.93</td><td>何も感じない</td></tr>
-<tr><td>札幌</td><td class="num">18.04</td><td class="num">74</td><td class="num">63.55</td><td>何も感じない</td></tr>
-<tr><td>盛岡</td><td class="num">18.32</td><td class="num">85</td><td class="num">64.40</td><td>何も感じない</td></tr>
-<tr><td>軽井沢</td><td class="num">18.55</td><td class="num">77</td><td class="num">64.45</td><td>何も感じない</td></tr>
-<tr><td>那須高原</td><td class="num">18.82</td><td class="num">89</td><td class="num">65.41</td><td>快適</td></tr>
-<tr><td>伊香保温泉</td><td class="num">18.99</td><td class="num">79</td><td class="num">65.24</td><td>快適</td></tr>
-<tr><td>青森</td><td class="num">19.14</td><td class="num">79</td><td class="num">65.48</td><td>快適</td></tr>
-<tr><td>秋田</td><td class="num">19.29</td><td class="num">80</td><td class="num">65.77</td><td>快適</td></tr>
-<tr><td>高山</td><td class="num">19.48</td><td class="num">88</td><td class="num">66.46</td><td>快適</td></tr>
-<tr><td>北茨城</td><td class="num">20.26</td><td class="num">93</td><td class="num">68.07</td><td>快適</td></tr>
-<tr><td>新潟</td><td class="num">20.59</td><td class="num">80</td><td class="num">67.84</td><td>快適</td></tr>
-<tr><td>水上温泉</td><td class="num">20.85</td><td class="num">87</td><td class="num">68.71</td><td>快適</td></tr>
-<tr><td>勝浦</td><td class="num">21.49</td><td class="num">89</td><td class="num">69.91</td><td>快適</td></tr>
-<tr><td>京都</td><td class="num">21.68</td><td class="num">85</td><td class="num">69.95</td><td>快適</td></tr>
-<tr class="row-hot"><td>東京</td><td class="num">22.67</td><td class="num">83</td><td class="num">71.41</td><td>不快感出始め</td></tr>
+<tr><td>根室</td><td class='num'>11.55</td><td class='num'>91.00</td><td class='num'>53.05</td><td>寒い        </td></tr><tr><td>釧路</td><td class='num'>13.42</td><td class='num'>89.00</td><td class='num'>56.27</td><td>肌寒い       </td></tr><tr><td>網走</td><td class='num'>14.52</td><td class='num'>86.00</td><td class='num'>58.12</td><td>肌寒い       </td></tr><tr><td>稚内</td><td class='num'>15.14</td><td class='num'>84.00</td><td class='num'>59.14</td><td>肌寒い       </td></tr><tr><td>帯広</td><td class='num'>16.47</td><td class='num'>84.00</td><td class='num'>61.33</td><td>何も感じない    </td></tr><tr><td>草津温泉</td><td class='num'>17.06</td><td class='num'>81.00</td><td class='num'>62.22</td><td>何も感じない    </td></tr><tr><td>菅平</td><td class='num'>17.95</td><td class='num'>83.00</td><td class='num'>63.73</td><td>何も感じない    </td></tr><tr><td>旭川</td><td class='num'>19.46</td><td class='num'>72.00</td><td class='num'>65.63</td><td>快適        </td></tr><tr><td>軽井沢</td><td class='num'>19.76</td><td class='num'>78.00</td><td class='num'>66.41</td><td>快適        </td></tr><tr><td>札幌</td><td class='num'>19.99</td><td class='num'>61.00</td><td class='num'>65.84</td><td>快適        </td></tr><tr><td>伊香保温泉</td><td class='num'>20.06</td><td class='num'>81.00</td><td class='num'>67.05</td><td>快適        </td></tr><tr><td>那須高原</td><td class='num'>20.35</td><td class='num'>89.00</td><td class='num'>67.99</td><td>快適        </td></tr><tr><td>高山</td><td class='num'>20.91</td><td class='num'>86.00</td><td class='num'>68.74</td><td>快適        </td></tr><tr><td>北茨城</td><td class='num'>21.40</td><td class='num'>93.00</td><td class='num'>70.04</td><td>不快感出始め    </td></tr><tr><td>青森</td><td class='num'>21.40</td><td class='num'>74.00</td><td class='num'>68.73</td><td>快適        </td></tr><tr><td>盛岡</td><td class='num'>21.68</td><td class='num'>80.00</td><td class='num'>69.59</td><td>快適        </td></tr><tr><td>秋田</td><td class='num'>21.69</td><td class='num'>75.00</td><td class='num'>69.25</td><td>快適        </td></tr><tr><td>新潟</td><td class='num'>21.82</td><td class='num'>79.00</td><td class='num'>69.74</td><td>快適        </td></tr><tr><td>水上温泉</td><td class='num'>22.01</td><td class='num'>89.00</td><td class='num'>70.79</td><td>不快感出始め    </td></tr><tr><td>勝浦</td><td class='num'>22.23</td><td class='num'>88.00</td><td class='num'>71.09</td><td>不快感出始め    </td></tr><tr><td>東京</td><td class='num'>24.44</td><td class='num'>79.00</td><td class='num'>73.92</td><td>不快感出始め    </td></tr><tr><td>京都</td><td class='num'>24.66</td><td class='num'>79.00</td><td class='num'>74.26</td><td>不快感出始め    </td></tr>
 </tbody>
 </table>
 
@@ -108,32 +35,11 @@ th {
 <table>
 <thead>
 <tr>
-<th>地名</th>
-<th class="num">AvgTemp(℃)</th>
-<th class="num">AvgHum(%)</th>
-<th class="num">不快指数</th>
-<th>評価</th>
+<th>地名</th><th>国</th><th class='num'>AvgTemp</th><th class='num'>AvgHum</th><th class='num'>DI</th><th>評価</th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-cold"><td>ウットキアグビク（バロウ）</td><td class="num">3.55</td><td class="num">75</td><td class="num">41.09</td><td>寒くてたまらない</td></tr>
-<tr class="row-cold"><td>ヌーク</td><td class="num">4.22</td><td class="num">84</td><td class="num">41.21</td><td>寒くてたまらない</td></tr>
-<tr class="row-cold"><td>ロングイヤービーエン</td><td class="num">6.71</td><td class="num">80</td><td class="num">45.61</td><td>寒くてたまらない</td></tr>
-<tr class="row-cold"><td>トロムソ</td><td class="num">9.61</td><td class="num">81</td><td class="num">50.21</td><td>寒い</td></tr>
-<tr><td>シドニー</td><td class="num">12.96</td><td class="num">68</td><td class="num">55.80</td><td>肌寒い</td></tr>
-<tr><td>ウランバートル</td><td class="num">13.59</td><td class="num">67</td><td class="num">56.73</td><td>肌寒い</td></tr>
-<tr><td>ベルホヤンスク</td><td class="num">14.55</td><td class="num">61</td><td class="num">58.15</td><td>肌寒い</td></tr>
-<tr><td>オイミヤコン</td><td class="num">15.49</td><td class="num">59</td><td class="num">59.46</td><td>肌寒い</td></tr>
-<tr><td>イエローナイフ</td><td class="num">18.86</td><td class="num">58</td><td class="num">64.11</td><td>何も感じない</td></tr>
-<tr><td>バンクーバー</td><td class="num">19.58</td><td class="num">63</td><td class="num">65.36</td><td>快適</td></tr>
-<tr><td>リマ</td><td class="num">21.00</td><td class="num">78</td><td class="num">68.37</td><td>快適</td></tr>
-<tr><td>ケアンズ</td><td class="num">21.67</td><td class="num">81</td><td class="num">69.65</td><td>快適</td></tr>
-<tr class="row-hot"><td>リオデジャネイロ</td><td class="num">22.80</td><td class="num">89</td><td class="num">72.13</td><td>不快感出始め</td></tr>
-<tr><td>ノリリスク</td><td class="num">23.29</td><td class="num">41</td><td class="num">68.76</td><td>快適</td></tr>
-<tr class="row-hot"><td>ハルビン</td><td class="num">23.52</td><td class="num">52</td><td class="num">70.03</td><td>不快感出始め</td></tr>
-<tr class="row-hot"><td>ソウル</td><td class="num">25.35</td><td class="num">52</td><td class="num">72.45</td><td>不快感出始め</td></tr>
-<tr class="row-hot"><td>ホノルル（ハワイ）</td><td class="num">25.54</td><td class="num">75</td><td class="num">75.23</td><td>半数が不快</td></tr>
-<tr class="row-hot"><td>クアラルンプール</td><td class="num">30.16</td><td class="num">73</td><td class="num">82.09</td><td>全員不快</td></tr>
+<tr><td>ウットキアグビク（バロウ）</td><td>US</td><td class='num'>2.57</td><td class='num'>72.00</td><td class='num'>39.91</td><td>寒くてたまらない  </td></tr><tr><td>ヌーク</td><td>GL</td><td class='num'>4.07</td><td class='num'>85.00</td><td class='num'>40.86</td><td>寒くてたまらない  </td></tr><tr><td>ロングイヤービーエン</td><td>SJ</td><td class='num'>8.30</td><td class='num'>76.00</td><td class='num'>48.40</td><td>寒くてたまらない  </td></tr><tr><td>トロムソ</td><td>NO</td><td class='num'>11.20</td><td class='num'>79.00</td><td class='num'>52.84</td><td>寒い        </td></tr><tr><td>オイミヤコン</td><td>RU</td><td class='num'>14.91</td><td class='num'>51.00</td><td class='num'>58.61</td><td>肌寒い       </td></tr><tr><td>シドニー</td><td>AU</td><td class='num'>14.91</td><td class='num'>64.00</td><td class='num'>58.67</td><td>肌寒い       </td></tr><tr><td>バンクーバー</td><td>CA</td><td class='num'>16.20</td><td class='num'>76.00</td><td class='num'>60.74</td><td>何も感じない    </td></tr><tr><td>ノリリスク</td><td>RU</td><td class='num'>18.43</td><td class='num'>48.00</td><td class='num'>63.12</td><td>何も感じない    </td></tr><tr><td>ウランバートル</td><td>MN</td><td class='num'>19.65</td><td class='num'>61.00</td><td class='num'>65.35</td><td>快適        </td></tr><tr><td>ベルホヤンスク</td><td>RU</td><td class='num'>19.71</td><td class='num'>42.00</td><td class='num'>64.46</td><td>何も感じない    </td></tr><tr><td>リマ</td><td>PE</td><td class='num'>21.62</td><td class='num'>79.00</td><td class='num'>69.42</td><td>快適        </td></tr><tr><td>イエローナイフ</td><td>CA</td><td class='num'>21.64</td><td class='num'>51.00</td><td class='num'>67.46</td><td>快適        </td></tr><tr><td>ケアンズ</td><td>AU</td><td class='num'>22.04</td><td class='num'>79.00</td><td class='num'>70.10</td><td>不快感出始め    </td></tr><tr><td>ハルビン</td><td>CN</td><td class='num'>24.30</td><td class='num'>71.00</td><td class='num'>72.92</td><td>不快感出始め    </td></tr><tr><td>リオデジャネイロ</td><td>BR</td><td class='num'>24.74</td><td class='num'>82.00</td><td class='num'>74.69</td><td>不快感出始め    </td></tr><tr><td>ホノルル（ハワイ）</td><td>US</td><td class='num'>25.56</td><td class='num'>76.00</td><td class='num'>75.37</td><td>半数が不快     </td></tr><tr><td>ソウル</td><td>KR</td><td class='num'>26.66</td><td class='num'>57.00</td><td class='num'>74.79</td><td>不快感出始め    </td></tr><tr><td>クアラルンプール</td><td>MY</td><td class='num'>29.29</td><td class='num'>75.00</td><td class='num'>81.05</td><td>全員不快      </td></tr>
 </tbody>
 </table>
 
