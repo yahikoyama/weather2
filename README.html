@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Global Discomfort Index – weather2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.7; margin: 20px; max-width: 900px; }
+  h1, h2, h3 { color: #333; }
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+  table th, table td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+  table th { background: #f0f0f0; }
+  pre { background: #f7f7f7; padding: 12px; border-radius: 6px; overflow-x: auto; }
+  img { max-width: 100%; }
+  hr { margin: 40px 0; }
+</style>
+</head>
+
+<body>
+
+<h1>🌍 Global Discomfort Index (Updated every 4 hours)</h1>
+
+<h2>👉 Live Global Weather Report — EN / JP / RU / ZH / KO / VI / AR / PT‑BR</h2>
+<p><a href="https://yahikoyama.github.io/weather2/">https://yahikoyama.github.io/weather2/</a></p>
+
+<a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
+  <img alt="Daily Weather Report Screenshot"
+       src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a">
+</a>
+
+<hr>
+
+<h1>🌦️ Daily Weather Reports (Auto-updated)</h1>
+
+<table>
+<tr><th>Language</th><th>URL</th><th>Update Frequency</th></tr>
+<tr><td>🇯🇵 Japanese</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now.html">weather_report_now.html</a></td><td>Every 4 hours</td></tr>
+<tr><td>🇬🇧 English</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">weather_report_now_en.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>🇷🇺 Russian</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_ru.html">weather_report_now_ru.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>🇨🇳 Chinese</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_zh.html">weather_report_now_zh.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>🇰🇷 Korean</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_ko.html">weather_report_now_ko.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>🇻🇳 Vietnamese</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_vi.html">weather_report_now_vi.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>AR Arabic</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_ar.html">weather_report_now_ar.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>BR Portuguese</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_ptbr.html">weather_report_now_ptbr.html</a></td><td>Every 4 hours (JST)</td></tr>
+</table>
+
+<hr>
+
+<h1>📜 Historical Weather Reports</h1>
+
+<p>Daily archived weather & DI data:</p>
+
+<ul>
+  <li>🇬🇧 English:  
+    <a href="https://yahikoyama.github.io/weather2/Historical_en/">Historical_en</a>
+  </li>
+  <li>🇯🇵 Japanese:  
+    <a href="https://yahikoyama.github.io/weather2/Historical/">Historical</a>
+  </li>
+  <li>📅 Daily Index:  
+    <a href="https://yahikoyama.github.io/weather2/Historical/index_daily.html">index_daily.html</a>
+  </li>
+</ul>
+
+<p>This project visualizes global discomfort index every 4 hours.  
+You can check which cities feel hot, cold, humid, or comfortable.</p>
+
+<hr>
+
+<h2>📌 Overview</h2>
+<p>
+This project provides automatically updated weather and discomfort index (DI) reports using real-time data from the OpenWeatherMap API.  
+The discomfort index is calculated from temperature, humidity, and weather conditions.
+</p>
+
+<ul>
+  <li>⏱ Updates every 4 hours</li>
+  <li>🌐 Supports multiple languages</li>
+  <li>📊 Includes historical archives</li>
+  <li>⚙️ Automated via PowerShell + SQL Server + Python + GitHub Pages</li>
+</ul>
+
+<p>This repository is designed for weather monitoring, heat countermeasures, environmental observation, and automation study.</p>
+
+<hr>
+
+<h1>📘 Project Overview</h1>
+
+<p>
+This project automatically collects global weather data (temperature, humidity, weather conditions) from the OpenWeatherMap API, calculates the Discomfort Index (DI), and publishes multilingual weather reports on GitHub Pages.
+</p>
+
+<p>It also serves as a practical study project for:</p>
+<ul>
+  <li>SQL database systems</li>
+  <li>PowerShell automation</li>
+  <li>Python data processing</li>
+  <li>Multilingual HTML generation</li>
+  <li>GitHub Pages publishing</li>
+</ul>
+
+<p>If you want to add additional cities, please insert records into the <strong>CityMaster</strong> table.</p>
+
+<hr>
+
+<h1>🏗️ System Architecture</h1>
+
+<h3>Technologies Used</h3>
+<ul>
+  <li>Windows 11 Pro (Task Scheduler automation)</li>
+  <li>PowerShell 5.1</li>
+  <li>Microsoft SQL Server Express 2022</li>
+  <li>Python 3.14 + pyodbc</li>
+</ul>
+
+<h3>Included in weather.zip</h3>
+<ul>
+  <li>Full source code</li>
+  <li>SQL Server database backup</li>
+  <li>Configuration templates</li>
+  <li>Task Scheduler XML (auto-execution)</li>
+</ul>
+
+<p>Configure the conf files according to your environment and import the Task Scheduler XML.</p>
+
+<p>📩 Contact: <strong>yahikoyama.777@gmail.com</strong></p>
+
+<hr>
+
+<h2>🌐 Available Languages</h2>
+<p>
+<a href="README_ja.md">日本語</a> |
+<a href="README_zh.md">中文</a> |
+<a href="README_fr.md">Français</a> |
+<a href="README_ko.md">한국어</a> |
+<a href="README_ru.md">Русский</a> |
+<a href="README_vi.md">Tiếng Việt</a>
+</p>
+
+<hr>
+
+<h1>🚀 Quick Start</h1>
+
+<h3>1. Clone the repository</h3>
+<pre><code>git clone https://github.com/yahikoyama/weather2
+</code></pre>
+
+<pre><code>weather2/
+├── Historical/
+├── Historical_en/
+├── SRC_DB_SETTING/weather.zip
+├── DBBackup/
+├── weather_report_now.html
+├── weather_report_now_en.html
+├── weather_report_now_ko.html
+├── weather_report_now_ru.html
+├── weather_report_now_zh.html
+├── weather_report_now_vi.html
+├── weather_report_now_ar.html
+├── weather_report_now_ptbr.html
+</code></pre>
+
+<pre><code>unzip weather.zip
+c:\weather
+├─config
+├─Data
+├─DBBackup
+├─Logs
+├─output
+├─Script
+├─Setup
+└─TaskScheduler
+</code></pre>
+
+<hr>
+
+<h2>🌐 Multi‑Language Weather Reports</h2>
+
+<table>
+<tr><th>XML File</th><th>Purpose</th><th>Schedule</th></tr>
+<tr><td>get-temp-data.xml</td><td>Fetch weather data via API and insert into SQL Server</td><td>Trigger-based</td></tr>
+<tr><td>make-txt-file.xml</td><td>Generate text data every 4 hours</td><td>Every 4 hours</td></tr>
+<tr><td>export_jp_latest_sync_html.xml</td><td>Generate multi-language HTML reports and upload to GitHub</td><td>Every 4 hours</td></tr>
+<tr><td>Historicaldata_daily.xml</td><td>Generate daily weather data</td><td>Daily at 14:00 JST</td></tr>
+</table>
+
+<h2>📜 Historical Weather Reports</h2>
+
+<table>
+<tr><th>XML File</th><th>Purpose</th><th>Schedule</th></tr>
+<tr><td>calc_weekly_avg.xml</td><td>Calculate weekly averages and generate weekly HTML reports</td><td>Weekly</td></tr>
+</table>
+
+<h2>🖥️ Server Management</h2>
+
+<table>
+<tr><th>XML File</th><th>Purpose</th><th>Schedule</th></tr>
+<tr><td>DBbackup.xml</td><td>SQL Server database backup</td><td>Scheduled</td></tr>
+<tr><td>DBbackupSync.xml</td><td>Upload DB backup file to GitHub</td><td>After DB backup</td></tr>
+<tr><td>reboot.xml</td><td>System reboot task</td><td>Scheduled</td></tr>
+</table>
+
+<h2>🔧 Miscellaneous Tasks</h2>
+
+<table>
+<tr><th>XML File</th><th>Purpose</th><th>Schedule</th></tr>
+<tr><td>historical_index_for_claude.xml</td><td>Generate historical index for Claude</td><td>Scheduled</td></tr>
+<tr><td>OneDriveToGithub.xml</td><td>Fetch data at 14:00 and upload at 15:00</td><td>Daily</td></tr>
+<tr><td>auto_check_weather_update_daily.xml</td><td>Check report update and rerun task</td><td>Every 4 hours</td></tr>
+</table>
+
+<hr>
+
+<h1>🔎 SEO Keywords</h1>
+<ul>
+  <li>Discomfort Index (DI)</li>
+  <li>Heat Index</li>
+  <li>Global Weather</li>
+  <li>Japan Weather</li>
+  <li>Humidity / Temperature</li>
+  <li>OpenWeatherMap API</li>
+  <li>Weather Visualization</li>
+  <li>GitHub Pages Weather Automation</li>
+  <li>PowerShell Weather Automation</li>
+  <li>SQL Server Weather Database</li>
+</ul>
+
+<hr>
+
+<h1>📁 SQL Overview</h1>
+
+<p>weather2 includes multiple SQL scripts to extract weather data in English and Japanese.</p>
+
+<h2>☀️ WBGT (Heat Index)</h2>
+<p>Calculated directly in SQL using temperature and humidity.</p>
+
+<pre><code>WBGT = 0.7T + 0.3(T × H / 100)
+</code></pre>
+
+<p>This provides practical accuracy (±1–2°C) for heat‑risk evaluation.</p>
+
+<hr>
+
+</body>
+</html>
