@@ -1,0 +1,67 @@
+# Weather & Discomfort Index Report (Full Specifications)
+> Real-time weather data aggregation, automated calculation of the Discomfort Index (DI), and multi-tier climate evaluation across selected domestic (Japan) and global extreme locations.
+- **Primary Live Webpage (English):** https://yahikoyama.github.io/weather2/weather_report_now_en.html
+- **Secondary Webpage (Japanese):** https://yahikoyama.github.io/weather2/weather_report_now_ja.html
+- **GitHub Repository:** https://github.com/yahikoyama/weather2
+- **Data Refresh Cycle:** Hourly automated update via GitHub Actions workflow
+---
+## System Architecture & Data Flow
+1. **Data Acquisition:** The collection script fetches real-time meteorological parameters (temperature, humidity, weather condition codes) via a weather API.
+2. **Computation Engine:** Calculates the Discomfort Index (Thom's Index) for each location using raw temperature (T) and relative humidity (RH).
+3. **Evaluation Mapping:** Categorizes each location into a qualitative comfort rating based on the computed DI value.
+4. **Static HTML Generation:** Dynamically builds and updates the static HTML tables (`weather_report_now_en.html` and `weather_report_now_ja.html`).
+5. **Deployment:** Automatically pushes updated HTML reports to GitHub Pages.
+---
+## Discomfort Index (DI) Calculation Formula
+The application uses Thom's Discomfort Index equation:
+DI = 0.81 * T + 0.01 * RH * (0.99 * T - 14.3) + 46.3
+Where:
+- T = Air Temperature in degrees Celsius (°C)
+- RH = Relative Humidity in percentage (%)
+### Classification Thresholds & Evaluation Standards
+
+| DI Range | English Evaluation | Japanese Evaluation | Comfort Level Description |
+| :--- | :--- | :--- | :--- |
+| **< 50** | Extremely Cold | 極度に寒い | Risk of hypothermia, extreme cold conditions |
+| **50 – 55** | Cold | 寒い | Cold conditions requiring heavy outerwear |
+| **55 – 60** | Chilly | やや寒い | Cool/chilly conditions requiring light outerwear |
+| **60 – 65** | Neutral | 肌寒い〜普通 | Mild, slightly cool conditions |
+| **65 – 70** | Comfortable | 快適 | Ideal human thermal comfort range |
+| **70 – 75** | Slightly Uncomfortable | 暑くない〜やや不快 | Slight discomfort, mild heat/humidity |
+| **75 – 80** | Half Feel Uncomfortable | 半数が不快 | Noticeable discomfort felt by around 50% of people |
+| **> 80** | Everyone Feels Uncomfortable | 全員が不快 | Severe discomfort, high heat and humidity stress |
+
+---
+## Target Location Index & Geographic Selection Rationale
+### 1. Domestic (Japan) - Total 22 Locations
+Selected to cover major urban centers, northern climate variations, mountain high-altitude climates, and famous hot spring (onsen) resort regions.
+#### High-Altitude & Onsen Resort Group
+- **Kusatsu Onsen (Gunma):** Famous mountain thermal spring resort (high altitude, cooler climate).
+- **Ikaho Onsen (Gunma):** Historical hillside hot spring destination.
+- **Minakami Onsen (Gunma):** Mountainous river/hot spring valley.
+- **Karuizawa (Nagano):** Premier high-altitude summer retreat.
+- **Nasu Highlands (Tochigi):** Volcanic plateau resort area.
+- **Sugadaira (Nagano):** High-altitude athletic training plateau, known for extremely cold winter temperatures.
+#### Regional & Metropolitan Group
+- **Hokkaido & Northern Japan:** Wakkanai, Nemuro, Kushiro, Abashiri, Obihiro, Asahikawa, Sapporo, Aomori, Morioka, Akita.
+- **Central & Urban Japan:** Niigata, Tokyo, Kyoto, Kitaibaraki, Katsuura, Takayama.
+### 2. Overseas (Global & Extreme Climates) - Total 18 Locations
+Selected to showcase contrast between standard global metropolitan hubs and Earth's most extreme polar or subpolar human settlements.
+#### Extreme & Subpolar Climate Group
+- **Utqiaġvik (Barrow, Alaska, USA):** Northernmost city in the US (High Arctic).
+- **Longyearbyen (Svalbard, Norway):** Northernmost permanent civilian settlement on Earth.
+- **Oymyakon (Sakha Republic, Russia):** Known as the coldest inhabited place on Earth ("Pole of Cold").
+- **Verkhoyansk (Sakha Republic, Russia):** Holds extreme temperature fluctuation records.
+- **Norilsk (Krasnoyarsk Krai, Russia):** World's northernmost major city built on continuous permafrost.
+- **Nuuk (Greenland):** Subarctic coastal climate.
+- **Yellowknife (Northwest Territories, Canada):** Subarctic inland climate.
+- **Tromsø (Norway):** Arctic coastal climate.
+#### Global Metropolitan Group
+- Sydney (AU), Vancouver (CA), Cairns (AU), Lima (PE), Rio de Janeiro (BR), Harbin (CN), Honolulu (US), Ulaanbaatar (MN), Seoul (KR), Kuala Lumpur (MY).
+---
+## API & Schema Reference
+### HTML Table Data Schema
+Each HTML report table exposes the following structured columns:
+Location | Temperature (°C) | Humidity (%) | Weather | Discomfort Index | Evaluation
+For overseas locations (`Overseas (NOTJP)`), an additional `Country` ISO code column is included:
+Location | Temperature (°C) | Humidity (%) | Weather | Country | Discomfort Index | Evaluation
