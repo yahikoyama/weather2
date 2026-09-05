@@ -1,0 +1,41 @@
+# Weather & Discomfort Index Report
+
+> Real-time environmental and discomfort index reporting, comparing Japanese regional cities, famous hot spring (onsen) destinations, and major/extreme international locations.
+
+## Overview
+This application provides live weather updates including temperature, humidity, clear-text weather condition descriptions, and computed **Discomfort Index (DI)** values. It categorizes locations into comfort evaluations ranging from "Extremely Cold" to "Everyone Feels Uncomfortable".
+
+- **Primary URL (English):** https://yahikoyama.github.io/weather2/weather_report_now_en.html
+- **Secondary URL (Japanese):** https://yahikoyama.github.io/weather2/weather_report_now_ja.html
+- **Data Update Frequency:** Hourly / Real-time updates
+
+## Featured Location Categories
+
+### 1. Domestic (Japan)
+Coverage includes major Japanese metropolitan areas as well as renowned mountain and hot spring (onsen) resorts:
+- **Resorts & Onsen:** Kusatsu Onsen, Ikaho Onsen, Minakami Onsen, Karuizawa, Nasu Highlands, Sugadaira
+- **Regional Cities:** Sapporo, Asahikawa, Morioka, Niigata, Tokyo, Kyoto, Kitaibaraki, Katsuura, Wakkanai, Nemuro, Kushiro, Abashiri, Obihiro, Takayama, Aomori, Akita
+
+### 2. Overseas (Global & Extreme Climates)
+Coverage includes major international hubs along with iconic extreme/polar climate locations:
+- **Extreme / Polar Climates:** Utqiaġvik (US), Longyearbyen (SJ), Nuuk (GL), Oymyakon (RU), Verkhoyansk (RU), Norilsk (RU), Tromsø (NO), Yellowknife (CA)
+- **Global Cities:** Sydney (AU), Vancouver (CA), Cairns (AU), Lima (PE), Rio de Janeiro (BR), Harbin (CN), Honolulu (US), Ulaanbaatar (MN), Seoul (KR), Kuala Lumpur (MY)
+
+## Key Metrics & Evaluation Criteria
+
+### Discomfort Index (DI) Calculation
+Calculated using temperature (T in °C) and relative humidity (RH in %):
+DI = 0.81 * T + 0.01 * RH * (0.99 * T - 14.3) + 46.3
+
+### Evaluation Thresholds
+- **< 55:** Cold / Extremely Cold
+- **55 – 60:** Chilly
+- **60 – 65:** Neutral
+- **65 – 70:** Comfortable
+- **70 – 75:** Slightly Uncomfortable
+- **75 – 80:** Half Feel Uncomfortable
+- **> 80:** Everyone Feels Uncomfortable
+
+## Key Pages & Links
+- [Current Weather Report (English)](https://yahikoyama.github.io/weather2/weather_report_now_en.html): Live weather table and discomfort index evaluation.
+- [Repository Root](https://github.com/yahikoyama/weather2): Source files and automation scripts.
