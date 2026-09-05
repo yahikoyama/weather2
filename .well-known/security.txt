@@ -1,0 +1,5 @@
+# Security and Project Contact Information
+Contact: https://github.com/yahikoyama/weather2/issues
+Preferred-Languages: en, ja
+Canonical: https://yahikoyama.github.io/weather2/.well-known/security.txt
+Policy: https://github.com/yahikoyama/weather2
