@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>How to Use SQL → CSV Automation (weather2)</title>
+<meta name="description" content="Usage guide for Select2CSV-citylist.bat, exec1.ps1, config.ps1 and sql1.ps1 in the weather2 project. Explains how to modify SQL and change CSV output location.">
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+h1, h2 { color: #333; }
+pre { background: #f7f7f7; padding: 10px; border-radius: 6px; }
+code { background: #eee; padding: 3px; }
+</style>
+</head>
+<body>
+
+<h1>How to Use SQL → CSV Automation (weather2)</h1>
+
+<p>
+This guide explains how the SQL-to-CSV automation works inside the
+<strong>weather2</strong> project.  
+The automation consists of a BAT file, multiple PowerShell scripts, and SQL files.
+Users only need to modify two files: <strong>config.ps1</strong> and <strong>sql1.ps1</strong>.
+</p>
+
+<hr>
+
+<h2>📁 Folder Location</h2>
+<p>
+Automation scripts are located here:<br>
+<a href="https://github.com/yahikoyama/weather2/tree/main/db_sql2csv" target="_blank">
+https://github.com/yahikoyama/weather2/tree/main/db_sql2csv
+</a>
+</p>
+
+<hr>
+
+<h2>🧩 Overall Execution Flow</h2>
+
+<pre>
+Select2CSV-citylist.bat   →   exec1.ps1   →   util-db.ps1
+                                   ↓
+                               sql1.ps1
+                                   ↓
+                               SQL Server
+                                   ↓
+                               city-list.csv
+</pre>
+
+<hr>
+
+<h2>🟦 1. Main Batch File (Entry Point)</h2>
+
+<h3>Select2CSV-citylist.bat</h3>
+
+<p>
+This is the main batch file.  
+Run this file from the command prompt to start the entire automation.
+</p>
+
+<pre>
+C:\weather\db_sql2csv>Select2CSV-citylist.bat
+</pre>
+
+<p>
+The BAT file launches PowerShell and calls <code>exec1.ps1</code>.
+</p>
+
+<h3>🔧 Changing the CSV Output Location (BAT)</h3>
+
+<p>
+The CSV output path is defined directly inside <strong>Select2CSV-citylist.bat</strong>.
+Below is the actual script used in weather2:
+</p>
+
+<pre>
+PowerShell -ExecutionPolicy RemoteSigned C:\weather\db_sql2csv\exec1.ps1 > C:\weather\db_sql2csv\CSV\city-list.CSV
+start notepad.exe "C:\weather\db_sql2csv\CSV\city-list.CSV"
+</pre>
+
+<p>
+To change where the CSV file is saved, edit the CSV path in both lines:
+</p>
+
+<pre>
+PowerShell -ExecutionPolicy RemoteSigned C:\weather\db_sql2csv\exec1.ps1 > D:\MyData\city-list.CSV
+start notepad.exe "D:\MyData\city-list.CSV"
+</pre>
+
+<p>
+This allows you to store the CSV file anywhere you prefer.
+</p>
+
+<hr>
+
+<h2>🟦 2. PowerShell Main Controller</h2>
+
+<h3>exec1.ps1</h3>
+
+<p>
+This script controls the SQL execution flow.  
+It loads <code>util-db.ps1</code> and then calls <code>sql1.ps1</code>.
+</p>
+
+<p><strong>Do not modify this file.</strong></p>
+
+<hr>
+
+<h2>🟦 3. Shared Utility Functions</h2>
+
+<h3>util-db.ps1</h3>
+
+<p>
+This file contains database utility functions such as:
+</p>
+
+<ul>
+  <li>SQL Server connection handling</li>
+  <li>Command execution helpers</li>
+  <li>Common logging functions</li>
+</ul>
+
+<p><strong>Do not modify this file.</strong></p>
+
+<hr>
+
+<h2>🟦 4. Files You Must Modify</h2>
+
+<h3>config.ps1 (Database Settings)</h3>
+
+<p>
+Edit this file to configure your SQL Server environment:
+</p>
+
+<ul>
+  <li>Server name</li>
+  <li>Instance name</li>
+  <li>Database name</li>
+  <li>Authentication settings</li>
+</ul>
+
+<pre>
+$ServerInstance = ".\SQLEXPRESS"
+$DatabaseName   = "WeatherDB"
+</pre>
+
+<hr>
+
+<h3>sql1.ps1 (SQL Execution Target)</h3>
+
+<p>
+This file specifies which SQL file to run.  
+Modify this file when you want to change the SQL logic.
+</p>
+
+<pre>
+$SqlFile = "city_list_en.sql"
+</pre>
+
+<p>
+You can replace the SQL file with any script from:
+</p>
+
+<a href="https://github.com/yahikoyama/weather2/tree/main/Data-Extraction-SQL" target="_blank">
+Data-Extraction-SQL directory
+</a>
+
+<hr>
+
+<h2>📤 Output</h2>
+
+<p>
+The result of the SQL execution is exported as:
+</p>
+
+<pre>
+city-list.csv
+</pre>
+
+<p>
+The output location is controlled entirely by the path inside  
+<strong>Select2CSV-citylist.bat</strong>.
+</p>
+
+<hr>
+
+<h2>📬 Contact</h2>
+
+<p>
+Maintainer: <strong>Yahikoyama</strong><br>
+GitHub: <a href="https://github.com/yahikoyama" target="_blank">https://github.com/yahikoyama</a>
+</p>
+
+</body>
+</html>
