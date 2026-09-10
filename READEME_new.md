@@ -30,7 +30,7 @@ https://yahikoyama.github.io/weather2/
 
 ---
 
-## 📄 Sitemap (Updated Every 4 Hours)
+## 📄 Sitemap (Updated Every day)
 https://yahikoyama.github.io/weather2/sitemap.xml
 
 ---
