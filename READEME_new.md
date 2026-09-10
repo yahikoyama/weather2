@@ -31,6 +31,9 @@ https://yahikoyama.github.io/weather2/
 ---
 
 ## 📄 Sitemap (Updated Every day)
+This sitemap is automatically regenerated every 4 hours to ensure
+search engines always receive the latest weather report URLs.
+
 https://yahikoyama.github.io/weather2/sitemap.xml
 
 ---
@@ -44,6 +47,12 @@ This repository contains all SQL files used for:
 - Historical weather extraction
 - Multi-language data processing
 
+Example SQL scripts included:
+- wbgt_en.sql / wbgt_jp.sql
+- discomfort_index_en.sql / discomfort_index_jp.sql
+- city_list_en.sql / city_list_jp.sql
+- weathercode_list_en.sql / weathercode_list_jp.sql
+
 SQL files are located here:  
 https://github.com/yahikoyama/weather2/tree/main/Data-Extraction-SQL
 
@@ -55,7 +64,10 @@ Sample scripts for converting SQL query results into CSV files:
 - `.bat` automation  
 - `.ps1` PowerShell automation  
 
-These scripts demonstrate how to execute SQL files and export weather data efficiently.
+These automation samples show how to:
+- Run SQL queries automatically
+- Export results to CSV
+- Schedule periodic data extraction
 
 Samples:  
 https://github.com/yahikoyama/weather2/tree/main/db_sql2csv
@@ -82,6 +94,7 @@ Updates occur every **4 hours**.
 
 ## 🧩 Technologies Used
 - OpenWeatherMap API  
+- SQL Server Express 2022  
 - SQL (multiple datasets)  
 - GitHub Actions  
 - GitHub Pages  
@@ -91,7 +104,9 @@ Updates occur every **4 hours**.
 ---
 
 ## 📌 Repository Topics (Recommended)
-Add these for better GitHub search visibility:
+weather, weather-api, openweathermap, sql, csv,
+wbgt, discomfort-index, multilingual, github-pages,
+automation, data-extraction, meteorology, climate-data
 
 
 ---
@@ -101,6 +116,7 @@ Add these for better GitHub search visibility:
 - Offer reusable SQL datasets for developers  
 - Enable automated weather data extraction  
 - Support heat countermeasures and environmental monitoring  
+- Provide SQL examples for learning and data processing practice  
 
 ---
 
