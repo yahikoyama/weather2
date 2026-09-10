@@ -269,6 +269,13 @@ WeatherCode / English name / Japanese name
 Useful as a reference table
 
 🔗 weathercode_list_jp.sql
+
+## 📘 Detailed Documentation
+A full technical documentation including SQL scripts, automation samples (BAT / PowerShell),
+and multilingual processing details is available here:
+
+👉 [README_new.md](README_new.md)
+
 WeatherCode / Japanese name / English name
 
 Japanese-friendly weather code dictionary
