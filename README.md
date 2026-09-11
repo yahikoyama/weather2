@@ -287,6 +287,11 @@ and multilingual processing details is available here:
 
 👉 [README_new.md](README_new.md)
 
+## Educational Use
+weather2 is available on OER Commons as an open educational resource for teaching and learning.
+
+https://oercommons.org/courses/global-discomfort-index-updated-every-4-hours
+
 WeatherCode / Japanese name / English name
 
 Japanese-friendly weather code dictionary
