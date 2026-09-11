@@ -185,6 +185,7 @@ PowerShell 自動化
 SQL Server 天気データベース
 
 📁 SQL 一覧（Data-Extraction-SQL）
+```
 daily_data_en.sql
 daily_data_jp.sql
 wbgt_en.sql
@@ -197,14 +198,16 @@ weathercode_en.sql
 weathercode_jp.sql
 weathercode_list_en.sql
 weathercode_list_jp.sql
+```
 
 ☀️ WBGT（暑さ指数）— SQLで直接計算
+```
 WBGT は温度と湿度のみで計算でき、外部API不要です。
 
 公式の簡易式：
 WBGT = 0.7T + 0.3(T × H / 100)
 精度は ±1–2°C 程度で、実用的な熱リスク評価が可能。
-
+```
 😓 不快指数（DI）
 discomfort_index_en.sql
 
