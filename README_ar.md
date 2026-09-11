@@ -1,192 +1,193 @@
-# 🌍 グローバル不快指数（4時間ごとに更新）
+# 🌍 مؤشر الانزعاج العالمي (يتم التحديث كل 4 ساعات)
 
-## 👉 **多言語対応のグローバル天気レポート — EN / JP / RU / ZH / KO / VI / AR / PT‑BR**
+## 👉 **تقرير الطقس العالمي متعدد اللغات — EN / JP / RU / ZH / KO / VI / AR / PT‑BR**
 ### https://yahikoyama.github.io/weather2/
 
-<a href="https://yahikoyama.github.io/weather2/weather_report_now.html">
-<img width="622" height="395" alt="image" src="https://github.com/user-attachments/assets/d0f0bde1-6cec-433d-8ccc-de58436beaa3" />
-
+<a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
+<img width="1280" alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
 </a>
 
 ---
 
-# 🌦️ 毎日の天気レポート（自動更新）
+# 🌦️ تقرير الطقس اليومي (تحديث تلقائي)
 
-| 言語 | URL | 更新頻度 |
-|------|-----|-----------|
-| 🇯🇵 日本語 | https://yahikoyama.github.io/weather2/weather_report_now.html | 4時間ごと |
-| 🇬🇧 英語 | https://yahikoyama.github.io/weather2/weather_report_now_en.html | 4時間ごと（JST） |
-| 🇷🇺 ロシア語 | https://yahikoyama.github.io/weather2/weather_report_now_ru.html | 4時間ごと（JST） |
-| 🇨🇳 中国語（簡体字） | https://yahikoyama.github.io/weather2/weather_report_now_zh.html | 4時間ごと（JST） |
-| 🇰🇷 韓国語 | https://yahikoyama.github.io/weather2/weather_report_now_ko.html | 4時間ごと（JST） |
-| 🇻🇳 ベトナム語 | https://yahikoyama.github.io/weather2/weather_report_now_vi.html | 4時間ごと（JST） |
-| 🇦🇪 アラビア語 | https://yahikoyama.github.io/weather2/weather_report_now_ar.html | 4時間ごと（JST） |
-| 🇧🇷 ブラジルポルトガル語 | https://yahikoyama.github.io/weather2/weather_report_now_ptbr.html | 4時間ごと（JST） |
+| اللغة | الرابط | معدل التحديث |
+|------|--------|---------------|
+| 🇯🇵 اليابانية | https://yahikoyama.github.io/weather2/weather_report_now.html | كل 4 ساعات |
+| 🇬🇧 الإنجليزية | https://yahikoyama.github.io/weather2/weather_report_now_en.html | كل 4 ساعات (JST) |
+| 🇷🇺 الروسية | https://yahikoyama.github.io/weather2/weather_report_now_ru.html | كل 4 ساعات (JST) |
+| 🇨🇳 الصينية (مبسطة) | https://yahikoyama.github.io/weather2/weather_report_now_zh.html | كل 4 ساعات (JST) |
+| 🇰🇷 الكورية | https://yahikoyama.github.io/weather2/weather_report_now_ko.html | كل 4 ساعات (JST) |
+| 🇻🇳 الفيتنامية | https://yahikoyama.github.io/weather2/weather_report_now_vi.html | كل 4 ساعات (JST) |
+| 🇦🇪 العربية | https://yahikoyama.github.io/weather2/weather_report_now_ar.html | كل 4 ساعات (JST) |
+| 🇧🇷 البرتغالية (البرازيل) | https://yahikoyama.github.io/weather2/weather_report_now_ptbr.html | كل 4 ساعات (JST) |
 
 ---
 
-# 📜 過去の天気レポート（アーカイブ）
+# 📜 تقارير الطقس التاريخية
 
-毎日の天気データと不快指数（DI）のアーカイブ：
+أرشيف بيانات الطقس اليومية ومؤشر الانزعاج (DI):
 
-- 🇬🇧 英語版  
+- 🇬🇧 الإنجليزية  
   https://yahikoyama.github.io/weather2/Historical_en/
 
-- 🇯🇵 日本語版  
+- 🇯🇵 اليابانية  
   https://yahikoyama.github.io/weather2/Historical/
 
-- 📅 日次インデックス  
+- 📅 الفهرس اليومي  
   https://yahikoyama.github.io/weather2/Historical/index_daily.html
 
 ---
 
-このプロジェクトは、世界中の不快指数を4時間ごとに可視化します。  
-どの都市が暑い・寒い・蒸し暑い・快適かを確認できます。
+يقوم هذا المشروع بعرض مؤشر الانزعاج العالمي كل 4 ساعات.  
+يمكنك معرفة المدن الحارة أو الباردة أو الرطبة أو المريحة.
 
 ---
 
-# 📌 概要
+# 📌 نظرة عامة
 
-このプロジェクトは **OpenWeatherMap API** のリアルタイムデータを使用し、  
-**気温・湿度・天候**から **不快指数（DI）** を計算して自動更新レポートを生成します。
+يستخدم المشروع بيانات **OpenWeatherMap API** في الوقت الفعلي،  
+ويحسب **مؤشر الانزعاج (DI)** بناءً على **درجة الحرارة والرطوبة وحالة الطقس**.
 
-- ⏱ **4時間ごとに自動更新**  
-- 🌐 **多言語対応（8言語）**  
-- 📊 **過去データのアーカイブあり**  
-- ⚙️ **PowerShell + SQL Server + Python + GitHub Pages による完全自動化**
+- ⏱ **تحديث تلقائي كل 4 ساعات**  
+- 🌐 **يدعم 8 لغات**  
+- 📊 **أرشيف بيانات تاريخية**  
+- ⚙️ **أتمتة كاملة باستخدام PowerShell + SQL Server + Python + GitHub Pages**
 
-用途：
-- 天候監視  
-- 熱中症対策  
-- 環境観測  
-- 自動化学習（PowerShell / SQL / Python）
-
----
-
-# 📘 プロジェクト概要
-
-このプロジェクトは、世界の気象データ（気温・湿度・天候）を自動収集し、  
-**不快指数（DI）** を計算して多言語HTMLレポートを GitHub Pages に公開します。
-
-学習用途としても最適：
-- SQL データベース  
-- PowerShell 自動化  
-- Python データ処理  
-- 多言語 HTML 生成  
-- GitHub Pages 公開
-
-都市を追加したい場合は **CityMaster テーブル** にレコードを追加してください。
+الاستخدامات:
+- مراقبة الطقس  
+- تقييم مخاطر الحرارة  
+- مراقبة البيئة  
+- تعلم الأتمتة (PowerShell / SQL / Python)
 
 ---
 
-# 🏗️ システム構成
+# 📘 وصف المشروع
 
-### 使用技術
-- Windows 11 Pro（タスクスケジューラ自動化）
+يقوم المشروع بجمع بيانات الطقس العالمية تلقائيًا (درجة الحرارة، الرطوبة، حالة الطقس)،  
+ويحسب **DI** وينشر تقارير HTML متعددة اللغات على **GitHub Pages**.
+
+مناسب للتعلم:
+- قواعد بيانات SQL  
+- أتمتة PowerShell  
+- معالجة البيانات باستخدام Python  
+- إنشاء HTML متعدد اللغات  
+- النشر عبر GitHub Pages
+
+لإضافة مدينة جديدة، قم بإدراج سجل في جدول **CityMaster**.
+
+---
+
+# 🏗️ بنية النظام
+
+### التقنيات المستخدمة
+- Windows 11 Pro (أتمتة عبر Task Scheduler)
 - PowerShell 5.1
-- Microsoft SQL Server Express 2022（最大10GB）
-- Python 3.14 + pyodbc（ODBCドライバ）
+- Microsoft SQL Server Express 2022 (حتى 10GB)
+- Python 3.14 + pyodbc (برنامج تشغيل ODBC)
 
 ---
 
-## 📦 GitHub リポジトリに含まれるファイル
+## 📦 محتويات مستودع GitHub
 
-以前 **weather.zip** に含まれていたすべてのファイルは、  
-現在は GitHub リポジトリ内にフォルダ単位で公開されています。
+جميع الملفات التي كانت موجودة سابقًا في **weather.zip**  
+متاحة الآن داخل المستودع على شكل مجلدات.
 
-含まれる内容：
+تشمل:
 
-- フルソースコード  
-- SQL Server データベーススクリプト & バックアップ  
-- 設定テンプレート（config.ps1, sql1.ps1 など）  
-- 自動化スクリプト（BAT / PowerShell）  
-- タスクスケジューラ XML（自動実行用）
+- كامل الشيفرة المصدرية  
+- نصوص SQL ونسخ احتياطية لقاعدة البيانات  
+- قوالب الإعداد (config.ps1، sql1.ps1، إلخ)  
+- نصوص الأتمتة (BAT / PowerShell)  
+- ملفات XML لـ Task Scheduler للتنفيذ التلقائي
 
-環境に合わせて設定ファイルを編集し、  
-必要に応じてタスクスケジューラ XML をインポートしてください。
+قم بتعديل ملفات الإعداد حسب بيئتك،  
+واستورد ملفات XML إذا كنت ترغب في الأتمتة.
 
-📩 連絡先: **yahikoyama.777@gmail.com**
+📩 البريد الإلكتروني: **yahikoyama.777@gmail.com**
 
 ---
 
-# 🌐 利用可能な言語
+# 🌐 اللغات المتاحة
 
 [日本語](README_ja.md) | [中文](README_zh.md) | [Français](README_fr.md) | [한국어](README_ko.md) | [Русский](README_ru.md) | [Tiếng Việt](README_vi.md)
 
 ---
 
-# 🚀 クイックスタート
+# 🚀 البدء السريع
 
-### 1. リポジトリをクローン
-```
-weather2/
-├── Historical/                # 日本語アーカイブ
-├── Historical_en/             # 英語アーカイブ
-├── SRC_DB_SETTING/            # DBバックアップ・設定ファイル
-├── DBBackup/                  # SQL Server 日次バックアップ
-├── weather_report_now.html    # 日本語レポート
-├── weather_report_now_en.html # 英語レポート
-├── weather_report_now_ko.html # 韓国語レポート
-├── weather_report_now_ru.html # ロシア語レポート
-├── weather_report_now_zh.html # 中国語レポート
-├── weather_report_now_vi.html # ベトナム語レポート
-├── weather_report_now_ar.html # アラビア語レポート
-├── weather_report_now_ptbr.html # ブラジルポルトガル語レポート
-```
+### 1. استنساخ المستودع
 
-🌐 多言語天気レポート生成タスク
-| XMLファイル | 目的 | スケジュール |
-| --- | --- | --- |
-| get-temp-data.xml | APIから天気データ取得 → SQL Serverへ挿入 | トリガー |
-| make-txt-file.xml | テキストデータ生成 | 4時間ごと |
-| export_jp_latest_sync_html.xml | 多言語HTML生成 → GitHubへアップロード | 4時間ごと |
-| Historicaldata_daily.xml | 日次データ生成 | 毎日14:00 JST |
-
-
-📜 過去データ生成タスク
-| XMLファイル | 目的 | スケジュール |
-| --- | --- | --- |
-| calc_weekly_avg.xml | 週次平均計算 → 週次HTML生成 → GitHubへアップロード | 毎週 |
-
-🖥️ サーバ管理タスク
-| XMLファイル | 目的 | スケジュール |
-| --- | --- | --- |
-| DBbackup.xml | SQL Server バックアップ | 定期 |
-| DBbackupSync.xml | バックアップを GitHub にアップロード | バックアップ後 |
-| reboot.xml | システム再起動 | 定期 |
-
-🔧 その他タスク
-| XMLファイル | 目的 | スケジュール |
-| --- | --- | --- |
-| historical_index_for_claude.xml | Claude 用インデックス生成 | 定期 |
-| OneDriveToGithub.xml | 14:00にデータ取得 → 15:00にGitHubへアップロード | 毎日 |
-| auto_check_weather_update_daily.xml | HTML更新チェック → 必要なら再実行 | 4時間ごと |
-
+```bash
 git clone https://github.com/yahikoyama/weather2
 
-🔎 SEO キーワード
-不快指数（DI）
+weather2/
+├── Historical/                # أرشيف ياباني
+├── Historical_en/             # أرشيف إنجليزي
+├── SRC_DB_SETTING/            # نسخ احتياطي وإعدادات قاعدة البيانات
+├── DBBackup/                  # النسخ الاحتياطي اليومي لـ SQL Server
+├── weather_report_now.html    # تقرير ياباني
+├── weather_report_now_en.html # تقرير إنجليزي
+├── weather_report_now_ko.html # تقرير كوري
+├── weather_report_now_ru.html # تقرير روسي
+├── weather_report_now_zh.html # تقرير صيني
+├── weather_report_now_vi.html # تقرير فيتنامي
+├── weather_report_now_ar.html # تقرير عربي
+├── weather_report_now_ptbr.html # تقرير برتغالي (البرازيل)
+
+
+🌐 مهام إنشاء تقارير الطقس متعددة اللغات
+| ملف XML | الوظيفة | الجدول |
+| --- | --- | --- |
+| get-temp-data.xml | جلب بيانات API → إدراجها في SQL Server | حسب المشغل |
+| make-txt-file.xml | إنشاء بيانات نصية | كل 4 ساعات |
+| export_jp_latest_sync_html.xml | إنشاء HTML متعدد اللغات → رفعه إلى GitHub | كل 4 ساعات |
+
+
+| Historicaldata_daily.xml | إنشاء بيانات يومية | يوميًا الساعة 14:00 JST |
+
+📜 مهام إنشاء البيانات التاريخية
+| ملف XML | الوظيفة | الجدول |
+| --- | --- | --- |
+| calc_weekly_avg.xml | حساب متوسط الأسبوع → إنشاء HTML → رفعه إلى GitHub | أسبوعيًا |
+
+🖥️ مهام إدارة الخادم
+| ملف XML | الوظيفة | الجدول |
+| --- | --- | --- |
+| DBbackup.xml | نسخ احتياطي لـ SQL Server | دوري |
+| DBbackupSync.xml | رفع النسخ الاحتياطية إلى GitHub | بعد النسخ الاحتياطي |
+| reboot.xml | إعادة تشغيل النظام | دوري |
+
+🔧 مهام أخرى
+| ملف XML | الوظيفة | الجدول |
+| --- | --- | --- |
+| historical_index_for_claude.xml | إنشاء فهرس تاريخي لـ Claude | دوري |
+| OneDriveToGithub.xml | جلب البيانات الساعة 14:00 → رفعها الساعة 15:00 | يوميًا |
+| auto_check_weather_update_daily.xml | التحقق من تحديث HTML → إعادة التشغيل عند الحاجة | كل 4 ساعات |
+
+🔎 كلمات مفتاحية SEO
+مؤشر الانزعاج (DI)
 
 WBGT
 
-グローバル天気
+الطقس العالمي
 
-日本の天気
+طقس اليابان
 
-湿度 / 気温
+الرطوبة / درجة الحرارة
 
 OpenWeatherMap API
 
-天気可視化
+عرض بيانات الطقس
 
-GitHub Pages 自動化
+أتمتة GitHub Pages
 
-PowerShell 自動化
+أتمتة PowerShell
 
-SQL Server 天気データベース
+قاعدة بيانات الطقس SQL Server
 
-📁 SQL 一覧（Data-Extraction-SQL）
-```
+📁 نصوص SQL (Data-Extraction-SQL)
+
 daily_data_en.sql
 daily_data_jp.sql
 wbgt_en.sql
@@ -199,35 +200,37 @@ weathercode_en.sql
 weathercode_jp.sql
 weathercode_list_en.sql
 weathercode_list_jp.sql
-```
 
-☀️ WBGT（暑さ指数）— SQLで直接計算
-```
-WBGT は温度と湿度のみで計算でき、外部API不要です。
 
-公式の簡易式：
+☀️ WBGT — حساب مباشر عبر SQL
+يمكن حساب WBGT باستخدام درجة الحرارة والرطوبة فقط، دون الحاجة إلى API خارجي.
+
+الصيغة:
+
 WBGT = 0.7T + 0.3(T × H / 100)
-精度は ±1–2°C 程度で、実用的な熱リスク評価が可能。
-```
-😓 不快指数（DI）
+
+
+2°C — مناسبة لتقييم مخاطر الحرارة.
+
+😓 مؤشر الانزعاج (DI)
 discomfort_index_en.sql
 
 discomfort_index_jp.sql
 
-温度・湿度から不快指数を計算し、
-英語版・日本語版の快適度分類を出力します。
+يحسب DI بناءً على درجة الحرارة والرطوبة،
+ويعرض مستويات الراحة وفقًا للمعايير اليابانية والإنجليزية.
 
-🌤 日次データ抽出
+🌤 بيانات يومية
 daily_data_en.sql
 
 daily_data_jp.sql
 
-🏙 都市リスト
+🏙 قائمة المدن
 city_list_en.sql
 
 city_list_jp.sql
 
-🌦 天気コード
+🌦 رموز الطقس
 weathercode_en.sql
 
 weathercode_jp.sql
