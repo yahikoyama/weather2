@@ -117,7 +117,7 @@
 # 🚀 빠른 시작
 
 ### 1. 저장소 클론
-
+````
 weather2/
 ├── Historical/                # 일본어 아카이브
 ├── Historical_en/             # 영어 아카이브
@@ -131,6 +131,7 @@ weather2/
 ├── weather_report_now_vi.html # 베트남어 보고서
 ├── weather_report_now_ar.html # 아랍어 보고서
 ├── weather_report_now_ptbr.html # 브라질 포르투갈어 보고서
+````
 
 🌐 다국어 날씨 보고서 생성 작업
 | XML 파일 | 기능 | 스케줄 |
