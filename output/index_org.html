@@ -10,7 +10,7 @@
 <!-- SEO Optimization -->
 <!-- ========================= -->
 <meta name="description" content="Automatically updated discomfort index (DI) and multilingual weather reports using OpenWeatherMap API. Updated every 4 hours.">
-<meta name="keywords" content="discomfort index, DI, weather report, humidity, temperature, Japan weather, global weather, heat index, OpenWeatherMap, GitHub Pages weather">
+<meta name="keywords" content="discomfort index, DI, weather report, humidity, temperature, Japan weather, global weather, heat index, OpenWeatherMap, GitHub Pages weather, SQL scripts, weather SQL">
 <meta name="author" content="Yahikoyama">
 
 <!-- OpenGraph -->
@@ -26,7 +26,7 @@
 <meta name="twitter:description" content="Updated every 4 hours with global weather data.">
 <meta name="twitter:image" content="https://yahikoyama.github.io/weather2/thumbnail.png">
 
-<!-- Schema.org (構造化データ) -->
+<!-- Schema.org -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -75,24 +75,36 @@ All data is processed and published through an automated workflow using GitHub P
 The goal of this project is to deliver simple, fast, and reliable weather insights without requiring any special applications or accounts.
 </p>
 
-<h2>System Overview</h2>
+<!-- ========================= -->
+<!-- 📄 Sitemap Section -->
+<!-- ========================= -->
+<h2>📄 Sitemap</h2>
 <p>
-For studying database systems (SQL) and programming by using weather data.<br>
-This system is built as a Client/Server architecture using:
+  This site is updated every 4 hours.<br>
+  You can view the full sitemap here:<br>
+  <a href="https://yahikoyama.github.io/weather2/sitemap.xml">📄 sitemap.xml</a>
 </p>
 
-<ul>
-  <li>Windows 11 Pro (Task Scheduler)</li>
-  <li>PowerShell 5.1</li>
-  <li>Microsoft SQL Server Express 2022 (max size 10GB)</li>
-  <li>Python 3.14 + pyodbc ODBC</li>
-</ul>
-
+<!-- ========================= -->
+<!-- 🌐 Source Code & SQL Database & SQL Scripts (UPDATED) -->
+<!-- ========================= -->
+<h2>💾 Source Code, SQL Database & SQL Scripts</h2>
 <p>
-weather.zip contains the source code and the database backup.<br>
-Please configure the conf file according to your environment and import the Task Scheduler XML file.
+  All source code, SQL databases, and SQL scripts used for weather data extraction,
+  processing, and multilingual report generation are publicly available on GitHub.
+  This includes SQL queries for WBGT, discomfort index, city lists, weather codes,
+  historical weather extraction, and many other scripts used throughout this project.
+</p>
+<p>
+  You can browse the full repository here:<br>
+  <a href="https://github.com/yahikoyama/weather2" target="_blank">
+    https://github.com/yahikoyama/weather2
+  </a>
 </p>
 
+<!-- ========================= -->
+<!-- Multi-Language Weather -->
+<!-- ========================= -->
 <h2>🌍 Multi‑Language Weather Reports</h2>
 <ul>
   <li>🇯🇵 <a href="weather_report_now.html">Japanese Weather Report</a></li>
@@ -101,6 +113,8 @@ Please configure the conf file according to your environment and import the Task
   <li>🇨🇳 <a href="weather_report_now_zh.html">Chinese Weather Report（简体中文）</a></li>
   <li>🇰🇷 <a href="weather_report_now_ko.html">Korean Weather Report</a></li>
   <li>🇻🇳 <a href="weather_report_now_vi.html">Vietnamese Weather Report</a></li>
+  <li>ar  <a href="weather_report_now_ar.html">Arabic Weather Report</a></li>
+  <li>🇧🇷 <a href="weather_report_now_ptbr.html">Brazilian Portuguese Weather Report</a></li>
 </ul>
 
 <h2>📚 Historical Weather Reports (GitHub Pages)</h2>
