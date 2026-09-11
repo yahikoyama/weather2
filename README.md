@@ -75,13 +75,24 @@ If you want to add additional cities, please insert records into the **CityMaste
 - Microsoft SQL Server Express 2022 (max size 10GB)
 - Python 3.14 + pyodbc (ODBC driver)
 
-### Included in **weather.zip**
-- Full source code  
-- SQL Server database backup  
-- Configuration templates  
-- Task Scheduler XML (auto-execution)
+📦 Included Files (GitHub Repository)
+All files that were previously distributed in weather.zip  
+are now fully available directly in this GitHub repository.
 
-Please configure the **conf** files according to your environment and import the Task Scheduler XML.
+The following components are provided as individual folders:
+
+Full source code
+
+SQL Server database scripts & backups
+
+Configuration templates (config.ps1, sql1.ps1, etc.)
+
+Automation scripts (BAT / PowerShell)
+
+Task Scheduler XML for auto‑execution
+
+Please configure the files according to your environment and
+import the Task Scheduler XML if you want automatic execution.
 
 📩 Contact: **yahikoyama.777@gmail.com**
 
