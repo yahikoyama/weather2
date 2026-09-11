@@ -1,0 +1,1 @@
+PowerShell -ExecutionPolicy RemoteSigned ./UpdateCityMaster.ps
