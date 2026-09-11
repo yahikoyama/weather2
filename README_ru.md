@@ -4,7 +4,8 @@
 ### https://yahikoyama.github.io/weather2/
 
 <a href="https://yahikoyama.github.io/weather2/weather_report_now_ru.html">
-<img width="1280" alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
+<img width="1280" height="394" alt="image" src="https://github.com/user-attachments/assets/5c76b13a-2968-4de4-b046-f43df3b9e9be" />
+
 </a>
 
 ---
