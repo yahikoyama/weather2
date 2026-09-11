@@ -1,0 +1,118 @@
+{
+  "place": {
+    "根室": "Nemuro",
+    "釧路": "Kushiro",
+    "草津温泉": "Kusatsu Onsen",
+    "帯広": "Obihiro",
+    "稚内": "Wakkanai",
+    "網走": "Abashiri",
+    "伊香保温泉": "Ikaho Onsen",
+    "菅平": "Sugadaira",
+    "旭川": "Asahikawa",
+    "札幌": "Sapporo",
+    "那須高原": "Nasu Highlands",
+    "盛岡": "Morioka",
+    "高山": "Takayama",
+    "青森": "Aomori",
+    "水上温泉": "Minakami Onsen",
+    "軽井沢": "Karuizawa",
+    "北茨城": "Kitaibaraki",
+    "秋田": "Akita",
+    "新潟": "Niigata",
+    "勝浦": "Katsuura",
+    "東京": "Tokyo",
+    "京都": "Kyoto",
+
+    "ウットキアグビク（バロウ）": "Utqiagvik (Barrow)",
+    "ロングイヤービーエン": "Longyearbyen",
+    "ヌーク": "Nuuk",
+    "トロムソ": "Tromsø",
+    "シドニー": "Sydney",
+    "ノリリスク": "Norilsk",
+    "ウランバートル": "Ulaanbaatar",
+    "ケアンズ": "Cairns",
+    "バンクーバー": "Vancouver",
+    "オイミヤコン": "Oymyakon",
+    "ベルホヤンスク": "Verkhoyansk",
+    "ハルビン": "Harbin",
+    "イエローナイフ": "Yellowknife",
+    "ソウル": "Seoul",
+    "クアラルンプール": "Kuala Lumpur",
+    "ホノルル（ハワイ）": "Honolulu (Hawaii)",
+    "リオデジャネイロ": "Rio de Janeiro",
+    "リマ": "Lima"
+  },
+
+  "weather": {
+    "曇り": "Cloudy",
+    "曇りがち": "Mostly Cloudy",
+    "薄い雲": "Few Clouds",
+    "小雨": "Light Rain",
+    "強い雨": "Heavy Rain",
+    "雨": "Rain",
+    "快晴": "Clear",
+    "雲": "Clouds",
+
+    "雨と雷": "Thunderstorm",
+    "大雨と雷": "Thunderstorm",
+    "弱い霧雨": "Drizzle",
+    "霧雨": "Drizzle",
+    "強い霧雨": "Drizzle",
+    "非常に強い雨": "Rain",
+    "極めて強い雨": "Rain",
+    "氷雨": "Rain",
+    "弱いにわか雨": "Rain",
+    "にわか雨": "Rain",
+    "強いにわか雨": "Rain",
+
+    "小雪": "Snow",
+    "雪": "Snow",
+    "大雪": "Snow",
+    "みぞれ": "Snow",
+    "にわかみぞれ": "Snow",
+    "小雨と雪": "Snow",
+    "雨と雪": "Snow",
+    "弱いにわか雪": "Snow",
+    "にわか雪": "Snow",
+    "強いにわか雪": "Snow",
+
+    "霧": "Atmosphere",
+    "煙": "Atmosphere",
+    "もや": "Atmosphere",
+    "砂塵": "Atmosphere",
+    "濃霧": "Atmosphere"
+  },
+
+  "feeling": {
+    "寒くてたまらない": "Extremely Cold",
+    "寒い": "Cold",
+
+    "肌寒い": "Cold",  
+    "肌": "Cold",      
+
+    "何も感じない": "Neutral",
+    "快適": "Comfortable",
+    "不快感出始め": "Slightly Uncomfortable",
+    "半数が不快": "Half Feel Uncomfortable",
+    "全員不快": "Everyone Feels Uncomfortable"
+  },
+
+  "labels": {
+    "気象・不快指数 観測レポート": "Weather & Discomfort Index Report",
+    "気象・Discomfort Index 観測レポート": "Weather & Discomfort Index Report",
+    "取得時間": "Acquisition Time",
+
+    "国内（JP）": "Domestic (JP)",
+    "海外（NOT JP）": "Overseas (NOT JP)",
+
+    "地名": "Location",
+    "温度(℃)": "Temperature (°C)",
+    "湿度(%)": "Humidity (%)",
+    "天気": "Weather",
+    "国": "Country",
+    "不快指数": "Discomfort Index",
+    "評価": "Evaluation",
+
+    "Weekly 平均気温・湿度レポート": "Weekly Average Temperature & Humidity Report"
+  }
+}

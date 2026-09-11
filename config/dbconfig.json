@@ -1,0 +1,7 @@
+{
+    "Server": "(local)",
+    "Database": "weather",
+    "User": "sa",
+    "Password": "test@123",
+    "OpenWeatherApiKey": "xxxxxxxxxxxxxx"
+}
