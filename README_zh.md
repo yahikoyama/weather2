@@ -118,6 +118,7 @@
 
 ### 1. 克隆仓库
 
+````
 weather2/
 ├── Historical/                # 日文档案
 ├── Historical_en/             # 英文档案
@@ -132,6 +133,7 @@ weather2/
 ├── weather_report_now_ar.html # 阿拉伯文报告
 ├── weather_report_now_ptbr.html # 巴西葡萄牙文报告
 
+````
 🌐 多语言天气报告生成任务
 | XML 文件 | 功能 | 时间表 |
 | --- | --- | --- |
@@ -181,6 +183,8 @@ PowerShell 自动化
 SQL Server 天气数据库
 
 📁 SQL 脚本（Data-Extraction-SQL）
+
+````
 daily_data_en.sql
 daily_data_jp.sql
 wbgt_en.sql
@@ -193,6 +197,8 @@ weathercode_en.sql
 weathercode_jp.sql
 weathercode_list_en.sql
 weathercode_list_jp.sql
+
+````
 
 ☀️ WBGT（湿球黑球温度）— SQL 直接计算
 WBGT 可仅通过气温与湿度计算，无需外部 API。
