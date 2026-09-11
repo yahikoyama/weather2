@@ -360,4 +360,8 @@
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260910.html</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260911.html</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>
