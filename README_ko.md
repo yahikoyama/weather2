@@ -182,6 +182,7 @@ PowerShell 자동화
 SQL Server 날씨 데이터베이스
 
 📁 SQL 스크립트 (Data-Extraction-SQL)
+````
 daily_data_en.sql
 daily_data_jp.sql
 wbgt_en.sql
@@ -194,6 +195,7 @@ weathercode_en.sql
 weathercode_jp.sql
 weathercode_list_en.sql
 weathercode_list_jp.sql
+````
 
 ☀️ WBGT — SQL로 직접 계산
 WBGT는 기온과 습도만으로 계산할 수 있으며 외부 API가 필요 없습니다.
