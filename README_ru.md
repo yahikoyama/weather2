@@ -4,7 +4,7 @@
 ### https://yahikoyama.github.io/weather2/
 
 <a href="https://yahikoyama.github.io/weather2/weather_report_now_ru.html">
-<img width="1280" height="394" alt="image" src="https://github.com/user-attachments/assets/5c76b13a-2968-4de4-b046-f43df3b9e9be" />
+<img width="574" height="437" alt="image" src="https://github.com/user-attachments/assets/912b4cc7-f44a-4baf-8683-8f7d47859a3f" />
 
 </a>
 
