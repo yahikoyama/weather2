@@ -3,8 +3,10 @@
 ## 👉 **Báo cáo thời tiết toàn cầu đa ngôn ngữ — EN / JP / RU / ZH / KO / VI / AR / PT‑BR**
 ### https://yahikoyama.github.io/weather2/
 
-<a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
-<img width="1280" alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
+<a href="https://yahikoyama.github.io/weather2/weather_report_now_vi.html">
+
+<img width="521" height="359" alt="image" src="https://github.com/user-attachments/assets/2959d9be-1fee-4ec4-b39c-83ee34ef8b5c" />
+
 </a>
 
 ---
