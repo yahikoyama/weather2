@@ -117,7 +117,7 @@
 # 🚀 クイックスタート
 
 ### 1. リポジトリをクローン
-
+```
 weather2/
 ├── Historical/                # 日本語アーカイブ
 ├── Historical_en/             # 英語アーカイブ
@@ -131,6 +131,7 @@ weather2/
 ├── weather_report_now_vi.html # ベトナム語レポート
 ├── weather_report_now_ar.html # アラビア語レポート
 ├── weather_report_now_ptbr.html # ブラジルポルトガル語レポート
+```
 
 🌐 多言語天気レポート生成タスク
 | XMLファイル | 目的 | スケジュール |
