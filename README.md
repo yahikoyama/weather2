@@ -287,9 +287,6 @@ and multilingual processing details is available here:
 
 👉 [README_new.md](README_new.md)
 <a href="https://alternativeto.net/software/weather2/about/">
-  <img src="https://alternativeto.net/static/badges/badge-compact-dark.svg"
-       alt="Your app | AlternativeTo"
-       width="171" height="58"
-       style="width: 171px; height: 58px;" />
+<img width="137" height="52" alt="image" src="https://github.com/user-attachments/assets/8c0435c5-0cc7-4957-a961-530bc1115b34" />
 </a>
 
