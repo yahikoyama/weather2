@@ -286,6 +286,7 @@ A full technical documentation including SQL scripts, automation samples (BAT / 
 and multilingual processing details is available here:
 
 👉 [README_new.md](README_new.md)
+<a>
 <a href="https://alternativeto.net/software/weather2/about/">
 <img width="137" height="52" alt="image" src="https://github.com/user-attachments/assets/8c0435c5-0cc7-4957-a961-530bc1115b34" />
 </a>
