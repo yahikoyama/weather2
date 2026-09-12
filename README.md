@@ -288,7 +288,7 @@ and multilingual processing details is available here:
 👉 [README_new.md](README_new.md)
 
 <a href="https://alternativeto.net/software/weather2/about/?utm_source=badge&utm_medium=referral" target="_blank">
-<img width="137" height="49" alt="image" src="https://github.com/user-attachments/assets/ff771073-a4a3-495a-87e3-cf1c421457f0" />
+<img width="137" alt="image" src="https://github.com/user-attachments/assets/ff771073-a4a3-495a-87e3-cf1c421457f0" />
 
 </a>
 
