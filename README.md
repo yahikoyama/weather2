@@ -287,4 +287,5 @@ and multilingual processing details is available here:
 
 👉 [README_new.md](README_new.md)
 
+[![Your app | AlternativeTo](https://alternativeto.net/static/badges/badge-compact-dark.svg)](https://alternativeto.net/software/your-app/about/?utm_source=badge&utm_medium=referral)
 
