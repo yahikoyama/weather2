@@ -287,7 +287,4 @@ and multilingual processing details is available here:
 
 👉 [README_new.md](README_new.md)
 
-<a href="[https://yahikoyama.github.io/weather2/weather_report_now_en.html](https://alternativeto.net/software/weather2/)">
-<img width="133" height="45" alt="image" src="https://github.com/user-attachments/assets/e74485a7-fc18-434d-91e1-7cb000a29a30" />
-</a>
 
