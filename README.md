@@ -288,10 +288,8 @@ and multilingual processing details is available here:
 👉 [README_new.md](README_new.md)
 
 <a href="https://alternativeto.net/software/weather2/about/?utm_source=badge&utm_medium=referral" target="_blank">
-  <img src="https://alternativeto.net/static/badges/badge-compact-dark.svg"
-       alt="weather2 | AlternativeTo"
-       width="171" height="58"
-       style="width: 171px; height: 58px;" />
+<img width="137" height="49" alt="image" src="https://github.com/user-attachments/assets/ff771073-a4a3-495a-87e3-cf1c421457f0" />
+
 </a>
 
 
