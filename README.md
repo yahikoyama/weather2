@@ -287,6 +287,6 @@ and multilingual processing details is available here:
 
 👉 [README_new.md](README_new.md)
 
-[![weather2 badge](https://github.com/user-attachments/assets/8c0435c5-0cc7-4957-a961-530bc1115b34)](https://alternativeto.net/software/weather2/about/)
+[![weather2 | AlternativeTo](https://alternativeto.net/static/badges/badge-compact-dark.svg)](https://alternativeto.net/software/weather2/about/?utm_source=badge&utm_medium=referral)
 
 
