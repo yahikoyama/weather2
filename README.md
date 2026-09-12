@@ -286,7 +286,7 @@ A full technical documentation including SQL scripts, automation samples (BAT / 
 and multilingual processing details is available here:
 
 👉 [README_new.md](README_new.md)
-<a href="[https://alternativeto.net/software/your-app/about/?utm_source=badge&utm_medium=referral" target="_blank](https://alternativeto.net/software/weather2/about/)">
+<a href="https://alternativeto.net/software/weather2/about/">
   <img src="https://alternativeto.net/static/badges/badge-compact-dark.svg"
        alt="Your app | AlternativeTo"
        width="171" height="58"
