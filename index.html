@@ -53,6 +53,27 @@ h1, h2 {
 ul {
   margin-bottom: 20px;
 }
+
+/* ===== 多言語 UI ===== */
+.lang-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.lang-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.lang-btn:hover {
+  background: #e0e0e0;
+}
 </style>
 
 </head>
@@ -86,7 +107,23 @@ The goal of this project is to deliver simple, fast, and reliable weather insigh
 </p>
 
 <!-- ========================= -->
-<!-- 🌐 Source Code & SQL Database & SQL Scripts (UPDATED) -->
+<!-- 🌍 Multi-Language Selector (フルパス版) -->
+<!-- ========================= -->
+<h2>🌍 Select Your Language</h2>
+
+<div class="lang-box">
+  <a class="lang-btn" href="https://yahikoyama.github.io/weather2/weather_report_now.html">🇯🇵 日本語</a>
+  <a class="lang-btn" href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">🇬🇧 English</a>
+  <a class="lang-btn" href="https://yahikoyama.github.io/weather2/weather_report_now_ru.html">🇷🇺 Русский</a>
+  <a class="lang-btn" href="https://yahikoyama.github.io/weather2/weather_report_now_zh.html">🇨🇳 中文</a>
+  <a class="lang-btn" href="https://yahikoyama.github.io/weather2/weather_report_now_ko.html">🇰🇷 한국어</a>
+  <a class="lang-btn" href="https://yahikoyama.github.io/weather2/weather_report_now_vi.html">🇻🇳 Tiếng Việt</a>
+  <a class="lang-btn" href="https://yahikoyama.github.io/weather2/weather_report_now_ar.html">🇦🇪 العربية</a>
+  <a class="lang-btn" href="https://yahikoyama.github.io/weather2/weather_report_now_ptbr.html">🇧🇷 Português</a>
+</div>
+
+<!-- ========================= -->
+<!-- 🌐 Source Code & SQL Database & SQL Scripts -->
 <!-- ========================= -->
 <h2>💾 Source Code, SQL Database & SQL Scripts</h2>
 <p>
@@ -137,4 +174,4 @@ The goal of this project is to deliver simple, fast, and reliable weather insigh
 </body>
 </html>
 
-<!-- rebuild 2026-09-13 16:35:11 -->
+<!-- rebuild 2026-09-13 20:35:11 -->
