@@ -287,6 +287,51 @@ and multilingual processing details is available here:
 
 👉 [README_new.md](README_new.md)
 
+## New Features Added
+
+### 1. Weekly Heat‑Stress Index Generator
+A new batch script (`Weekly_HeatStress_Index.bat`) has been added to automatically generate  
+**Weekly_HeatStress_Index.csv**, summarizing the past 7 days of meteorological stress indicators  
+(Heat Index, Wet‑Bulb, WBGT, and Discomfort Index) for all registered cities.
+
+This tool is useful for:
+- Weekly climate monitoring  
+- Heat‑stress risk assessment  
+- Educational and research use  
+- Automated data‑processing workflows
+
+The script is fully integrated into the main menu (`menu.bat`) as option **1**.
+
+---
+
+### 2. Comfortable Region Finder
+A new batch script (`Comfortable_Region_Finder.bat`) generates  
+**Comfortable_Region_Finder.csv**, ranking global cities by comfort level using a composite score  
+based on temperature, humidity, Heat Index, Wet‑Bulb, WBGT, and Discomfort Index.
+
+This feature enables:
+- Identification of comfortable climate regions  
+- Comparative climate analysis  
+- Multi‑language reporting  
+- Integration with GitHub Pages dashboards
+
+The script is available in the main menu (`menu.bat`) as option **2**.
+
+---
+
+### Updated Menu Options
+The project’s interactive menu now includes the new tools:
+
+| Number | Description                         | Output File                     |
+|--------|-------------------------------------|---------------------------------|
+| **0**  | Generate city list                  | `city-list.csv`                 |
+| **1**  | Generate weekly heat‑stress metrics | `Weekly_HeatStress_Index.csv`   |
+| **2**  | Generate comfortable region ranking | `Comfortable_Region_Finder.csv` |
+| **99** | Exit the menu                       | —                               |
+
+These additions expand weather2’s capabilities for climate analysis, education, and automated data processing.
+
+
 [![weather2 | AlternativeTo](https://alternativeto.net/static/badges/badge-compact-dark.svg)](https://alternativeto.net/software/weather2/about/?utm_source=badge&utm_medium=referral)
 
 
