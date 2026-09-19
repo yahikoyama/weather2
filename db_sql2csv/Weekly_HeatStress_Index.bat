@@ -1,0 +1,2 @@
+PowerShell -ExecutionPolicy RemoteSigned C:\weather\db_sql2csv\exec2.ps1 > C:\weather\db_sql2csv\CSV\Weekly_HeatStress_Index.CSV
+start notepad.exe "C:\weather\db_sql2csv\CSV\Weekly_HeatStress_Index.CSV"
