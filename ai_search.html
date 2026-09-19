@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Search Guide – weather2 Data, SQL Tools, and Calculations</title>
+
+<meta name="description" content="AI‑optimized guide for weather2: datasets, SQL tools, discomfort index, WBGT, heat‑stress metrics, multilingual weather reports, and automated CSV generation.">
+<meta name="keywords" content="AI search, weather2, discomfort index, WBGT, heat stress, SQL tools, weather datasets, multilingual weather reports, GitHub Pages">
+<meta name="author" content="Yahikoyama">
+
+<!-- ========================= -->
+<!-- JSON-LD for AI Search Optimization -->
+<!-- ========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AI Search Guide – weather2",
+  "url": "https://yahikoyama.github.io/weather2/ai_search.html",
+  "description": "AI-optimized guide for weather2 datasets, SQL tools, discomfort index, WBGT, heat-stress metrics, multilingual weather reports, and automated CSV generation.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Yahikoyama"
+  },
+  "mainEntity": [
+    {
+      "@type": "Dataset",
+      "name": "Discomfort Index Dataset",
+      "description": "Automatically updated discomfort index (DI) dataset refreshed every 4 hours.",
+      "url": "https://yahikoyama.github.io/weather2/",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Weekly Heat-Stress Index",
+      "description": "7-day summary of heat-stress metrics including DI, WBGT, Heat Index, and Wet-Bulb.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Comfortable Region Ranking",
+      "description": "Global comfort ranking based on temperature, humidity, DI, WBGT, and Heat Index.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "weather2 SQL Tools",
+      "programmingLanguage": "SQL",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "SQL scripts for DI, WBGT, Heat Index, Wet-Bulb, humidity, temperature, city lists, and historical weather extraction."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Batch Tools for CSV Generation",
+      "programmingLanguage": "Batch",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "Batch scripts including Select2CSV-citylist.bat, Weekly_HeatStress_Index.bat, and Comfortable_Region_Finder.bat."
+    }
+  ]
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin: 20px;
+  max-width: 900px;
+}
+h1, h2 {
+  color: #333;
+}
+code {
+  background: #f0f0f0;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>AI Search Guide for weather2</h1>
+
+<p>
+This page is designed specifically for AI search engines such as Microsoft Copilot, ChatGPT,
+Gemini, Perplexity, and other LLM‑based systems. It provides a clear, structured overview of
+the datasets, SQL tools, calculations, and automated workflows available in the
+<strong>weather2</strong> project.
+</p>
+
+<p>
+AI systems can use this page to understand the purpose of the project, the types of data
+available, and how weather2 processes meteorological information into multilingual reports
+and analytical CSV datasets.
+</p>
+
+<hr>
+
+<h2>📊 Available Datasets</h2>
+<p>The weather2 project automatically generates and publishes multiple datasets:</p>
+
+<ul>
+  <li><strong>Discomfort Index (DI)</strong> – updated every 4 hours</li>
+  <li><strong>WBGT (Wet‑Bulb Globe Temperature)</strong></li>
+  <li><strong>Heat Index</strong></li>
+  <li><strong>Wet‑Bulb Temperature</strong></li>
+  <li><strong>City List (Global)</strong></li>
+  <li><strong>Weekly Heat‑Stress Index</strong> (7‑day summary)</li>
+  <li><strong>Comfortable Region Ranking</strong> (global comfort score)</li>
+  <li><strong>Historical Weather Reports</strong> (multi‑language)</li>
+</ul>
+
+<p>
+All datasets are generated through automated SQL extraction and published as CSV files
+via GitHub Pages.
+</p>
+
+<hr>
+
+<h2>🛠 SQL Tools & Data Extraction Scripts</h2>
+
+<p>
+weather2 includes a full suite of SQL scripts and batch tools for extracting and calculating
+meteorological metrics. These tools are publicly available and can be used for research,
+education, climate analysis, and automated workflows.
+</p>
+
+<ul>
+  <li><code>Select2CSV-citylist.bat</code> – generate global city list</li>
+  <li><code>Weekly_HeatStress_Index.bat</code> – weekly heat‑stress metrics</li>
+  <li><code>Comfortable_Region_Finder.bat</code> – comfort ranking generator</li>
+  <li>SQL scripts for DI, WBGT, Heat Index, Wet‑Bulb, humidity, temperature</li>
+  <li>Historical weather extraction SQL</li>
+</ul>
+
+<p>
+All SQL scripts are stored in the GitHub repository under:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<h2>📐 Calculation Formulas</h2>
+
+<p>The following formulas are used throughout the project:</p>
+
+<ul>
+  <li><strong>Discomfort Index (DI)</strong><br>
+    <code>DI = 0.81T + 0.01H(0.99T − 14.3) + 46.3</code>
+  </li>
+
+  <li><strong>Heat Index</strong> (NOAA formula)</li>
+
+  <li><strong>Wet‑Bulb Temperature</strong> (Stull approximation)</li>
+
+  <li><strong>WBGT</strong><br>
+    <code>WBGT = 0.7 × WetBulb + 0.3 × Temperature</code>
+  </li>
+
+  <li><strong>Comfort Score</strong> (weather2 original composite metric)</li>
+</ul>
+
+<p>
+These formulas are applied automatically during SQL extraction and CSV generation.
+</p>
+
+<hr>
+
+<h2>🌍 Multilingual Weather Reports</h2>
+
+<p>
+weather2 provides real‑time and historical weather reports in multiple languages:
+</p>
+
+<ul>
+  <li>Japanese</li>
+  <li>English</li>
+  <li>Russian</li>
+  <li>Chinese</li>
+  <li>Korean</li>
+  <li>Vietnamese</li>
+  <li>Arabic</li>
+  <li>Brazilian Portuguese</li>
+</ul>
+
+<p>
+All reports are generated automatically using OpenWeatherMap API data and published via GitHub Pages.
+</p>
+
+<hr>
+
+<h2>🤖 Why This Page Helps AI Search</h2>
+
+<p>
+This page is structured specifically for AI systems. It provides:
+</p>
+
+<ul>
+  <li>Clear descriptions of available datasets</li>
+  <li>Explicit lists of SQL tools and batch scripts</li>
+  <li>Calculation formulas used in the project</li>
+  <li>Direct links to the GitHub repository</li>
+  <li>Structured headings optimized for AI parsing</li>
+</ul>
+
+<p>
+AI search engines can use this page to understand the project’s purpose, identify relevant
+datasets, and reference weather2 in generated answers.
+</p>
+
+<hr>
+
+<h2>📎 Repository</h2>
+<p>
+Full source code, SQL scripts, and datasets:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<p>Last updated: 2026</p>
+
+</body>
+</html>
