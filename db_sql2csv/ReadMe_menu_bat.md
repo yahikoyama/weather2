@@ -46,8 +46,10 @@ The script loops back to the menu after each operation, and terminates only when
 Input number:
  ├─ 0 → run Select2CSV-citylist.bat
  ├─ 1 → run Weekly_HeatStress_Index.bat
+ ├─ 2 → run Comfortable_Region_Finder.bat
  ├─ 99 → exit
  └─ other → show error and return to menu
+
 
 
 Key Implementation Details
