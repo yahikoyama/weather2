@@ -1,67 +1,83 @@
-📝 Overview
-This SQL script calculates advanced meteorological metrics for each city over the last 7 days, including:
+# Menu Batch Script (`menu.bat`)
 
-Heat Index (HI)
+## Overview
+This batch script provides a simple text-based menu for executing predefined data-processing tasks in the **weather2** project.  
+Users can select an option to generate CSV files such as the city list or weekly heat‑stress metrics.
 
-Wet-bulb Temperature (Tw)
+The script loops back to the menu after each operation, and terminates only when the user selects **99 (exit)**.
 
-WBGT (Heat Stress Index)
+---
 
-Discomfort Index (DI)
+## Features
+- Interactive menu with numeric input  
+- Executes external batch files using `call`  
+- Clears the screen after each operation  
+- Prevents accidental termination by validating input  
+- English exit message instead of the default Japanese `pause` output  
 
-The query aggregates daily averages of temperature and humidity from WeatherLog, joins city information from CityMaster, and outputs results with:
+---
 
-CityCode
+## Menu Options
 
-CityEn (English city name)
+| Number | Description | Output File |
+|--------|-------------|-------------|
+| **0** | Generate city list | `city-list.csv` |
+| **1** | Generate weekly heat‑stress metrics | `Weekly_HeatStress_Index.csv` |
+| **99** | Exit the menu | — |
 
-CountryCode
+---
 
-Daily metrics (rounded to 2 decimals)
+## Execution Flow
 
-Latest dates shown first
+1. Display menu  
+2. Wait for user input  
+3. Validate input  
+4. Execute the corresponding batch file  
+5. Clear screen  
+6. Return to menu  
+7. Exit when user selects **99**
 
-🔢 Formulas Used
-🌡️ Heat Index (HI)
-NOAA standard formula (Celsius version):
-````
-HI = -8.784695
-     + 1.61139411*T
-     + 2.338549*H
-     - 0.14611605*T*H
-     - 0.012308094*T^2
-     - 0.016424828*H^2
-     + 0.002211732*T^2*H
-     + 0.00072546*T*H^2
-     - 0.000003582*T^2*H^2
-````
+---
 
-🧊 Wet-bulb Temperature (Tw)
-Approximation formula using temperature (T) and humidity (H):
-````
-Tw = T * atan(0.151977 * sqrt(H + 8))
-     + atan(T + H)
-     - atan(H - 1.676331)
-     + 0.00391838 * H^(3/2) * atan(0.023101 * H)
-     - 4.686035
-````
-     
-🥵 WBGT (Indoor Approximation)
-WBGT is mainly determined by Wet-bulb temperature:
-````
-WBGT = 0.7 * Tw + 0.3 * T
-````
-| Column | Description |
-| --- | --- |
-| CityCode | City identifier |
-| CityEn | English city name |
-| CountryCode | Country code (ISO) |
-| LogDate | Date of aggregated weather data |
-| AvgT | Average temperature (°C) |
-| AvgH | Average humidity (%) |
-| HeatIndex | Calculated HI |
-| WetBulb | Calculated Tw |
-| WBGT | Calculated heat stress index |
-| DiscomfortIndex | Calculated DI |
+## Batch Logic (Simplified)
+
+```text
+Input number:
+ ├─ 0 → run Select2CSV-citylist.bat
+ ├─ 1 → run Weekly_HeatStress_Index.bat
+ ├─ 99 → exit
+ └─ other → show error and return to menu
 
 
+Key Implementation Details
+1. Safe Input Handling
+User input is wrapped in quotes to avoid errors when the input is empty:
+if "%USR_INPUT_STR%"=="0" (
+
+This prevents the batch from terminating due to malformed IF statements.
+
+2. Using call to Avoid Exiting the Menu
+External batch files are executed with call:
+
+call "C:\weather\db_sql2csv\Weekly_HeatStress_Index.bat"
+
+Without call, the menu script would terminate after running the external batch.
+
+3. English Exit Message
+The default Japanese pause message is replaced with a custom English prompt:
+
+echo Press any key to continue...
+set /p dummy=
+
+This ensures consistent English output regardless of OS language settings.
+
+Notes
+This script is intended for Windows environments.
+
+Paths must match the directory structure of your local weather2 installation.
+
+You can freely extend the menu by adding more numbered options and corresponding goto blocks.
+
+Author
+Maintainer: Yahikoyama  
+Project: weather2 — Multi‑language meteorological data processing tools
