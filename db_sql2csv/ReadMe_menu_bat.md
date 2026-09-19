@@ -19,11 +19,12 @@ The script loops back to the menu after each operation, and terminates only when
 
 ## Menu Options
 
-| Number | Description | Output File |
-|--------|-------------|-------------|
-| **0** | Generate city list | `city-list.csv` |
-| **1** | Generate weekly heat‑stress metrics | `Weekly_HeatStress_Index.csv` |
-| **99** | Exit the menu | — |
+| Number | Description                         | Output File                     |
+|--------|-------------------------------------|---------------------------------|
+| **0**  | Generate city list                  | `city-list.csv`                 |
+| **1**  | Generate weekly heat‑stress metrics | `Weekly_HeatStress_Index.csv`   |
+| **2**  | Generate comfortable region ranking | `Comfortable_Region_Finder.csv` |
+| **99** | Exit the menu                       | —                               |
 
 ---
 
