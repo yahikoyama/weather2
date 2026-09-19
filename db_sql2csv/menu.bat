@@ -6,6 +6,7 @@ echo *****************************************************************
 echo * menu                                                         *
 echo *   0:CityList                 ÅÀ city-list.CSV                 *
 echo *   1:Weekly_HeatStress_Index ÅÀ Weekly_HeatStress_Index.CSV   *
+echo *   2:Weekly_Comfortable_Ranking ÅÀ ComfortableRegionFinder.CSV   *
 echo *                                                                 *
 echo *  99:exit                                                        *
 echo *****************************************************************
@@ -19,6 +20,9 @@ if "%USR_INPUT_STR%"=="0" (
     goto EXECUTE_0
 ) else if "%USR_INPUT_STR%"=="1" (
     goto EXECUTE_1
+) else if "%USR_INPUT_STR%"=="2" (
+    goto EXECUTE_2
+
 ) else if "%USR_INPUT_STR%"=="99" (
     goto EXITTRAP
 ) else (
@@ -36,6 +40,12 @@ goto TOP
 REM 1 start
 :EXECUTE_1
 call "C:\weather\db_sql2csv\Weekly_HeatStress_Index.bat"
+cls
+goto TOP
+
+REM 2 start
+:EXECUTE_2
+call "C:\weather\db_sql2csv\ComfortableRegionFinder.bat"
 cls
 goto TOP
 

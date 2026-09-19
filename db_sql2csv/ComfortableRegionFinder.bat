@@ -1,0 +1,2 @@
+PowerShell -ExecutionPolicy RemoteSigned C:\weather\db_sql2csv\exec3.ps1 > C:\weather\db_sql2csv\CSV\ComfortableRegionFinder.CSV
+start notepad.exe "C:\weather\db_sql2csv\CSV\ComfortableRegionFinder.CSV"
