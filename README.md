@@ -65,6 +65,9 @@ It also serves as a practical study project for:
 If you want to add additional cities, please insert records into the **CityMaster** table.
 
 ---
+AI Search Guide:
+https://yahikoyama.github.io/weather2/ai_search.html
+
 
 # 🏗️ System Architecture
 
