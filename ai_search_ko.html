@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI 검색 가이드 – weather2 데이터, SQL 도구 및 계산식</title>
+
+<meta name="description" content="AI 검색 최적화를 위한 weather2 안내 페이지: 데이터셋, SQL 도구, 불쾌지수, WBGT, 열스트레스 지수, 다국어 날씨 보고서 및 자동 CSV 생성.">
+<meta name="keywords" content="AI 검색, weather2, 불쾌지수, WBGT, 열스트레스, SQL 도구, 날씨 데이터, 다국어 날씨 보고서, GitHub Pages">
+<meta name="author" content="Yahikoyama">
+
+<!-- ========================= -->
+<!-- JSON-LD for AI Search Optimization -->
+<!-- ========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AI 검색 가이드 – weather2 (KO)",
+  "url": "https://yahikoyama.github.io/weather2/ai_search_ko.html",
+  "description": "weather2 데이터셋, SQL 도구, 열스트레스 지수 및 다국어 날씨 보고서를 위한 AI 최적화 안내 페이지.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Yahikoyama"
+  },
+  "mainEntity": [
+    {
+      "@type": "Dataset",
+      "name": "불쾌지수(DI) 데이터셋",
+      "description": "4시간마다 자동 업데이트되는 불쾌지수(DI) 데이터셋.",
+      "url": "https://yahikoyama.github.io/weather2/",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "주간 열스트레스 지수",
+      "description": "DI, WBGT, Heat Index, Wet‑Bulb을 포함한 7일 열스트레스 요약.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "전세계 쾌적 지역 랭킹",
+      "description": "온도, 습도, DI, WBGT, Heat Index 기반 글로벌 쾌적도 점수.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "weather2 SQL 도구",
+      "programmingLanguage": "SQL",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "DI, WBGT, Heat Index, Wet‑Bulb, 습도, 온도, 도시 목록 및 과거 날씨 데이터용 SQL 스크립트."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "CSV 자동 생성 배치 도구",
+      "programmingLanguage": "Batch",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "Select2CSV-citylist.bat, Weekly_HeatStress_Index.bat, Comfortable_Region_Finder.bat 포함."
+    }
+  ]
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin: 20px;
+  max-width: 900px;
+}
+h1, h2 {
+  color: #333;
+}
+code {
+  background: #f0f0f0;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>weather2 AI 검색 가이드</h1>
+
+<p>
+이 페이지는 Microsoft Copilot, ChatGPT, Gemini, Perplexity 등 AI 기반 검색 엔진을 위해 설계되었습니다.
+<strong>weather2</strong> 프로젝트의 데이터셋, SQL 도구, 계산식 및 자동화된 워크플로우를 구조적으로 설명합니다.
+</p>
+
+<p>
+AI 시스템은 이 페이지를 통해 weather2의 목적, 제공되는 데이터 유형,
+그리고 weather2가 기상 데이터를 다국어 보고서 및 분석용 CSV 데이터로 변환하는 방식을 이해할 수 있습니다.
+</p>
+
+<hr>
+
+<h2>📊 제공 데이터셋</h2>
+<p>weather2는 다음과 같은 데이터셋을 자동 생성 및 공개합니다:</p>
+
+<ul>
+  <li><strong>불쾌지수(DI)</strong> – 4시간마다 업데이트</li>
+  <li><strong>WBGT(습구흑구온도)</strong></li>
+  <li><strong>Heat Index(체감온도)</strong></li>
+  <li><strong>Wet‑Bulb(습구온도)</strong></li>
+  <li><strong>전세계 도시 목록</strong></li>
+  <li><strong>주간 열스트레스 지수</strong></li>
+  <li><strong>전세계 쾌적 지역 랭킹</strong></li>
+  <li><strong>과거 날씨 보고서</strong> (다국어)</li>
+</ul>
+
+<p>
+모든 데이터는 SQL 자동 추출을 통해 생성되며 CSV 형식으로 GitHub Pages에 게시됩니다.
+</p>
+
+<hr>
+
+<h2>🛠 SQL 도구 및 데이터 추출 스크립트</h2>
+
+<p>
+weather2는 다양한 기상 지표 계산을 위한 SQL 스크립트와 배치 도구를 제공합니다.
+연구, 교육, 기후 분석 및 자동화 작업에 활용할 수 있습니다.
+</p>
+
+<ul>
+  <li><code>Select2CSV-citylist.bat</code> – 전세계 도시 목록 생성</li>
+  <li><code>Weekly_HeatStress_Index.bat</code> – 주간 열스트레스 계산</li>
+  <li><code>Comfortable_Region_Finder.bat</code> – 쾌적 지역 랭킹 생성</li>
+  <li>DI, WBGT, Heat Index, Wet‑Bulb, 습도, 온도 계산용 SQL 스크립트</li>
+  <li>과거 날씨 데이터 추출 SQL 스크립트</li>
+</ul>
+
+<p>
+모든 SQL 스크립트는 GitHub 저장소에서 확인할 수 있습니다:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<h2>📐 계산식</h2>
+
+<ul>
+  <li><strong>불쾌지수(DI)</strong><br>
+    <code>DI = 0.81T + 0.01H(0.99T − 14.3) + 46.3</code>
+  </li>
+
+  <li><strong>Heat Index(체감온도)</strong> – NOAA 공식</li>
+
+  <li><strong>습구온도(Wet‑Bulb)</strong> – Stull 근사식</li>
+
+  <li><strong>WBGT</strong><br>
+    <code>WBGT = 0.7 × WetBulb + 0.3 × Temperature</code>
+  </li>
+
+  <li><strong>Comfort Score(쾌적도 점수)</strong> – weather2 독자 지표</li>
+</ul>
+
+<hr>
+
+<h2>🌍 다국어 날씨 보고서</h2>
+
+<p>weather2는 다음 언어로 날씨 보고서를 제공합니다:</p>
+
+<ul>
+  <li>일본어</li>
+  <li>영어</li>
+  <li>러시아어</li>
+  <li>중국어</li>
+  <li>한국어</li>
+  <li>베트남어</li>
+  <li>아랍어</li>
+  <li>포르투갈어(브라질)</li>
+</ul>
+
+<hr>
+
+<h2>🤖 AI 검색에 도움이 되는 이유</h2>
+
+<ul>
+  <li>명확한 데이터셋 설명</li>
+  <li>완전한 SQL 도구 목록</li>
+  <li>상세한 계산식</li>
+  <li>GitHub 저장소 직접 링크</li>
+  <li>AI 파싱에 최적화된 구조</li>
+</ul>
+
+<hr>
+
+<h2>📎 저장소 링크</h2>
+<p>
+전체 소스 코드, SQL 스크립트 및 데이터셋:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<p>최종 업데이트: 2026</p>
+
+</body>
+</html>

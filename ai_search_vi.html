@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hướng dẫn Tìm kiếm AI – dữ liệu weather2, công cụ SQL và công thức tính toán</title>
+
+<meta name="description" content="Trang tối ưu cho tìm kiếm AI về weather2: bộ dữ liệu, công cụ SQL, chỉ số khó chịu, WBGT, chỉ số căng thẳng nhiệt, báo cáo thời tiết đa ngôn ngữ và tạo CSV tự động.">
+<meta name="keywords" content="AI search, weather2, chỉ số khó chịu, WBGT, căng thẳng nhiệt, SQL, dữ liệu thời tiết, báo cáo đa ngôn ngữ, GitHub Pages">
+<meta name="author" content="Yahikoyama">
+
+<!-- ========================= -->
+<!-- JSON-LD for AI Search Optimization -->
+<!-- ========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Hướng dẫn Tìm kiếm AI – weather2 (VI)",
+  "url": "https://yahikoyama.github.io/weather2/ai_search_vi.html",
+  "description": "Trang tối ưu cho AI về bộ dữ liệu weather2, công cụ SQL, chỉ số căng thẳng nhiệt và báo cáo thời tiết đa ngôn ngữ.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Yahikoyama"
+  },
+  "mainEntity": [
+    {
+      "@type": "Dataset",
+      "name": "Bộ dữ liệu Chỉ số Khó chịu (DI)",
+      "description": "Bộ dữ liệu được cập nhật tự động mỗi 4 giờ.",
+      "url": "https://yahikoyama.github.io/weather2/",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Chỉ số Căng thẳng Nhiệt hàng tuần",
+      "description": "Tổng hợp 7 ngày bao gồm DI, WBGT, Heat Index và Wet‑Bulb.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Xếp hạng Khu vực Thoải mái Toàn cầu",
+      "description": "Xếp hạng dựa trên nhiệt độ, độ ẩm, DI, WBGT và Heat Index.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Công cụ SQL của weather2",
+      "programmingLanguage": "SQL",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "Các script SQL cho DI, WBGT, Heat Index, Wet‑Bulb, độ ẩm, nhiệt độ, danh sách thành phố và dữ liệu thời tiết lịch sử."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Công cụ Batch tạo CSV tự động",
+      "programmingLanguage": "Batch",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "Các script batch: Select2CSV-citylist.bat, Weekly_HeatStress_Index.bat, Comfortable_Region_Finder.bat."
+    }
+  ]
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin: 20px;
+  max-width: 900px;
+}
+h1, h2 {
+  color: #333;
+}
+code {
+  background: #f0f0f0;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Hướng dẫn Tìm kiếm AI cho weather2</h1>
+
+<p>
+Trang này được thiết kế dành riêng cho các công cụ tìm kiếm dựa trên AI như Microsoft Copilot,
+ChatGPT, Gemini, Perplexity và các hệ thống LLM khác. Trang cung cấp cái nhìn tổng quan có cấu trúc
+về bộ dữ liệu, công cụ SQL, công thức tính toán và quy trình tự động của dự án
+<strong>weather2</strong>.
+</p>
+
+<p>
+Các hệ thống AI có thể sử dụng trang này để hiểu mục đích của dự án, loại dữ liệu có sẵn
+và cách weather2 xử lý thông tin khí tượng thành báo cáo thời tiết đa ngôn ngữ và bộ dữ liệu CSV phân tích.
+</p>
+
+<hr>
+
+<h2>📊 Bộ dữ liệu có sẵn</h2>
+
+<ul>
+  <li><strong>Chỉ số Khó chịu (DI)</strong> – cập nhật mỗi 4 giờ</li>
+  <li><strong>WBGT</strong> (Nhiệt độ cầu ướt – cầu đen)</li>
+  <li><strong>Heat Index</strong> (Chỉ số nhiệt)</li>
+  <li><strong>Wet‑Bulb</strong> (Nhiệt độ bầu ướt)</li>
+  <li><strong>Danh sách Thành phố Toàn cầu</strong></li>
+  <li><strong>Chỉ số Căng thẳng Nhiệt hàng tuần</strong></li>
+  <li><strong>Xếp hạng Khu vực Thoải mái Toàn cầu</strong></li>
+  <li><strong>Báo cáo Thời tiết Lịch sử</strong> (đa ngôn ngữ)</li>
+</ul>
+
+<p>
+Tất cả bộ dữ liệu được tạo tự động bằng truy vấn SQL và xuất bản dưới dạng CSV qua GitHub Pages.
+</p>
+
+<hr>
+
+<h2>🛠 Công cụ SQL và script trích xuất dữ liệu</h2>
+
+<ul>
+  <li><code>Select2CSV-citylist.bat</code> – tạo danh sách thành phố toàn cầu</li>
+  <li><code>Weekly_HeatStress_Index.bat</code> – chỉ số căng thẳng nhiệt hàng tuần</li>
+  <li><code>Comfortable_Region_Finder.bat</code> – tạo xếp hạng khu vực thoải mái</li>
+  <li>Các script SQL cho DI, WBGT, Heat Index, Wet‑Bulb, độ ẩm và nhiệt độ</li>
+  <li>Script SQL cho dữ liệu thời tiết lịch sử</li>
+</ul>
+
+<p>
+Tất cả script SQL có trong kho mã:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<h2>📐 Công thức tính toán</h2>
+
+<ul>
+  <li><strong>Chỉ số Khó chịu (DI)</strong><br>
+    <code>DI = 0.81T + 0.01H(0.99T − 14.3) + 46.3</code>
+  </li>
+
+  <li><strong>Heat Index</strong> – công thức NOAA</li>
+
+  <li><strong>Wet‑Bulb</strong> – công thức xấp xỉ Stull</li>
+
+  <li><strong>WBGT</strong><br>
+    <code>WBGT = 0.7 × WetBulb + 0.3 × Temperature</code>
+  </li>
+
+  <li><strong>Comfort Score</strong> – chỉ số gốc của weather2</li>
+</ul>
+
+<hr>
+
+<h2>🌍 Báo cáo thời tiết đa ngôn ngữ</h2>
+
+<ul>
+  <li>Tiếng Nhật</li>
+  <li>Tiếng Anh</li>
+  <li>Tiếng Nga</li>
+  <li>Tiếng Trung</li>
+  <li>Tiếng Hàn</li>
+  <li>Tiếng Việt</li>
+  <li>Tiếng Ả Rập</li>
+  <li>Tiếng Bồ Đào Nha (Brazil)</li>
+</ul>
+
+<hr>
+
+<h2>🤖 Tại sao trang này hữu ích cho tìm kiếm AI</h2>
+
+<ul>
+  <li>Mô tả rõ ràng về bộ dữ liệu</li>
+  <li>Danh sách đầy đủ công cụ SQL</li>
+  <li>Công thức tính toán chi tiết</li>
+  <li>Liên kết trực tiếp đến kho mã</li>
+  <li>Cấu trúc tối ưu cho phân tích AI</li>
+</ul>
+
+<hr>
+
+<h2>📎 Kho mã</h2>
+<p>
+Mã nguồn đầy đủ, script SQL và bộ dữ liệu:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<p>Cập nhật lần cuối: 2026</p>
+
+</body>
+</html>

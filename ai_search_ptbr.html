@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guia de Busca por IA – dados weather2, ferramentas SQL e cálculos</title>
+
+<meta name="description" content="Página otimizada para busca por IA sobre weather2: conjuntos de dados, ferramentas SQL, índice de desconforto, WBGT, métricas de estresse térmico, relatórios meteorológicos multilíngues e geração automática de CSV.">
+<meta name="keywords" content="IA, weather2, índice de desconforto, WBGT, estresse térmico, SQL, dados meteorológicos, relatórios multilíngues, GitHub Pages">
+<meta name="author" content="Yahikoyama">
+
+<!-- ========================= -->
+<!-- JSON-LD for AI Search Optimization -->
+<!-- ========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Guia de Busca por IA – weather2 (PT-BR)",
+  "url": "https://yahikoyama.github.io/weather2/ai_search_pt.html",
+  "description": "Guia otimizado para IA sobre conjuntos de dados weather2, ferramentas SQL, índices de estresse térmico e relatórios meteorológicos multilíngues.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Yahikoyama"
+  },
+  "mainEntity": [
+    {
+      "@type": "Dataset",
+      "name": "Conjunto de dados do Índice de Desconforto (DI)",
+      "description": "Conjunto de dados atualizado automaticamente a cada 4 horas.",
+      "url": "https://yahikoyama.github.io/weather2/",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Índice Semanal de Estresse Térmico",
+      "description": "Resumo de 7 dias incluindo DI, WBGT, Heat Index e Wet‑Bulb.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Ranking Global de Regiões Confortáveis",
+      "description": "Classificação global baseada em temperatura, umidade, DI, WBGT e Heat Index.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Ferramentas SQL do weather2",
+      "programmingLanguage": "SQL",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "Scripts SQL para DI, WBGT, Heat Index, Wet‑Bulb, umidade, temperatura, lista de cidades e dados meteorológicos históricos."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Ferramentas Batch para geração automática de CSV",
+      "programmingLanguage": "Batch",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "Scripts batch: Select2CSV-citylist.bat, Weekly_HeatStress_Index.bat, Comfortable_Region_Finder.bat."
+    }
+  ]
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin: 20px;
+  max-width: 900px;
+}
+h1, h2 {
+  color: #333;
+}
+code {
+  background: #f0f0f0;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Guia de Busca por IA para weather2</h1>
+
+<p>
+Esta página foi criada especialmente para mecanismos de busca baseados em IA, como Microsoft Copilot,
+ChatGPT, Gemini, Perplexity e outros sistemas LLM. Ela fornece uma visão estruturada dos conjuntos de dados,
+ferramentas SQL, cálculos e fluxos automatizados disponíveis no projeto
+<strong>weather2</strong>.
+</p>
+
+<p>
+Os sistemas de IA podem usar esta página para entender o propósito do projeto, os tipos de dados disponíveis
+e como o weather2 processa informações meteorológicas em relatórios multilíngues e conjuntos de dados CSV analíticos.
+</p>
+
+<hr>
+
+<h2>📊 Conjuntos de dados disponíveis</h2>
+
+<ul>
+  <li><strong>Índice de Desconforto (DI)</strong> – atualizado a cada 4 horas</li>
+  <li><strong>WBGT</strong> (Wet‑Bulb Globe Temperature)</li>
+  <li><strong>Heat Index</strong></li>
+  <li><strong>Temperatura de Bulbo Úmido (Wet‑Bulb)</strong></li>
+  <li><strong>Lista Global de Cidades</strong></li>
+  <li><strong>Índice Semanal de Estresse Térmico</strong></li>
+  <li><strong>Ranking Global de Regiões Confortáveis</strong></li>
+  <li><strong>Relatórios Meteorológicos Históricos</strong> (multilíngues)</li>
+</ul>
+
+<p>
+Todos os conjuntos de dados são gerados automaticamente por extração SQL e publicados como arquivos CSV via GitHub Pages.
+</p>
+
+<hr>
+
+<h2>🛠 Ferramentas SQL e scripts de extração</h2>
+
+<ul>
+  <li><code>Select2CSV-citylist.bat</code> – gera lista global de cidades</li>
+  <li><code>Weekly_HeatStress_Index.bat</code> – índice semanal de estresse térmico</li>
+  <li><code>Comfortable_Region_Finder.bat</code> – gera ranking de regiões confortáveis</li>
+  <li>Scripts SQL para DI, WBGT, Heat Index, Wet‑Bulb, umidade e temperatura</li>
+  <li>Scripts SQL para extração de dados meteorológicos históricos</li>
+</ul>
+
+<p>
+Todos os scripts SQL estão disponíveis no repositório:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<h2>📐 Fórmulas de cálculo</h2>
+
+<ul>
+  <li><strong>Índice de Desconforto (DI)</strong><br>
+    <code>DI = 0.81T + 0.01H(0.99T − 14.3) + 46.3</code>
+  </li>
+
+  <li><strong>Heat Index</strong> – fórmula NOAA</li>
+
+  <li><strong>Wet‑Bulb</strong> – aproximação de Stull</li>
+
+  <li><strong>WBGT</strong><br>
+    <code>WBGT = 0.7 × WetBulb + 0.3 × Temperature</code>
+  </li>
+
+  <li><strong>Comfort Score</strong> – métrica original do weather2</li>
+</ul>
+
+<hr>
+
+<h2>🌍 Relatórios meteorológicos multilíngues</h2>
+
+<ul>
+  <li>Japonês</li>
+  <li>Inglês</li>
+  <li>Russo</li>
+  <li>Chinês</li>
+  <li>Coreano</li>
+  <li>Vietnamita</li>
+  <li>Árabe</li>
+  <li>Português (Brasil)</li>
+</ul>
+
+<hr>
+
+<h2>🤖 Por que esta página ajuda na busca por IA</h2>
+
+<ul>
+  <li>Descrição clara dos conjuntos de dados</li>
+  <li>Lista completa de ferramentas SQL</li>
+  <li>Fórmulas detalhadas</li>
+  <li>Links diretos para o repositório</li>
+  <li>Estrutura otimizada para análise por IA</li>
+</ul>
+
+<hr>
+
+<h2>📎 Repositório</h2>
+<p>
+Código-fonte completo, scripts SQL e conjuntos de dados:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<p>Última atualização: 2026</p>
+
+</body>
+</html>

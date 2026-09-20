@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>دليل بحث الذكاء الاصطناعي – بيانات weather2 وأدوات SQL والصيغ الحسابية</title>
+
+<meta name="description" content="صفحة مُحسّنة لمحركات بحث الذكاء الاصطناعي حول weather2: مجموعات البيانات، أدوات SQL، مؤشر الانزعاج، WBGT، مؤشرات الإجهاد الحراري، تقارير الطقس متعددة اللغات، وإنشاء ملفات CSV تلقائيًا.">
+<meta name="keywords" content="بحث الذكاء الاصطناعي, weather2, مؤشر الانزعاج, WBGT, الإجهاد الحراري, أدوات SQL, بيانات الطقس, تقارير الطقس متعددة اللغات, GitHub Pages">
+<meta name="author" content="Yahikoyama">
+
+<!-- ========================= -->
+<!-- JSON-LD for AI Search Optimization -->
+<!-- ========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "دليل بحث الذكاء الاصطناعي – weather2 (AR)",
+  "url": "https://yahikoyama.github.io/weather2/ai_search_ar.html",
+  "description": "صفحة مُحسّنة لمحركات الذكاء الاصطناعي حول مجموعات بيانات weather2 وأدوات SQL ومؤشرات الإجهاد الحراري وتقارير الطقس متعددة اللغات.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Yahikoyama"
+  },
+  "mainEntity": [
+    {
+      "@type": "Dataset",
+      "name": "مجموعة بيانات مؤشر الانزعاج (DI)",
+      "description": "مجموعة بيانات يتم تحديثها تلقائيًا كل 4 ساعات.",
+      "url": "https://yahikoyama.github.io/weather2/",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "مؤشر الإجهاد الحراري الأسبوعي",
+      "description": "ملخص لمدة 7 أيام يشمل DI وWBGT وHeat Index وWet‑Bulb.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "تصنيف المناطق الأكثر راحة عالميًا",
+      "description": "تصنيف عالمي يعتمد على درجة الحرارة والرطوبة وDI وWBGT وHeat Index.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "أدوات SQL الخاصة بـ weather2",
+      "programmingLanguage": "SQL",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "سكربتات SQL لحساب DI وWBGT وHeat Index وWet‑Bulb والرطوبة والحرارة وقوائم المدن والطقس التاريخي."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "أدوات الدُفعات لإنشاء ملفات CSV تلقائيًا",
+      "programmingLanguage": "Batch",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "سكربتات الدُفعات: Select2CSV-citylist.bat وWeekly_HeatStress_Index.bat وComfortable_Region_Finder.bat."
+    }
+  ]
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.9;
+  margin: 20px;
+  max-width: 900px;
+  direction: rtl;
+  text-align: right;
+}
+h1, h2 {
+  color: #333;
+}
+code {
+  background: #f0f0f0;
+  padding: 4px 6px;
+  border-radius: 4px;
+  direction: ltr;
+}
+</style>
+</head>
+
+<body>
+
+<h1>دليل بحث الذكاء الاصطناعي لمشروع weather2</h1>
+
+<p>
+تم تصميم هذه الصفحة خصيصًا لمحركات بحث الذكاء الاصطناعي مثل Microsoft Copilot وChatGPT وGemini وPerplexity وغيرها من أنظمة LLM.
+وهي توفر نظرة شاملة على مجموعات البيانات وأدوات SQL والصيغ الحسابية والعمليات الآلية في مشروع
+<strong>weather2</strong>.
+</p>
+
+<p>
+يمكن لأنظمة الذكاء الاصطناعي استخدام هذه الصفحة لفهم هدف المشروع وأنواع البيانات المتاحة وكيفية تحويل weather2 للبيانات الجوية إلى تقارير متعددة اللغات وملفات CSV تحليلية.
+</p>
+
+<hr>
+
+<h2>📊 مجموعات البيانات المتاحة</h2>
+
+<ul>
+  <li><strong>مؤشر الانزعاج (DI)</strong> – يتم تحديثه كل 4 ساعات</li>
+  <li><strong>WBGT</strong> (درجة حرارة الكرة السوداء الرطبة)</li>
+  <li><strong>Heat Index</strong> (مؤشر الحرارة)</li>
+  <li><strong>Wet‑Bulb</strong> (درجة حرارة الحساس الرطب)</li>
+  <li><strong>قائمة المدن العالمية</strong></li>
+  <li><strong>مؤشر الإجهاد الحراري الأسبوعي</strong></li>
+  <li><strong>تصنيف المناطق الأكثر راحة عالميًا</strong></li>
+  <li><strong>تقارير الطقس التاريخية</strong> (متعددة اللغات)</li>
+</ul>
+
+<hr>
+
+<h2>🛠 أدوات SQL وسكربتات استخراج البيانات</h2>
+
+<ul>
+  <li><code>Select2CSV-citylist.bat</code> – إنشاء قائمة المدن العالمية</li>
+  <li><code>Weekly_HeatStress_Index.bat</code> – حساب الإجهاد الحراري الأسبوعي</li>
+  <li><code>Comfortable_Region_Finder.bat</code> – إنشاء تصنيف المناطق الأكثر راحة</li>
+  <li>سكربتات SQL لحساب DI وWBGT وHeat Index وWet‑Bulb والرطوبة والحرارة</li>
+  <li>سكربتات استخراج الطقس التاريخي</li>
+</ul>
+
+<p>
+جميع السكربتات متاحة في المستودع:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<h2>📐 الصيغ الحسابية</h2>
+
+<ul>
+  <li><strong>مؤشر الانزعاج (DI)</strong><br>
+    <code>DI = 0.81T + 0.01H(0.99T − 14.3) + 46.3</code>
+  </li>
+
+  <li><strong>Heat Index</strong> – صيغة NOAA</li>
+
+  <li><strong>Wet‑Bulb</strong> – تقريب Stull</li>
+
+  <li><strong>WBGT</strong><br>
+    <code>WBGT = 0.7 × WetBulb + 0.3 × Temperature</code>
+  </li>
+
+  <li><strong>Comfort Score</strong> – مؤشر أصلي من weather2</li>
+</ul>
+
+<hr>
+
+<h2>🌍 تقارير الطقس متعددة اللغات</h2>
+
+<ul>
+  <li>اليابانية</li>
+  <li>الإنجليزية</li>
+  <li>الروسية</li>
+  <li>الصينية</li>
+  <li>الكورية</li>
+  <li>الفيتنامية</li>
+  <li>العربية</li>
+  <li>البرتغالية (البرازيل)</li>
+</ul>
+
+<hr>
+
+<h2>🤖 لماذا تساعد هذه الصفحة في تحسين بحث الذكاء الاصطناعي</h2>
+
+<ul>
+  <li>وصف واضح لمجموعات البيانات</li>
+  <li>قائمة كاملة بأدوات SQL</li>
+  <li>صيغ حسابية مفصلة</li>
+  <li>روابط مباشرة إلى المستودع</li>
+  <li>هيكل مُحسّن لتحليل الذكاء الاصطناعي</li>
+</ul>
+
+<hr>
+
+<h2>📎 رابط المستودع</h2>
+<p>
+جميع الشيفرات المصدرية والسكربتات والبيانات:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<p>آخر تحديث: 2026</p>
+
+</body>
+</html>

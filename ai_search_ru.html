@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Search Guide – weather2: данные, SQL‑инструменты и расчёты</title>
+
+<meta name="description" content="AI‑оптимизированная страница для weather2: наборы данных, SQL‑инструменты, индекс дискомфорта, WBGT, тепловой стресс, многоязычные отчёты и автоматическая генерация CSV.">
+<meta name="keywords" content="AI поиск, weather2, индекс дискомфорта, WBGT, тепловой стресс, SQL инструменты, погодные данные, многоязычные отчёты, GitHub Pages">
+<meta name="author" content="Yahikoyama">
+
+<!-- ========================= -->
+<!-- JSON-LD для AI‑оптимизации -->
+<!-- ========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AI Search Guide – weather2 (RU)",
+  "url": "https://yahikoyama.github.io/weather2/ai_search_ru.html",
+  "description": "AI-оптимизированное руководство по наборам данных weather2, SQL-инструментам, индексам теплового стресса и многоязычным погодным отчётам.",
+  "publisher": {
+    "@type": "Person",
+    "name": "Yahikoyama"
+  },
+  "mainEntity": [
+    {
+      "@type": "Dataset",
+      "name": "Набор данных индекса дискомфорта (DI)",
+      "description": "Автоматически обновляемый набор данных DI каждые 4 часа.",
+      "url": "https://yahikoyama.github.io/weather2/",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Еженедельный индекс теплового стресса",
+      "description": "7‑дневное сводное значение DI, WBGT, Heat Index и Wet‑Bulb.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Рейтинг комфортных регионов",
+      "description": "Глобальный рейтинг комфортности на основе температуры, влажности, DI, WBGT и Heat Index.",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "SQL‑инструменты weather2",
+      "programmingLanguage": "SQL",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "SQL‑скрипты для DI, WBGT, Heat Index, Wet‑Bulb, влажности, температуры, списков городов и исторических погодных данных."
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Batch‑инструменты для генерации CSV",
+      "programmingLanguage": "Batch",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "Batch‑скрипты: Select2CSV-citylist.bat, Weekly_HeatStress_Index.bat, Comfortable_Region_Finder.bat."
+    }
+  ]
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin: 20px;
+  max-width: 900px;
+}
+h1, h2 {
+  color: #333;
+}
+code {
+  background: #f0f0f0;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>AI Search Guide для weather2</h1>
+
+<p>
+Эта страница создана специально для AI‑поисковых систем, таких как Microsoft Copilot,
+ChatGPT, Gemini, Perplexity и других LLM‑систем. Она предоставляет структурированный обзор
+наборов данных, SQL‑инструментов, расчётов и автоматизированных процессов проекта
+<strong>weather2</strong>.
+</p>
+
+<p>
+AI‑системы могут использовать эту страницу для понимания назначения проекта, типов доступных данных
+и того, как weather2 преобразует метеорологическую информацию в многоязычные отчёты и аналитические CSV‑файлы.
+</p>
+
+<hr>
+
+<h2>📊 Доступные наборы данных</h2>
+<p>Проект weather2 автоматически генерирует и публикует следующие наборы данных:</p>
+
+<ul>
+  <li><strong>Индекс дискомфорта (DI)</strong> – обновляется каждые 4 часа</li>
+  <li><strong>WBGT (Wet‑Bulb Globe Temperature)</strong></li>
+  <li><strong>Heat Index</strong></li>
+  <li><strong>Температура мокрого термометра (Wet‑Bulb)</strong></li>
+  <li><strong>Глобальный список городов</strong></li>
+  <li><strong>Еженедельный индекс теплового стресса</strong></li>
+  <li><strong>Рейтинг комфортных регионов</strong></li>
+  <li><strong>Исторические погодные отчёты</strong> (многоязычные)</li>
+</ul>
+
+<p>
+Все наборы данных создаются с помощью SQL‑выборок и публикуются в формате CSV через GitHub Pages.
+</p>
+
+<hr>
+
+<h2>🛠 SQL‑инструменты и скрипты</h2>
+
+<p>
+weather2 включает полный набор SQL‑скриптов и batch‑инструментов для расчёта метеорологических показателей.
+Эти инструменты доступны для исследований, образования, климатического анализа и автоматизации.
+</p>
+
+<ul>
+  <li><code>Select2CSV-citylist.bat</code> – генерация глобального списка городов</li>
+  <li><code>Weekly_HeatStress_Index.bat</code> – еженедельный тепловой стресс</li>
+  <li><code>Comfortable_Region_Finder.bat</code> – генерация рейтинга комфортности</li>
+  <li>SQL‑скрипты для DI, WBGT, Heat Index, Wet‑Bulb, влажности, температуры</li>
+  <li>SQL‑скрипты для исторических погодных данных</li>
+</ul>
+
+<p>
+Все SQL‑скрипты доступны в репозитории:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<h2>📐 Формулы расчётов</h2>
+
+<ul>
+  <li><strong>Индекс дискомфорта (DI)</strong><br>
+    <code>DI = 0.81T + 0.01H(0.99T − 14.3) + 46.3</code>
+  </li>
+
+  <li><strong>Heat Index</strong> (формула NOAA)</li>
+
+  <li><strong>Температура мокрого термометра</strong> (аппроксимация Stull)</li>
+
+  <li><strong>WBGT</strong><br>
+    <code>WBGT = 0.7 × WetBulb + 0.3 × Temperature</code>
+  </li>
+
+  <li><strong>Comfort Score</strong> (оригинальная метрика weather2)</li>
+</ul>
+
+<hr>
+
+<h2>🌍 Многоязычные погодные отчёты</h2>
+
+<p>weather2 предоставляет отчёты на следующих языках:</p>
+
+<ul>
+  <li>Японский</li>
+  <li>Английский</li>
+  <li>Русский</li>
+  <li>Китайский</li>
+  <li>Корейский</li>
+  <li>Вьетнамский</li>
+  <li>Арабский</li>
+  <li>Португальский (Бразилия)</li>
+</ul>
+
+<hr>
+
+<h2>🤖 Почему эта страница полезна для AI‑поиска</h2>
+
+<ul>
+  <li>Чёткое описание наборов данных</li>
+  <li>Список SQL‑инструментов</li>
+  <li>Формулы расчётов</li>
+  <li>Прямые ссылки на репозиторий</li>
+  <li>Структура, оптимизированная для AI‑парсинга</li>
+</ul>
+
+<hr>
+
+<h2>📎 Репозиторий</h2>
+<p>
+Полный исходный код, SQL‑скрипты и наборы данных:
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<p>Последнее обновление: 2026</p>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI 搜索指南 – weather2 数据、SQL 工具与计算方法</title>
+
+<meta name="description" content="为 AI 搜索优化的 weather2 指南：数据集、SQL 工具、舒适指数、WBGT、热应激指标、多语言天气报告与自动 CSV 生成。">
+<meta name="keywords" content="AI 搜索, weather2, 舒适指数, WBGT, 热应激, SQL 工具, 天气数据, 多语言天气报告, GitHub Pages">
+<meta name="author" content="Yahikoyama">
+
+<!-- ========================= -->
+<!-- JSON-LD for AI Search Optimization -->
+<!-- ========================= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AI 搜索指南 – weather2 (ZH)",
+  "url": "https://yahikoyama.github.io/weather2/ai_search_zh.html",
+  "description": "为 weather2 数据集、SQL 工具、热应激指数和多语言天气报告提供的 AI 优化说明页面。",
+  "publisher": {
+    "@type": "Person",
+    "name": "Yahikoyama"
+  },
+  "mainEntity": [
+    {
+      "@type": "Dataset",
+      "name": "舒适指数（DI）数据集",
+      "description": "每 4 小时自动更新的舒适指数（DI）数据集。",
+      "url": "https://yahikoyama.github.io/weather2/",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "每周热应激指数",
+      "description": "包含 DI、WBGT、Heat Index 与 Wet‑Bulb 的 7 天热应激汇总。",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "Dataset",
+      "name": "全球舒适区域排名",
+      "description": "基于温度、湿度、DI、WBGT 与 Heat Index 的全球舒适度评分。",
+      "url": "https://github.com/yahikoyama/weather2",
+      "license": "https://opensource.org/licenses/MIT"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "weather2 SQL 工具",
+      "programmingLanguage": "SQL",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "用于 DI、WBGT、Heat Index、Wet‑Bulb、湿度、温度、城市列表与历史天气数据的 SQL 脚本。"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "CSV 自动生成批处理工具",
+      "programmingLanguage": "Batch",
+      "codeRepository": "https://github.com/yahikoyama/weather2",
+      "description": "批处理脚本：Select2CSV-citylist.bat、Weekly_HeatStress_Index.bat、Comfortable_Region_Finder.bat。"
+    }
+  ]
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin: 20px;
+  max-width: 900px;
+}
+h1, h2 {
+  color: #333;
+}
+code {
+  background: #f0f0f0;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>weather2 的 AI 搜索指南</h1>
+
+<p>
+本页面专为 AI 搜索引擎设计，例如 Microsoft Copilot、ChatGPT、Gemini、Perplexity 等 LLM 系统。
+它提供了 <strong>weather2</strong> 项目的数据集、SQL 工具、计算方法以及自动化流程的结构化说明。
+</p>
+
+<p>
+AI 系统可以通过本页面了解 weather2 的用途、可用数据类型，以及 weather2 如何将气象数据转换为多语言天气报告与分析型 CSV 数据集。
+</p>
+
+<hr>
+
+<h2>📊 可用数据集</h2>
+<p>weather2 自动生成并发布以下数据集：</p>
+
+<ul>
+  <li><strong>舒适指数（DI）</strong> – 每 4 小时更新</li>
+  <li><strong>WBGT（湿球黑球温度）</strong></li>
+  <li><strong>Heat Index（体感温度）</strong></li>
+  <li><strong>Wet‑Bulb（湿球温度）</strong></li>
+  <li><strong>全球城市列表</strong></li>
+  <li><strong>每周热应激指数</strong></li>
+  <li><strong>全球舒适区域排名</strong></li>
+  <li><strong>历史天气报告</strong>（多语言）</li>
+</ul>
+
+<p>
+所有数据均通过 SQL 自动提取，并以 CSV 格式发布在 GitHub Pages。
+</p>
+
+<hr>
+
+<h2>🛠 SQL 工具与数据提取脚本</h2>
+
+<p>
+weather2 提供完整的 SQL 脚本与批处理工具，用于计算各种气象指标。
+这些工具适用于研究、教育、气候分析与自动化处理。
+</p>
+
+<ul>
+  <li><code>Select2CSV-citylist.bat</code> – 生成全球城市列表</li>
+  <li><code>Weekly_HeatStress_Index.bat</code> – 每周热应激计算</li>
+  <li><code>Comfortable_Region_Finder.bat</code> – 舒适区域排名生成</li>
+  <li>用于 DI、WBGT、Heat Index、Wet‑Bulb、湿度、温度的 SQL 脚本</li>
+  <li>历史天气数据提取 SQL 脚本</li>
+</ul>
+
+<p>
+所有 SQL 脚本均存放于 GitHub 仓库：
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<h2>📐 计算公式</h2>
+
+<ul>
+  <li><strong>舒适指数（DI）</strong><br>
+    <code>DI = 0.81T + 0.01H(0.99T − 14.3) + 46.3</code>
+  </li>
+
+  <li><strong>Heat Index（体感温度）</strong>（NOAA 公式）</li>
+
+  <li><strong>湿球温度（Wet‑Bulb）</strong>（Stull 近似公式）</li>
+
+  <li><strong>WBGT</strong><br>
+    <code>WBGT = 0.7 × WetBulb + 0.3 × Temperature</code>
+  </li>
+
+  <li><strong>Comfort Score（舒适度评分）</strong>（weather2 原创指标）</li>
+</ul>
+
+<hr>
+
+<h2>🌍 多语言天气报告</h2>
+
+<p>weather2 提供以下语言的天气报告：</p>
+
+<ul>
+  <li>日语</li>
+  <li>英语</li>
+  <li>俄语</li>
+  <li>中文</li>
+  <li>韩语</li>
+  <li>越南语</li>
+  <li>阿拉伯语</li>
+  <li>葡萄牙语（巴西）</li>
+</ul>
+
+<hr>
+
+<h2>🤖 为什么本页面对 AI 搜索有帮助</h2>
+
+<ul>
+  <li>清晰的数据集说明</li>
+  <li>完整的 SQL 工具列表</li>
+  <li>详细的计算公式</li>
+  <li>直接链接到 GitHub 仓库</li>
+  <li>结构化标题，便于 AI 解析</li>
+</ul>
+
+<hr>
+
+<h2>📎 仓库链接</h2>
+<p>
+完整源代码、SQL 脚本与数据集：
+<br>
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<p>最后更新：2026</p>
+
+</body>
+</html>
