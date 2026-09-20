@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>不快指数（DI）・多言語天気レポート – 4時間ごとに自動更新</title>
+
+<meta name="description" content="OpenWeatherMap API を使用した不快指数（DI）と多言語天気レポートを自動更新。4時間ごとに最新データを提供。">
+<meta name="keywords" content="不快指数, DI, 天気レポート, 湿度, 気温, 日本の天気, グローバル天気, ヒートインデックス, OpenWeatherMap, GitHub Pages, SQL スクリプト, 天気 SQL">
+<meta name="author" content="Yahikoyama">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="不快指数（DI）・多言語天気レポート – 4時間ごとに自動更新">
+<meta property="og:description" content="不快指数（DI）と多言語天気レポートを自動更新。">
+<meta property="og:image" content="https://yahikoyama.github.io/weather2/thumbnail.png">
+<meta property="og:url" content="https://yahikoyama.github.io/weather2/index_ja.html">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="不快指数（DI）・多言語天気レポート">
+<meta name="twitter:description" content="4時間ごとに最新の天気データを自動更新。">
+<meta name="twitter:image" content="https://yahikoyama.github.io/weather2/thumbnail.png">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "weather2 日本語版",
+  "url": "https://yahikoyama.github.io/weather2/index_ja.html",
+  "description": "不快指数（DI）を4時間ごとに自動更新し、多言語天気レポートを提供するサイト。",
+  "publisher": {
+    "@type": "Person",
+    "name": "Yahikoyama"
+  }
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin: 20px;
+}
+h1, h2 {
+  color: #333;
+}
+ul {
+  margin-bottom: 20px;
+}
+.lang-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.lang-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.lang-btn:hover {
+  background: #e0e0e0;
+}
+</style>
+
+</head>
+<body>
+
+<h1>weather2 日本語版</h1>
+
+<p>
+このサイトでは、OpenWeatherMap API を利用して日本全国の不快指数（DI）を自動計算し、
+4時間ごとに最新データを公開しています。
+不快指数は気温・湿度・天候をもとに「どれだけ暑く感じるか」を示す指標です。
+</p>
+
+<p>
+毎日の天気確認、熱中症対策、環境モニタリングなどに役立つよう設計されています。
+GitHub Pages による自動ワークフローで処理されており、特別なアプリやアカウントは不要です。
+</p>
+
+<!-- Sitemap -->
+<h2>📄 サイトマップ</h2>
+<p>
+  このサイトは 4時間ごとに自動更新されます。<br>
+  サイトマップはこちら：<br>
+  <a href="https://yahikoyama.github.io/weather2/sitemap.xml">📄 sitemap.xml</a>
+</p>
+
+<!-- Language Selector -->
+<h2>🌍 多言語レポート</h2>
+
+<div class="lang-box">
+  <a class="lang-btn" href="weather_report_now.html">🇯🇵 日本語</a>
+  <a class="lang-btn" href="weather_report_now_en.html">🇬🇧 English</a>
+  <a class="lang-btn" href="weather_report_now_ru.html">🇷🇺 Русский</a>
+  <a class="lang-btn" href="weather_report_now_zh.html">🇨🇳 中文</a>
+  <a class="lang-btn" href="weather_report_now_ko.html">🇰🇷 한국어</a>
+  <a class="lang-btn" href="weather_report_now_vi.html">🇻🇳 Tiếng Việt</a>
+  <a class="lang-btn" href="weather_report_now_ar.html">🇦🇪 العربية</a>
+  <a class="lang-btn" href="weather_report_now_ptbr.html">🇧🇷 Português (BR)</a>
+</div>
+
+<!-- Source Code -->
+<h2>💾 ソースコード・SQL データベース・SQL スクリプト</h2>
+<p>
+weather2 のすべてのソースコード、SQL データベース、SQL スクリプトは GitHub で公開されています。
+WBGT、DI、都市リスト、天気コード、過去天気データなどの SQL クエリが含まれています。
+</p>
+<p>
+  GitHub リポジトリ：<br>
+  <a href="https://github.com/yahikoyama/weather2" target="_blank">
+    https://github.com/yahikoyama/weather2
+  </a>
+</p>
+
+<!-- Historical -->
+<h2>📚 過去の天気レポート</h2>
+<ul>
+  <li>🇯🇵 <a href="https://yahikoyama.github.io/weather2/Historical/">日本語版 過去天気レポート</a></li>
+  <li>🇺🇸 <a href="https://yahikoyama.github.io/weather2/Historical_en/">英語版 過去天気レポート</a></li>
+</ul>
+
+<!-- AI Search Guide -->
+<h2>🤖 AI Search Guide（AI検索向けページ）</h2>
+<p>
+AI検索エンジン（Microsoft Copilot、ChatGPT、Gemini、Perplexity など）が
+weather2 のデータ構造を正しく理解できるように、
+専用の説明ページを用意しています。
+</p>
+
+<p>👉 <a href="ai_search_ja.html">AI Search Guide 日本語版</a></p>
+
+<p>👉 多言語 AI Search Guide:</p>
+<ul>
+  <li><a href="ai_search.html">English</a></li>
+  <li><a href="ai_search_ru.html">Русский</a></li>
+  <li><a href="ai_search_zh.html">中文</a></li>
+  <li><a href="ai_search_ko.html">한국어</a></li>
+  <li><a href="ai_search_ar.html">العربية</a></li>
+  <li><a href="ai_search_ptbr.html">Português (BR)</a></li>
+  <li><a href="ai_search_vi.html">Tiếng Việt</a></li>
+</ul>
+
+<p>GitHub Pages は正常に動作しています。</p>
+
+</body>
+</html>

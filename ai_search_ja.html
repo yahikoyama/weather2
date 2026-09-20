@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Search Guide – weather2 のデータ・SQL ツール・計算式</title>
+
+<meta name="description" content="weather2 のデータセット、SQL ツール、熱ストレス指標、WBGT、DI、多言語天気レポート、CSV 自動生成について AI 検索向けに最適化した説明ページ。">
+<meta name="keywords" content="AI検索, weather2, 不快指数, WBGT, 熱ストレス, SQL, 天気データ, 多言語レポート, GitHub Pages">
+<meta name="author" content="Yahikoyama">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "AI Search Guide – weather2 日本語版",
+  "url": "https://yahikoyama.github.io/weather2/ai_search_ja.html",
+  "description": "weather2 のデータセット、SQL ツール、熱ストレス指標、WBGT、DI、多言語天気レポートの AI 最適化ガイド。",
+  "publisher": {
+    "@type": "Person",
+    "name": "Yahikoyama"
+  }
+}
+</script>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  margin: 20px;
+  max-width: 900px;
+}
+h1, h2 {
+  color: #333;
+}
+code {
+  background: #f0f0f0;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>weather2 の AI Search Guide（日本語版）</h1>
+
+<p>
+このページは、Microsoft Copilot、ChatGPT、Gemini、Perplexity などの AI 検索エンジンが
+weather2 のデータ構造・計算式・SQL ツールを正しく理解できるように設計された
+<strong>AI 最適化ページ</strong>です。
+</p>
+
+<hr>
+
+<h2>📊 提供されているデータセット</h2>
+
+<ul>
+  <li><strong>不快指数（DI）</strong> – 4時間ごとに自動更新</li>
+  <li><strong>WBGT（湿球黒球温度）</strong></li>
+  <li><strong>Heat Index（体感温度）</strong></li>
+  <li><strong>Wet‑Bulb（湿球温度）</strong></li>
+  <li><strong>世界都市リスト</strong></li>
+  <li><strong>週間熱ストレス指数</strong></li>
+  <li><strong>快適地域ランキング</strong></li>
+  <li><strong>過去天気レポート（多言語）</strong></li>
+</ul>
+
+<hr>
+
+<h2>🛠 SQL ツール・データ抽出スクリプト</h2>
+
+<ul>
+  <li><code>Select2CSV-citylist.bat</code> – 世界都市リスト生成</li>
+  <li><code>Weekly_HeatStress_Index.bat</code> – 週間熱ストレス計算</li>
+  <li><code>Comfortable_Region_Finder.bat</code> – 快適地域ランキング生成</li>
+  <li>DI、WBGT、Heat Index、湿球温度、湿度、気温の SQL スクリプト</li>
+  <li>過去天気データ抽出 SQL スクリプト</li>
+</ul>
+
+<p>
+GitHub リポジトリ：  
+<a href="https://github.com/yahikoyama/weather2" target="_blank">
+https://github.com/yahikoyama/weather2
+</a>
+</p>
+
+<hr>
+
+<h2>📐 計算式</h2>
+
+<ul>
+  <li><strong>不快指数（DI）</strong><br>
+    <code>DI = 0.81T + 0.01H(0.99T − 14.3) + 46.3</code>
+  </li>
+
+  <li><strong>Heat Index（体感温度）</strong> – NOAA 公式</li>
+
+  <li><strong>湿球温度（Wet‑Bulb）</strong> – Stull 近似式</li>
+
+  <li><strong>WBGT</strong><br>
+    <code>WBGT = 0.7 × WetBulb + 0.3 × Temperature</code>
+  </li>
+
+  <li><strong>Comfort Score（快適度スコア）</strong> – weather2 独自指標</li>
+</ul>
+
+<hr>
+
+<h2>🌍 多言語天気レポート</h2>
+
+<ul>
+  <li>日本語</li>
+  <li>英語</li>
+  <li>ロシア語</li>
+  <li>中国語</li>
+  <li>韓国語</li>
+  <li>ベトナム語</li>
+  <li>アラビア語</li>
+  <li>ポルトガル語（ブラジル）</li>
+</ul>
+
+<hr>
+
+<h2>🤖 AI検索に最適化されている理由</h2>
+
+<ul>
+  <li>データセットの構造が明確</li>
+  <li>SQL ツール一覧が整理されている</li>
+  <li>計算式が明示されている</li>
+  <li>GitHub リポジトリへの直接リンク</li>
+  <li>AI が解析しやすい HTML 構造</li>
+</ul>
+
+<hr>
+
+<p>最終更新：2026</p>
+
+</body>
+</html>
