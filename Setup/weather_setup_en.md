@@ -283,7 +283,7 @@ Command Prompt:
 
 ```
 
-cd c:\\weather\\script
+cd c:\weather\script
 
 WeatherLogger.bat
 
@@ -301,7 +301,7 @@ Also check:
 
 ```
 
-c:\weather\\logs\
+c:\weather\logs\
 
 ```
 
@@ -313,9 +313,9 @@ SQL check:
 
 ```sql
 
-SELECT \*
+SELECT *
 
-FROM \[weather].\[dbo].\[WeatherLog]
+FROM [weather].[dbo].[WeatherLog]
 
 ORDER BY 1 DESC;
 
