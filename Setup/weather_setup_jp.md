@@ -83,82 +83,59 @@ SETUP.EXE
 パスワードはメモしておくこと
 
 
-
 c:\\weather\\config\\dbconfig.json
-
-
 
 で必要になります
 
-
-
 2)SQLServer Management Studio(SSMS)のインストール
-
-
 
 https://learn.microsoft.com/ja-jp/ssms/install/install
 
-
-
 vs\_SSMS.exe
 
-⇒管理者として実行
+`⇒管理者として実行`
 
-⇒続行
+`⇒続行`
 
-⇒ワークロード画面はなにも選択せず　インストール
-
-
+`⇒ワークロード画面はなにも選択せず　インストール`
 
 起動させたら
 
 後でアカウントをスキップして追加します
 
+`サーバー名 (local)`
 
+`認証　SQL Server認証`
 
-サーバー名 (local)
+`ユーザー名 sa`
 
-認証　SQL Server認証
+`パスワード test@123`
 
-ユーザー名 sa
+`パスワードを記憶するをチェックする`
 
-パスワード test@123
+`データベース　<既定>`
 
-パスワードを記憶するをチェックする
-
-データベース　<既定>
-
-暗号化　オプション
-
-
+`暗号化　オプション`
 
 オブジェクトエクスプローラーが表示されればOK
-
-
 
 3)データベース復号化
 
 オブジェクトエクスプローラー
 
-⇒データベース　を選択し、右クリック
+`⇒データベース　を選択し、右クリック`
 
-⇒データベースの復元
+`⇒データベースの復元`
 
 デバイスを選択　... をクリック
 
+`⇒C:\\Weather\\DBBackup\\weather\_2026yymm.bak　を選択しOK`
 
+`⇒OK をクリック`
 
-⇒C:\\Weather\\DBBackup\\weather\_202609.bak　を選択しOK
-
-⇒OK をクリック
-
-⇒OK をクリック
-
-
+`⇒OK をクリック`
 
 データベース'weather'の復元に成功しました。　と表示されればOK
-
-
 
 4)C:\\weather\\config\\dbconfig.json 変更
 
@@ -168,35 +145,19 @@ vs\_SSMS.exe
 
 Server,Password,OpenWeatherApiKey
 
-
-
 {
 
 &#x20;   "Server": "(local)",
-
 &#x20;   "Database": "weather",
-
 &#x20;   "User": "sa",
-
 &#x20;   "Password": "test@123",
-
 &#x20;   "OpenWeatherApiKey": "????????"
 
 }
 
-
-
-説明
-
-
-
 5)データ取得確認(手動）
 
-
-
 コマンドプロンプト
-
-
 
 cd c:\\weather\\script
 
