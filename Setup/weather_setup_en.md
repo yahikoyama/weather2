@@ -241,15 +241,15 @@ Modify the following fields:
 
 {
 
-&#x20;   "Server": "(local)",
+"Server": "(local)",
 
-&#x20;   "Database": "weather",
+"Database": "weather",
 
-&#x20;   "User": "sa",
+"User": "sa",
 
-&#x20;   "Password": "test@123",
+"Password": "test@123",
 
-&#x20;   "OpenWeatherApiKey": "????????"
+"OpenWeatherApiKey": "????????"
 
 }
 
