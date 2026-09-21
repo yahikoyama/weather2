@@ -12,7 +12,7 @@
 
 ```
 
-c:\\weather
+c:\weather
 
 ├─config                 # Configuration files (DB, API, GitHub) and dictionaries
 ├─Data                   # cities.csv (not used if you restore the DB backup file)
@@ -28,16 +28,16 @@ c:\\weather
 
 ```
 
-c:\\winserverroot\\OneDrive
+c:\winserverroot\OneDrive
 
 ├─Historical        # Historical data JP
 ├─Historical\_en     # Historical data EN
 
 ```
 
-Files under `c:\\winserverroot\\OneDrive` are uploaded to GitHub.  
+Files under `c:\winserverroot\OneDrive` are uploaded to GitHub.  
 
-This path can be changed inside `c:\\weather\\Script\\ps1` and `.bat` files.
+This path can be changed inside `c:\weather\Script\ps1` and `.bat` files.
 
 \---
 
@@ -51,13 +51,13 @@ This path can be changed inside `c:\\weather\\Script\\ps1` and `.bat` files.
 
 https://openweathermap.org/api  
 
-Used in `c:\\weather\\config\\dbconfig.json`.
+Used in `c:\weather\config\dbconfig.json`.
 
 
 
 \### 🔑 Obtain a GitHub Token  
 
-Used in `c:\\weather\\config\\sync.json`.
+Used in `c:\weather\config\sync.json`.
 
 
 
@@ -69,11 +69,11 @@ Place them according to the following paths:
 
 ```
 
-c:\\weather\\
+c:\weather\
 
 
 
-c:\\winserverroot\\OneDrive
+c:\winserverroot\OneDrive
 
 ```
 
@@ -131,7 +131,7 @@ This password is required in:
 
 ```
 
-c:\\weather\\config\\dbconfig.json
+c:\weather\config\dbconfig.json
 
 ```
 
@@ -205,7 +205,7 @@ Right‑click \*\*Databases\*\* → \*\*Restore Database\*\*
 
 \- Choose:  
 
-&#x20; `C:\\Weather\\DBBackup\\weather\_2026mmdd.bak`  
+&#x20; `C:\Weather\DBBackup\weather\2026mmdd.bak`  
 
 \- Click OK → OK
 
@@ -219,7 +219,7 @@ If the message \*\*“Database 'weather' restored successfully”\*\* appears, i
 
 
 
-\### 4) Edit `c:\\weather\\config\\dbconfig.json`
+\### 4) Edit `c:\weather\config\dbconfig.json`
 
 
 
@@ -301,7 +301,7 @@ Also check:
 
 ```
 
-c:\\weather\\logs\\
+c:\weather\\logs\
 
 ```
 
@@ -315,9 +315,9 @@ SQL check:
 
 SELECT \*
 
-&#x20; FROM \[weather].\[dbo].\[WeatherLog]
+FROM \[weather].\[dbo].\[WeatherLog]
 
-&#x20; ORDER BY 1 DESC;
+ORDER BY 1 DESC;
 
 ```
 
@@ -377,7 +377,7 @@ Start in:
 
 ```
 
-C:\\weather\\Script
+C:\weather\Script
 
 ```
 
@@ -465,7 +465,7 @@ Command Prompt:
 
 ```
 
-c:\\weather\\Script>weather\_viewer.py
+c:\weather\Script\weather\viewer.py
 
 ```
 
@@ -489,7 +489,7 @@ Or import:
 
 ```
 
-c:\\weather\\TaskScheduler\\DBbackup.xml
+c:\weather\TaskScheduler\DBbackup.xml
 
 ```
 
@@ -509,7 +509,7 @@ Command Prompt:
 
 ```
 
-c:\\weather\\Script>export\_jp.py
+c:\weather\Script\export_jp.py
 
 ```
 
@@ -521,13 +521,13 @@ Output:
 
 ```
 
-c:\\weather\\output\\jp\_result.txt
+c:\weather\output\jp_result.txt
 
 ```
 
 
 
-The file `jp\_result.txt` will be generated in the `output` folder.
+The file `jp_result.txt` will be generated in the `output` folder.
 
 
 
