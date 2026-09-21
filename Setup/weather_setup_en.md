@@ -15,44 +15,29 @@
 c:\\weather
 
 ├─config                 # Configuration files (DB, API, GitHub) and dictionaries
-
 ├─Data                   # cities.csv (not used if you restore the DB backup file)
-
 ├─Data-Extraction-SQL    # Data extraction tool
-
 ├─DBBackup               # SQL Server backup file
-
 ├─Logs                   # Not used
-
 ├─output                 # index.html, jp\_result.txt (generated at JST 14:00)
-
 ├─Script                 # PowerShell scripts, batch files (calling PS1), and Python scripts
-
 ├─Setup                  # Setup instructions and environment preparation
-
 └─TaskScheduler          # Task Scheduler XML definitions
 
 ```
-
-
 
 ```
 
 c:\\winserverroot\\OneDrive
 
 ├─Historical        # Historical data JP
-
 ├─Historical\_en     # Historical data EN
 
 ```
 
-
-
 Files under `c:\\winserverroot\\OneDrive` are uploaded to GitHub.  
 
 This path can be changed inside `c:\\weather\\Script\\ps1` and `.bat` files.
-
-
 
 \---
 
@@ -220,7 +205,7 @@ Right‑click \*\*Databases\*\* → \*\*Restore Database\*\*
 
 \- Choose:  
 
-&#x20; `C:\\Weather\\DBBackup\\weather\_2026yymm.bak`  
+&#x20; `C:\\Weather\\DBBackup\\weather\_2026mmdd.bak`  
 
 \- Click OK → OK
 
