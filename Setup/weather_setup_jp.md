@@ -1,66 +1,31 @@
 \# 🧱 weather2 構築方法
 
-
-
 \## 📘 概要
-
-
 
 \### ディレクトリ構成（ローカル）
 
-
-
 ```
-
 c:\\weather
-
 ├─config                 # Configuration files (DB, API, GitHub) and dictionaries
-
 ├─Data                   # cities.csv (not used if you restore the DB backup file)
-
 ├─Data-Extraction-SQL    # Data-Extraction-tool
-
 ├─DBBackup               # SQL Server backup file
-
 ├─Logs                   # Not used
-
 ├─output                 # index.html, jp\_result.txt (generated at JST 14:00)
-
 ├─Script                 # PowerShell scripts, batch files (calling PS1), and Python scripts
-
 ├─Setup                  # Setup instructions and environment preparation
-
 └─TaskScheduler          # Task Scheduler XML definitions
-
 ```
-
-
-
 ```
-
 c:\\winserverroot\\OneDrive
-
 ├─Historical        # Historical data JP
-
 ├─Historical\_en     # Historical data EN
-
 ```
-
-
-
 主に `c:\\winserverroot\\OneDrive` のファイルを GitHub にアップロードする仕組み。  
-
 このパスは `c:\\weather\\Script\\ps1` および `.bat` 内で指定しているため変更可能。
-
-
-
 \---
 
-
-
 \## 🛠 事前準備
-
-
 
 \### 🔑 OpenWeather API Key を取得  
 
@@ -68,46 +33,29 @@ https://openweathermap.org/api
 
 `c:\\weather\\config\\dbconfig.json` で使用します。
 
-
-
 \### 🔑 GitHub Token を取得  
 
 `c:\\weather\\config\\sync.json` で使用します。
-
-
 
 \### 📥 GitHub からファイルをダウンロード  
 
 以下のパスに合わせて配置してください。
 
-
-
 ```
-
 c:\\weather\\
 
 c:\\winserverroot\\OneDrive
-
 ```
-
-
 
 \---
 
-
-
 \## 🚀 インストール手順
 
-
-
 \### 1. SQL Server 2022 Express のインストール
-
-
 
 ダウンロード：  
 
 https://www.microsoft.com/ja-jp/download/details.aspx?id=104781
-
 
 
 SETUP.EXE
@@ -122,8 +70,6 @@ SETUP.EXE
 
 ⇒次へ⇒次へ
 
-
-
 SQL Server用Azure拡張機能のチェックを外す⇒次へ
 
 インスタンス機能はそのまま⇒次へ
@@ -131,8 +77,6 @@ SQL Server用Azure拡張機能のチェックを外す⇒次へ
 ⇒既定のインスタンスを選択⇒次へ
 
 サービスアカウント　そのまま⇒次へ
-
-
 
 混合モードを選択 パスワード test@123 ⇒次へ
 
