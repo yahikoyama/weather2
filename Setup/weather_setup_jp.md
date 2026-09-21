@@ -129,7 +129,7 @@ vs\_SSMS.exe
 
 デバイスを選択　... をクリック
 
-`⇒C:\\Weather\\DBBackup\\weather\_2026mmdd.bak　を選択しOK`
+`⇒C:\Weather\DBBackup\weather\2026mmdd.bak　を選択しOK`
 
 `⇒OK をクリック`
 
@@ -137,7 +137,7 @@ vs\_SSMS.exe
 
 データベース'weather'の復元に成功しました。　と表示されればOK
 
-4)C:\\weather\\config\\dbconfig.json 変更
+4)C:\weather\config\dbconfig.json 変更
 
 メモ帳で修正する
 
@@ -164,7 +164,7 @@ Server,Password,OpenWeatherApiKey
 
 コマンドプロンプト
 
-cd c:\\weather\\script
+cd c:\weather\script
 
 WeatherLogger.bat
 
@@ -174,7 +174,7 @@ WeatherLogger.bat
 
 
 
-c:\\weather\\logs\\ も確認してください
+c:\weather\logs\ も確認してください
 
 
 
@@ -230,13 +230,13 @@ Userはsa です。
 
 プログラム
 
-C:\\weather\\Script\\WeatherLogger.bat
+C:\weather\Script\WeatherLogger.bat
 
 
 
 開始オプション
 
-C:\\weather\\Script
+C:\weather\Script
 
 
 
@@ -312,7 +312,7 @@ c:\\weather\\Script>weather\_viewer.py
 
 
 
-あるいは　c:\\weather\\TaskScheduler\\DBbackup.xml　
+あるいは　c:\weather\TaskScheduler\DBbackup.xml　
 
 をタスクスケジューラーでインポートする
 
@@ -320,7 +320,7 @@ c:\\weather\\Script>weather\_viewer.py
 
 11)テキストファイルに出力
 
-c:\\weather\\Script>export\_jp.py
+c:\weather\Script>export\_jp.py
 
 
 
@@ -328,11 +328,11 @@ c:\\weather\\Script>export\_jp.py
 
 
 
-c:\\weather\\output\\jp\_result.txt
+c:\weather\output\jp_result.txt
 
 
 
-c:\\weather\\output フォルダに jp\_result.txt ファイルが出力されます
+c:\weather\output フォルダに jp_result.txt ファイルが出力されます
 
 
 
