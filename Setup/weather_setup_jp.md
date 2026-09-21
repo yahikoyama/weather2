@@ -320,7 +320,7 @@ c:\\weather\\Script>weather\_viewer.py
 
 11)テキストファイルに出力
 
-c:\weather\Script>export\_jp.py
+c:\weather\Script\export\_jp.py
 
 
 
