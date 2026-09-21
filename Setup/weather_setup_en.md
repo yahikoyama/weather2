@@ -31,7 +31,7 @@ c:\weather
 c:\winserverroot\OneDrive
 
 ├─Historical        # Historical data JP
-├─Historical\_en     # Historical data EN
+├─Historical_en     # Historical data EN
 
 ```
 
