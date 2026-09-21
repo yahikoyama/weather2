@@ -5,7 +5,7 @@
 \### ディレクトリ構成（ローカル）
 
 ```
-c:\\weather
+c:\weather
 ├─config                 # Configuration files (DB, API, GitHub) and dictionaries
 ├─Data                   # cities.csv (not used if you restore the DB backup file)
 ├─Data-Extraction-SQL    # Data-Extraction-tool
@@ -17,7 +17,7 @@ c:\\weather
 └─TaskScheduler          # Task Scheduler XML definitions
 ```
 ```
-c:\\winserverroot\\OneDrive
+c:\winserverroot\\OneDrive
 ├─Historical        # Historical data JP
 ├─Historical\_en     # Historical data EN
 ```
