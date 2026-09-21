@@ -21,8 +21,8 @@ c:\\winserverroot\\OneDrive
 ├─Historical        # Historical data JP
 ├─Historical\_en     # Historical data EN
 ```
-主に `c:\\winserverroot\\OneDrive` のファイルを GitHub にアップロードする仕組み。  
-このパスは `c:\\weather\\Script\\ps1` および `.bat` 内で指定しているため変更可能。
+主に `c:\winserverroot\OneDrive` のファイルを GitHub にアップロードする仕組み。  
+このパスは `c:\weather\Script\ps1` および `.bat` 内で指定しているため変更可能。
 \---
 
 \## 🛠 事前準備
@@ -31,20 +31,20 @@ c:\\winserverroot\\OneDrive
 
 https://openweathermap.org/api  
 
-`c:\\weather\\config\\dbconfig.json` で使用します。
+`c:\weather\config\dbconfig.json` で使用します。
 
 \### 🔑 GitHub Token を取得  
 
-`c:\\weather\\config\\sync.json` で使用します。
+`c:\weather\config\sync.json` で使用します。
 
 \### 📥 GitHub からファイルをダウンロード  
 
 以下のパスに合わせて配置してください。
 
 ```
-c:\\weather\\
+c:\weather\
 
-c:\\winserverroot\\OneDrive
+c:\winserverroot\OneDrive
 ```
 
 \---
