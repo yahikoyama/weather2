@@ -148,10 +148,15 @@ Server,Password,OpenWeatherApiKey
 {
 
 &#x20;   "Server": "(local)",
+
 &#x20;   "Database": "weather",
+
 &#x20;   "User": "sa",
+
 &#x20;   "Password": "test@123",
+
 &#x20;   "OpenWeatherApiKey": "????????"
+
 
 }
 
