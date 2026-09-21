@@ -19,7 +19,7 @@ c:\weather
 ```
 c:\winserverroot\\OneDrive
 ├─Historical        # Historical data JP
-├─Historical\_en     # Historical data EN
+├─Historical_en     # Historical data EN
 ```
 主に `c:\winserverroot\OneDrive` のファイルを GitHub にアップロードする仕組み。  
 このパスは `c:\weather\Script\ps1` および `.bat` 内で指定しているため変更可能。
