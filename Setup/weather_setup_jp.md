@@ -129,7 +129,7 @@ vs\_SSMS.exe
 
 デバイスを選択　... をクリック
 
-`⇒C:\\Weather\\DBBackup\\weather\_2026yymm.bak　を選択しOK`
+`⇒C:\\Weather\\DBBackup\\weather\_2026mmdd.bak　を選択しOK`
 
 `⇒OK をクリック`
 
