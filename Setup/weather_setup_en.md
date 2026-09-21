@@ -367,7 +367,7 @@ Program:
 
 ```
 
-C:\\weather\\Script\\WeatherLogger.bat
+C:\weather\Script\WeatherLogger.bat
 
 ```
 
