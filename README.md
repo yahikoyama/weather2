@@ -126,10 +126,11 @@ weather2/
 ├── weather_report_now_ar.html # Arabic report
 ├── weather_report_now_ptbr.html # Brazilian Portuguese report
 
-unzip weather.zip
+download weather2
 c:\weather
 ├─config        # Configuration files (DB, API, GitHub) and dictionaries
 ├─Data          # cities.csv (not used if you restore the DB backup file)
+├─Data-Extraction-SQL    # Data extraction tool
 ├─DBBackup      # SQL Server backup file
 ├─Logs          # Not used
 ├─output        # index.html, jp_result.txt (generated at JST 14:00)
@@ -147,6 +148,12 @@ c:\weather
       ├─historical_index_for_claude.xml
       ├─OneDriveToGithub.xml
       ├─auto_check_weather_update_daily.xml
+      ├─weekly_comfortable_region.xml
+
+c:\winserverroot\OneDrive
+├─Historical        # Historical data JP
+├─Historical_en     # Historical data EN
+
 
 ## 🌐 Multi‑Language Weather Reports
 | XML File                     | Purpose                                                   | Schedule              |
@@ -160,6 +167,7 @@ c:\weather
 | XML File          | Purpose                                                        | Schedule |
 |-------------------|----------------------------------------------------------------|----------|
 | calc_weekly_avg.xml | Calculate weekly averages, generate weekly HTML reports, and upload to GitHub | Weekly   |
+|weekly_comfortable_region.xml | Calculate WBGT and discomfort index and comfortable Index | Weekly   |
 
 ## 🖥️ Server Management
 | XML File        | Purpose                               | Schedule              |
@@ -179,7 +187,8 @@ c:\weather
 To improve discoverability, this project focuses on the following topics:
 
 - Discomfort Index (DI)  
-- Heat Index  
+- `Comfortable Index(Original)`
+- WBGT
 - Global Weather  
 - Japan Weather  
 - Humidity / Temperature  
