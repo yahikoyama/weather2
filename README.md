@@ -164,10 +164,10 @@ c:\winserverroot\OneDrive
 | Historicaldata_daily.xml     | Generate daily weather data                               | Daily at 14:00 JST    |
 
 ## 📜 Historical Weather Reports
-| XML File          | Purpose                                                        | Schedule |
-|-------------------|----------------------------------------------------------------|----------|
+| XML File            | Purpose                                                                       | Schedule |
+|---------------------|-------------------------------------------------------------------------------|----------|
 | calc_weekly_avg.xml | Calculate weekly averages, generate weekly HTML reports, and upload to GitHub | Weekly   |
-|weekly_comfortable_region.xml | Calculate WBGT and discomfort index and comfortable Index | Weekly   |
+|weekly_comfortable_region.xml | Calculate WBGT and discomfort index and comfortable Index            | Weekly   |
 
 ## 🖥️ Server Management
 | XML File        | Purpose                               | Schedule              |
@@ -211,7 +211,9 @@ Data-Extraction-SQL/
  ├─ weathercode_en.sql
  ├─ weathercode_jp.sql
  ├─ weathercode_list_en.sql
- └─ weathercode_list_jp.sql
+ ├─ weathercode_list_jp.sql
+ ├─ Weekly_HeatStress_Index.sql
+ └─ ComfortableRegionFinder.sql
 
 📁 SQL Overview
 weather2 includes multiple SQL scripts to extract weather data in both English and Japanese.
