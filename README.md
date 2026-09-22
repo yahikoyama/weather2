@@ -180,8 +180,8 @@ c:\winserverroot\OneDrive
 ## 🔧 Miscellaneous Tasks
 | XML File                         | Purpose                                           | Schedule |
 |----------------------------------|---------------------------------------------------|----------|
-| historical_index_for_claude.xml  | Generate historical index for Claude              | Scheduled |
-| OneDriveToGithub.xml        　　 | Fetch data at 14:00 and upload to GitHub at 15:00  | Daily     |
+| historical_index_for_claude.xml  | Generate historical index for Claude              | Scheduled|
+| OneDriveToGithub.xml        　　  | Fetch data at 14:00 and upload to GitHub at 15:00 | Daily   |
 |auto_check_weather_update_daily.xml| report html data update check and run task again | Every 4 hours|
 
 ## 🔎 SEO Keywords  
