@@ -131,6 +131,7 @@ c:\weather
 ├─config        # Configuration files (DB, API, GitHub) and dictionaries
 ├─Data          # cities.csv (not used if you restore the DB backup file)
 ├─Data-Extraction-SQL    # Data extraction tool
+├─db_sql2csv    # SQL Data CSV output  tool
 ├─DBBackup      # SQL Server backup file
 ├─Logs          # Not used
 ├─output        # index.html, jp_result.txt (generated at JST 14:00)
@@ -187,7 +188,7 @@ c:\winserverroot\OneDrive
 To improve discoverability, this project focuses on the following topics:
 
 - Discomfort Index (DI)  
-- `Comfortable Index(Original)`
+- `Comfortable Index(calculated with my own algorithm)`
 - WBGT
 - Global Weather  
 - Japan Weather  
