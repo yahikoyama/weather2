@@ -22,6 +22,10 @@
     "勝浦": "Katsuura",
     "東京": "Tokyo",
     "京都": "Kyoto",
+    "奥日光": "Oku-Nikko",
+    "雲仙": "Unzen",
+    "レイキャビク": "Reykjavik",
+    "ジンマ": "Jimma",
 
     "ウットキアグビクバロウ": "Utqiagvik",
     "ロングイヤービーエン": "Longyearbyen",
@@ -40,7 +44,14 @@
     "クアラルンプール": "Kuala Lumpur",
     "ホノルルハワイ": "Honolulu, Hawaii",
     "リオデジャネイロ": "Rio de Janeiro",
-    "リマ": "Lima"
+    "リマ": "Lima",
+
+    "ブエノスアイレス": "Buenos Aires",
+    "インターラーケン": "Interlaken",
+    "ナイロビ": "Nairobi",
+    "ベルリン": "Berlin",
+    "マチピチュ": "Machu Picchu",
+    "クマシ": "Kumasi"
   },
 
   "weather": {
