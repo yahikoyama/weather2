@@ -1,5 +1,5 @@
 # convert_to_html.ps1
-# 実行方法: .\convert_to_html.ps1
+# 靖典専用・weather2 完全対応版（列数判定＋ヘッダー除外）
 
 $dirPath = "C:\Users\winserverroot\OneDrive"
 $file1 = Join-Path $dirPath "jp_result_latest.txt"
@@ -16,10 +16,10 @@ if (Test-Path $file1) {
         
         if ($time1 -ge $time2) {
             $inputFile = $file1
-            Write-Host "両ファイルのうち、最新の '$file1' を使用します。 (更新日時: $time1)" -ForegroundColor Cyan
+            Write-Host "最新の '$file1' を使用します。" -ForegroundColor Cyan
         } else {
             $inputFile = $file2
-            Write-Host "両ファイルのうち、最新の '$file2' を使用します。 (更新日時: $time2)" -ForegroundColor Cyan
+            Write-Host "最新の '$file2' を使用します。" -ForegroundColor Cyan
         }
     } else {
         $inputFile = $file1
@@ -29,7 +29,7 @@ if (Test-Path $file1) {
     $inputFile = $file2
     Write-Host "'$file1' が見つからないため、'$file2' を使用します。" -ForegroundColor Yellow
 } else {
-    Write-Error "入力ファイルがどちらも見つかりません。 ('$file1' または '$file2')"
+    Write-Error "入力ファイルがどちらも見つかりません。"
     exit
 }
 
@@ -37,21 +37,13 @@ if (Test-Path $file1) {
 $content = Get-Content $inputFile -Encoding UTF8
 
 # 取得時間の抽出
-$timestamp = ""
-foreach ($line in $content) {
-    if ($line -match "取得時間(.*)") {
-        $timestamp = $matches[0]
-        break
-    }
-}
+$timestamp = ($content | Select-String "取得時間").Line
 
-# データのパース関数
-function Parse-TableData ($lines, $startIndex, $isGlobal) {
+# データパース関数（列数で国内/海外を判定）
+function Parse-WeatherData($lines, $startIndex) {
 
-    # 海外判定に使う国コード一覧
-    $countryCodes = "US","GL","SJ","NO","AU","RU","CA","MN","PE","CN","BR","KR","MY"
-
-    $data = [System.Collections.Generic.List[PSObject]]::new()
+    $jpList = New-Object System.Collections.Generic.List[PSObject]
+    $globalList = New-Object System.Collections.Generic.List[PSObject]
 
     for ($i = $startIndex; $i -lt $lines.Count; $i++) {
 
@@ -61,74 +53,53 @@ function Parse-TableData ($lines, $startIndex, $isGlobal) {
             continue
         }
 
-        # ▼ 国内（JP）に海外データが混入している場合は除外する（continue 2 を使わない安全版）
-        if (-not $isGlobal) {
-            $isForeign = $false
-            foreach ($cc in $countryCodes) {
-                if ($line -match "\b$cc\b") {
-                    $isForeign = $true
-                    break
-                }
-            }
-            if ($isForeign) { continue }
+        # ▼ ヘッダー行の除外
+        if ($line -match "温度" -or $line -match "湿度" -or $line -match "不快指数") {
+            continue
         }
 
-        # タブや複数スペースで分割
+        # 分割（スペース・タブ・全角スペース対応）
         $parts = $line -split '[\s\u00a0]+' | Where-Object { $_ -ne "" }
 
-        if ($parts[0] -eq "地名") { continue }
+        # 国内（6列）
+        if ($parts.Count -eq 6) {
+            $jpList.Add([PSCustomObject]@{
+                Place      = $parts[0]
+                Temp       = $parts[1]
+                Humidity   = $parts[2]
+                Weather    = $parts[3]
+                Discomfort = $parts[4]
+                Eval       = $parts[5]
+                Country    = "-"
+            })
+        }
 
-        if ($parts.Count -ge 6) {
-
-            if ($parts.Count -eq 6) {
-                # 国内データ
-                $obj = [PSCustomObject]@{
-                    Place      = $parts[0]
-                    Temp       = $parts[1]
-                    Humidity   = $parts[2]
-                    Weather    = $parts[3]
-                    Discomfort = $parts[4]
-                    Eval       = $parts[5]
-                    Country    = "-"
-                }
-                $data.Add($obj)
-
-            } elseif ($parts.Count -ge 7) {
-                # 海外データ
-                $evalStr = ($parts[6..($parts.Count-1)] -join " ")
-                $obj = [PSCustomObject]@{
-                    Place      = $parts[0]
-                    Temp       = $parts[1]
-                    Humidity   = $parts[2]
-                    Weather    = $parts[3]
-                    Country    = $parts[4]
-                    Discomfort = $parts[5]
-                    Eval       = $evalStr
-                }
-                $data.Add($obj)
-            }
+        # 海外（7列以上）
+        elseif ($parts.Count -ge 7) {
+            $globalList.Add([PSCustomObject]@{
+                Place      = $parts[0]
+                Temp       = $parts[1]
+                Humidity   = $parts[2]
+                Weather    = $parts[3]
+                Country    = $parts[4]
+                Discomfort = $parts[5]
+                Eval       = ($parts[6..($parts.Count-1)] -join " ")
+            })
         }
     }
 
-    return $data
+    return @{ JP = $jpList; GLOBAL = $globalList }
 }
 
 # セクション位置の特定
-$jpStartIndex = -1
-$notJpStartIndex = -1
+$jpStartIndex = ($content | Select-String "【国内（JP）】").LineNumber
+$notJpStartIndex = ($content | Select-String "【海外（NOTJP）】").LineNumber
 
-for ($i = 0; $i -lt $content.Count; $i++) {
-    if ($content[$i] -match "【国内（JP）】") {
-        $jpStartIndex = $i + 1
-    }
-    if ($content[$i] -match "【海外（NOTJP）】") {
-        $notJpStartIndex = $i + 1
-    }
-}
+$parsedJP = Parse-WeatherData $content ($jpStartIndex)
+$parsedGlobal = Parse-WeatherData $content ($notJpStartIndex)
 
-# データ取得（海外判定フラグを追加）
-$jpData    = if ($jpStartIndex -ne -1) { Parse-TableData $content $jpStartIndex $false } else { @() }
-$notJpData = if ($notJpStartIndex -ne -1) { Parse-TableData $content $notJpStartIndex $true } else { @() }
+$jpData = $parsedJP.JP
+$notJpData = $parsedGlobal.GLOBAL
 
 # HTML行生成
 function Get-HtmlRows ($dataList, $isGlobal) {
