@@ -42,7 +42,19 @@
     "リオデジャネイロ": "Rio de Janeiro",
     "ホノルル/ハワイ": "Honolulu / Hawaii",
     "ホノルルハワイ": "Honolulu / Hawaii",
-    "イエローナイフ": "Yellowknife"
+    "イエローナイフ": "Yellowknife",
+
+   "奥日光": "Oku-Nikko",
+   "雲仙": "Unzen",
+   "レイキャビク": "Reykjavik",
+   "ベルリン": "Berlin",
+   "ジンマ": "Jimma",
+   "マチピチュ": "Machu Picchu",
+   "クマシ": "Kumasi",
+   "ナイロビ": "Nairobi",
+   "ブエノスアイレス": "Buenos Aires",
+   "インターラーケン": "Interlaken"
+
   },
 
   "weather": {
