@@ -22,5 +22,14 @@
     "GL": "GREENLAND",
     "SJ": "SVALBARD AND JAN MAYEN",
     "NO": "NORWAY",
-    "MN": "MONGOLIA"
+    "MN": "MONGOLIA",
+
+    "IS": "ICELAND",
+    "ET": "ETHIOPIA",
+    "AR": "ARGENTINA",
+    "PE": "PERU",
+    "CH": "SWITZERLAND",
+    "KE": "KENYA",
+    "GH": "GHANA"
+
 }
