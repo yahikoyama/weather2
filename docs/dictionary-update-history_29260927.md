@@ -66,5 +66,8 @@
 
 \- GH (Ghana)
 
+\### See details here
+https://github.com/yahikoyama/weather2/tree/main/guides/add-city
+
 
 
