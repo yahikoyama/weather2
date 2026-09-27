@@ -1,1 +1,25 @@
+﻿都市追加
 
+テーブルに追加
+
+1)daily html
+
+ps1修正
+C:\weather\Scriptconvert_to_html.ps1
+
+辞書ファイル追加
+C:\weather\config\dictionary_daily.json
+C:\weather\config\dictionary_ptbr.json
+C:\weather\config\dictionary_ar.json
+C:\weather\config\dictionary_vi.json
+C:\weather\config\dictionary_ko.json
+C:\weather\config\dictionary_zh.json
+C:\weather\config\dictionary_ru.json
+
+2)weather_viewer.py
+辞書ファイル追加
+C:\weather\config\country_fullname.json
+
+
+3)weelly en html
+C:\weather\config\dictionary.json
