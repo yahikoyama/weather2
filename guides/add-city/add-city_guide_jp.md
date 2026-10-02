@@ -30,12 +30,15 @@ C:\weather\config\dictionary_ru.json
 
 
 2. weather_viewer.py に都市を追加する
+   
 📌 使用する辞書ファイル
 
 C:\weather\config\country_fullname.json
+
 国コード（例：JP, US, KR など）を追加する場合はここに追記する。
 
 3. Weekly 英語版 HTML に都市を追加する
+
 📌 使用する辞書ファイル
 
 C:\weather\config\dictionary.json
