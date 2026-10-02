@@ -1,7 +1,10 @@
 ﻿📝 都市追加方法（まとめ）
 
 1. Daily HTML に都市を追加する
-📌 使用するスクリプト
+【Insert】add-city.sql
+【Insert】add-city2.sql
+   
+📌 修正するスクリプト
 C:\weather\Script\convert_to_html.ps1
 
 📌 追加する辞書ファイル
