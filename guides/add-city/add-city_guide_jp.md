@@ -1,21 +1,31 @@
 ﻿📝 都市追加方法（まとめ）
 
 1. Daily HTML に都市を追加する
+   
 【Insert】add-city.sql
+
 【Insert】add-city2.sql
    
 📌 修正するスクリプト
+
 C:\weather\Script\convert_to_html.ps1
 
 📌 追加する辞書ファイル
+
 以下の辞書に都市名を追加する：
 
 C:\weather\config\dictionary_daily.json
+
 C:\weather\config\dictionary_ptbr.json
+
 C:\weather\config\dictionary_ar.json
+
 C:\weather\config\dictionary_vi.json
+
 C:\weather\config\dictionary_ko.json
+
 C:\weather\config\dictionary_zh.json
+
 C:\weather\config\dictionary_ru.json
 
 
