@@ -25,11 +25,17 @@ Add the city name to every dictionary file used for multilingual output.
 📌 Dictionary files to update:
 
 C:\weather\config\dictionary_daily.json
+
 C:\weather\config\dictionary_ptbr.json
+
 C:\weather\config\dictionary_ar.json
+
 C:\weather\config\dictionary_vi.json
+
 C:\weather\config\dictionary_ko.json
+
 C:\weather\config\dictionary_zh.json
+
 C:\weather\config\dictionary_ru.json
 
 Each dictionary must contain:
