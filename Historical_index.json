@@ -516,6 +516,16 @@
                       "name":  "jp_result_mail_20261006.txt"
                   },
                   {
+                      "date":  "2026-10-07",
+                      "path":  "Historical/jp_result_mail_20261007.txt",
+                      "name":  "jp_result_mail_20261007.txt"
+                  },
+                  {
+                      "date":  "2026-10-08",
+                      "path":  "Historical/jp_result_mail_20261008.txt",
+                      "name":  "jp_result_mail_20261008.txt"
+                  },
+                  {
                       "date":  "2026-06-15",
                       "path":  "Historical/weekly_20260615_20260621.txt",
                       "name":  "weekly_20260615_20260621.txt"
