@@ -1,0 +1,292 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Global Discomfort Index - README</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* ===== Base Layout ===== */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7;
+    padding: 20px;
+    max-width: 980px;
+    margin: auto;
+    color: #222;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+    margin-top: 1.4em;
+    font-weight: 600;
+}
+h1 { font-size: 1.9em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.3em; }
+
+/* ===== Links ===== */
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Tables ===== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.4em 0;
+}
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+table th {
+    background: #f6f8fa;
+}
+
+/* ===== Code Blocks ===== */
+pre {
+    background: #f6f8fa;
+    padding: 14px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+code {
+    background: #f6f8fa;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* ===== Horizontal Rule ===== */
+hr {
+    margin: 2.2em 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* ===== Images ===== */
+img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/* ===== Lists ===== */
+ul {
+    margin-top: 0.6em;
+}
+</style>
+</head>
+<body>
+
+<h1>🌍 Global Discomfort Index (Updated every 4 hours)</h1>
+
+<h2>👉 <strong>Live Global Weather Report — EN / JP / RU / ZH / KO / VI / AR / PT‑BR</strong></h2>
+<h3><a href="https://yahikoyama.github.io/weather2/">https://yahikoyama.github.io/weather2/</a></h3>
+
+<a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
+<img alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a">
+</a>
+
+<h1>🌦️ Daily Weather Reports (Auto-updated)</h1>
+
+<table>
+<thead>
+<tr><th>Language</th><th>URL</th><th>Update Frequency</th></tr>
+</thead>
+<tbody>
+<tr><td>🇯🇵 Japanese</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now.html">weather_report_now.html</a></td><td>Every 4 hours</td></tr>
+<tr><td>🇬🇧 English</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">weather_report_now_en.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>🇷🇺 Russian</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_ru.html">weather_report_now_ru.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>🇨🇳 Chinese</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_zh.html">weather_report_now_zh.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>🇰🇷 Korean</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_ko.html">weather_report_now_ko.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>🇻🇳 Vietnamese</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_vi.html">weather_report_now_vi.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>Arabic</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_ar.html">weather_report_now_ar.html</a></td><td>Every 4 hours (JST)</td></tr>
+<tr><td>Brazilian Portuguese</td><td><a href="https://yahikoyama.github.io/weather2/weather_report_now_ptbr.html">weather_report_now_ptbr.html</a></td><td>Every 4 hours (JST)</td></tr>
+</tbody>
+</table>
+
+<hr>
+
+<h1>📜 Historical Weather Reports</h1>
+
+<ul>
+<li>🇬🇧 English: <a href="https://yahikoyama.github.io/weather2/Historical_en/">Historical_en</a></li>
+<li>🇯🇵 Japanese: <a href="https://yahikoyama.github.io/weather2/Historical/">Historical</a></li>
+<li>📅 Daily Index: <a href="https://yahikoyama.github.io/weather2/Historical/index_daily.html">index_daily.html</a></li>
+</ul>
+
+<hr>
+
+<h2>📌 Overview</h2>
+
+<p>This project provides <strong>automatically updated weather and discomfort index (DI) reports</strong> using real-time data from the <strong>OpenWeatherMap API</strong>.</p>
+
+<ul>
+<li>⏱ Updates every 4 hours</li>
+<li>🌐 Supports multiple languages</li>
+<li>📊 Historical archives</li>
+<li>⚙️ Automated via PowerShell + SQL Server + Python + GitHub Pages</li>
+</ul>
+
+<hr>
+
+<h1>📘 Project Overview</h1>
+
+<p>Collects global weather data, calculates DI, and publishes multilingual reports.</p>
+
+<ul>
+<li>SQL database systems</li>
+<li>PowerShell automation</li>
+<li>Python data processing</li>
+<li>Multilingual HTML generation</li>
+<li>GitHub Pages publishing</li>
+</ul>
+
+<p>To add cities, insert into <strong>CityMaster</strong>.</p>
+
+<hr>
+
+<h2>AI Search Guide</h2>
+<p><a href="https://yahikoyama.github.io/weather2/ai_search.html">ai_search.html</a></p>
+
+<hr>
+
+<h1>🏗️ System Architecture</h1>
+
+<ul>
+<li>Windows 11 Pro</li>
+<li>PowerShell 5.1</li>
+<li>SQL Server Express 2022</li>
+<li>Python 3.14 + pyodbc</li>
+</ul>
+
+<p>Includes full source code, SQL scripts, automation tools, and Task Scheduler XML.</p>
+
+<p>📩 Contact: <strong>yahikoyama.777@gmail.com</strong></p>
+
+<hr>
+
+<h2>🌐 Available Languages</h2>
+
+<p>
+<a href="README_ja.md">日本語</a> |
+<a href="README_zh.md">中文</a> |
+<a href="README_fr.md">Français</a> |
+<a href="README_ko.md">한국어</a> |
+<a href="README_ru.md">Русский</a> |
+<a href="README_vi.md">Tiếng Việt</a>
+</p>
+
+<hr>
+
+<h1>🚀 Quick Start</h1>
+
+<h3>Clone the repository</h3>
+
+<pre><code>git clone https://github.com/yahikoyama/weather2
+</code></pre>
+
+<pre><code>weather2/
+├── Historical/
+├── Historical_en/
+├── SRC_DB_SETTING/
+├── DBBackup/
+├── weather_report_now.html
+├── weather_report_now_en.html
+├── weather_report_now_ko.html
+├── weather_report_now_ru.html
+├── weather_report_now_zh.html
+├── weather_report_now_vi.html
+├── weather_report_now_ar.html
+├── weather_report_now_ptbr.html
+</code></pre>
+
+<hr>
+
+<h2>🌐 Multi‑Language Weather Reports</h2>
+
+<table>
+<tr><th>XML File</th><th>Purpose</th><th>Schedule</th></tr>
+<tr><td>get-temp-data.xml</td><td>Fetch weather data</td><td>Trigger-based</td></tr>
+<tr><td>make-txt-file.xml</td><td>Generate text data</td><td>Every 4 hours</td></tr>
+<tr><td>export_jp_latest_sync_html.xml</td><td>Generate HTML reports</td><td>Every 4 hours</td></tr>
+<tr><td>Historicaldata_daily.xml</td><td>Daily weather data</td><td>Daily 14:00 JST</td></tr>
+</table>
+
+<hr>
+
+<h2>📜 Historical Weather Reports</h2>
+
+<table>
+<tr><th>XML File</th><th>Purpose</th><th>Schedule</th></tr>
+<tr><td>calc_weekly_avg.xml</td><td>Weekly averages</td><td>Weekly</td></tr>
+<tr><td>weekly_comfortable_region.xml</td><td>WBGT & DI</td><td>Weekly</td></tr>
+</table>
+
+<hr>
+
+<h2>🖥️ Server Management</h2>
+
+<table>
+<tr><th>XML File</th><th>Purpose</th><th>Schedule</th></tr>
+<tr><td>DBbackup.xml</td><td>DB backup</td><td>Scheduled</td></tr>
+<tr><td>DBbackupSync.xml</td><td>Upload backup</td><td>After backup</td></tr>
+<tr><td>reboot.xml</td><td>System reboot</td><td>Scheduled</td></tr>
+</table>
+
+<hr>
+
+<h2>🔧 Miscellaneous Tasks</h2>
+
+<table>
+<tr><th>XML File</th><th>Purpose</th><th>Schedule</th></tr>
+<tr><td>historical_index_for_claude.xml</td><td>Generate index</td><td>Scheduled</td></tr>
+<tr><td>OneDriveToGithub.xml</td><td>Fetch & upload</td><td>Daily</td></tr>
+<tr><td>auto_check_weather_update_daily.xml</td><td>Check updates</td><td>Every 4 hours</td></tr>
+</table>
+
+<hr>
+
+<h2>🔎 SEO Keywords</h2>
+
+<ul>
+<li>Discomfort Index (DI)</li>
+<li>Comfortable Index</li>
+<li>WBGT</li>
+<li>Global Weather</li>
+<li>Humidity / Temperature</li>
+<li>OpenWeatherMap API</li>
+<li>Weather Visualization</li>
+<li>GitHub Pages Automation</li>
+<li>PowerShell Automation</li>
+<li>SQL Server Weather Database</li>
+</ul>
+
+<hr>
+
+<h1>New Features Added</h1>
+
+<h2>Weekly Heat‑Stress Index Generator</h2>
+<p>Generates <strong>Weekly_HeatStress_Index.csv</strong> summarizing 7‑day heat‑stress indicators.</p>
+
+<h2>Comfortable Region Finder</h2>
+<p>Generates <strong>Comfortable_Region_Finder.csv</strong> ranking global cities by comfort.</p>
+
+<hr>
+
+<h2>Updated Menu Options</h2>
+
+<table>
+<tr><th>Number</th><th>Description</th><th>Output File</th></tr>
+<tr><td>0</td><td>Generate city list</td><td>city-list.csv</td></tr>
+<tr><td>1</td><td>Weekly heat‑stress metrics</td><td>Weekly_HeatStress_Index.csv</td></tr>
+<tr><td>2</td><td>Comfortable region ranking</td><td>Comfortable_Region_Finder.csv</td></tr>
+<tr><td>99</td><td>Exit</td><td>—</td></tr>
+</table>
+
+</body>
+</html>
