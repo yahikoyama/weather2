@@ -126,3 +126,4 @@ GitHub: https://github.com/yahikoyama
 
 ## License
 This project is available for non‑commercial use only.
+The copyright for this data and program belongs to me.
