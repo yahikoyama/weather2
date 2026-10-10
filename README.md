@@ -348,6 +348,7 @@ These additions expand weather2’s capabilities for climate analysis, education
 
 ## License
 This project is available for non‑commercial use only.
+The copyright for this data and program belongs to me.
 
 
 
