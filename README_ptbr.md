@@ -235,6 +235,7 @@ weathercode_list_jp.sql
 
 ## License
 This project is available for non‑commercial use only.
+The copyright for this data and program belongs to me.
 
 
 
