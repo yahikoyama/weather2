@@ -229,6 +229,10 @@ city_list_jp.sql
 🌦 Mã thời tiết
 weathercode_en.sql
 
+## License
+This project is available for non‑commercial use only.
+
+
 weathercode_jp.sql
 
 weathercode_list_en.sql
