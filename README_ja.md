@@ -230,12 +230,14 @@ city_list_jp.sql
 🌦 天気コード
 weathercode_en.sql
 
-## License
-This project is available for non‑commercial use only.
-
-
 weathercode_jp.sql
 
 weathercode_list_en.sql
 
 weathercode_list_jp.sql
+
+## License
+This project is available for non‑commercial use only.
+The copyright for this data and program belongs to me.
+
+
