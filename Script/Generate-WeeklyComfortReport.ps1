@@ -109,7 +109,39 @@ Copy-Item $OutputHtmlFixed $OutputHtmlDated -Force
 # --- ⑨ GitHub Pages 用 weekly フォルダにコピー ---
 Copy-Item $OutputHtmlFixed $RepoHtmlDated -Force
 
-# --- ⑩ GitHub に push（pull 追加） ---
+# --- ⑩ weekly フォルダの index.html を自動生成 ---
+$files = Get-ChildItem $RepoWeeklyDir -Filter "weekly_comfortable_region_*.html" | Sort-Object Name -Descending
+
+$indexContent = @"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weekly Comfortable Region Ranking</title>
+<style>
+body { font-family: Arial; margin: 20px; }
+a { font-size: 18px; }
+</style>
+</head>
+<body>
+<h2>Weekly Comfortable Region Ranking</h2>
+<ul>
+"@
+
+foreach ($f in $files) {
+    $indexContent += "<li><a href=""$($f.Name)"">$($f.Name)</a></li>`n"
+}
+
+$indexContent += @"
+</ul>
+</body>
+</html>
+"@
+
+$IndexFile = Join-Path $RepoWeeklyDir "index.html"
+$indexContent | Out-File -Encoding UTF8 $IndexFile
+
+# --- ⑪ GitHub に push（pull 追加） ---
 cd $RepoPath
 git pull
 git add .
