@@ -237,3 +237,7 @@ weathercode_list_jp.sql
 
 ```bash
 git clone https://github.com/yahikoyama/weather2
+
+## License
+This project is available for non‑commercial use only.
+
