@@ -346,6 +346,10 @@ The project’s interactive menu now includes the new tools:
 
 These additions expand weather2’s capabilities for climate analysis, education, and automated data processing.
 
+## License
+This project is available for non‑commercial use only.
+
+
 
 [![weather2 | AlternativeTo](https://alternativeto.net/static/badges/badge-compact-dark.svg)](https://alternativeto.net/software/weather2/about/?utm_source=badge&utm_medium=referral)
 
