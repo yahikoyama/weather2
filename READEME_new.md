@@ -123,3 +123,6 @@ automation, data-extraction, meteorology, climate-data
 ## 📬 Contact
 Maintainer: **Yahikoyama**  
 GitHub: https://github.com/yahikoyama
+
+## License
+This project is available for non‑commercial use only.
