@@ -496,4 +496,8 @@
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20261010.html</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20261011.html</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>
