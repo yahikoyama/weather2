@@ -1,3 +1,9 @@
+## Weekly Comfortable Region Ranking
+Updated every week with original comfort score calculations.
+<img width="926" height="384" alt="image" src="https://github.com/user-attachments/assets/8c228292-aeb3-48a7-bab1-c678cc464781" />
+
+
+
 # weather2 – Global Weather Data, Discomfort Index (DI), WBGT & Multilingual Reports  
 Automatically updated every 4 hours using OpenWeatherMap API
 
