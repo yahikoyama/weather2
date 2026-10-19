@@ -345,12 +345,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260907.html</loc>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://yahikoyama.github.io/weather2/Historical/weekly_20260907_20260913.html</loc>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260907.html</loc>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20260908.html</loc>
@@ -534,6 +534,10 @@
   </url>
   <url>
     <loc>https://yahikoyama.github.io/weather2/Historical/historical_20261018.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yahikoyama.github.io/weather2/Historical/historical_20261019.html</loc>
     <priority>0.5</priority>
   </url>
 </urlset>
