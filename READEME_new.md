@@ -1,7 +1,8 @@
 ## Weekly Comfortable Region Ranking
 Updated every week with original comfort score calculations.
 <img width="926" height="384" alt="image" src="https://github.com/user-attachments/assets/8c228292-aeb3-48a7-bab1-c678cc464781" />
-
+Full Historical Comfortable Region Dataset (CSV)
+https://yahikoyama.github.io/weather2/CSV/all_weekly_comfortable_region.csv
 
 
 # weather2 – Global Weather Data, Discomfort Index (DI), WBGT & Multilingual Reports  
