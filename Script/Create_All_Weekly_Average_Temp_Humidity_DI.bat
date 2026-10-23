@@ -1,0 +1,1 @@
+PowerShell -ExecutionPolicy RemoteSigned ./Create_All_Weekly_Average_Temp_Humidity_DI.ps1
