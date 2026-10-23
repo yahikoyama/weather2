@@ -9,7 +9,7 @@ SELECT
 FROM
     CityMaster
 ORDER BY
-    CityEn ASC;
+    CityCode ASC;
 --SQL END ---
 ;
 ";
