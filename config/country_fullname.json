@@ -35,8 +35,14 @@
     "ZA": "SOUTH AFRICA",
     "IR": "IRAN",
     "TR": "TURKIYE",
-    "EG": "EGYPT"
+    "EG": "EGYPT",
 
-
+    "SE": "SWEDEN",
+    "DK": "DENMARK",
+    "MC": "MONACO",
+    "AE": "UNITED ARAB EMIRATES",
+    "AQ": "ANTARCTICA",
+    "NZ": "NEW ZEALAND",
+    "RW": "RWANDA"
 
 }
