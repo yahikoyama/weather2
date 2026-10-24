@@ -1,5 +1,10 @@
 ﻿📝 都市追加方法（まとめ）
 
+0.CityMasterテーブルのバックアップ
+SELECT *
+INTO CityMaster_BK_20261022
+FROM CityMaster; 
+
 1.CityMasterテーブルに都市を追加する
 
 【Insert】add-city.sql
