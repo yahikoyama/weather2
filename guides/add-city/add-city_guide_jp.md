@@ -15,7 +15,6 @@ FROM CityMaster;
 
 【Insert】add-city2.sql
 
-
 2. Daily HTML に都市を追加する
    
 📌 修正するスクリプト
