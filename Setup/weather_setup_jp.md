@@ -334,5 +334,32 @@ c:\weather\output\jp_result.txt
 
 c:\weather\output フォルダに jp_result.txt ファイルが出力されます
 
+追加
+9)kaggle自動更新
 
+PowerShell プロンプト
+
+1. Kaggle APIインストール
+PowerShellで
+
+pip install kaggle
+
+3. kaggle.json を配置
+
+C:\Users\ユーザー名\.kaggle\kaggle.json
+
+3. metadata 作成
+
+dataset-metadata.json
+
+アップロードするCSVと同じフォルダに置く
+
+ここでは c:\weathe\CSV\
+
+4. 更新
+PowerShellスクリプト
+
+kaggle datasets version `
+-p C:\weather\CSV `
+-m "Weekly update"
 
