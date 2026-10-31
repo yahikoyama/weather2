@@ -335,7 +335,7 @@ c:\weather\output\jp_result.txt
 c:\weather\output フォルダに jp_result.txt ファイルが出力されます
 
 追加
-9)kaggle自動更新
+12)kaggle自動更新
 
 PowerShell プロンプト
 
