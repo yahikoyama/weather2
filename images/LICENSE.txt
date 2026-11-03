@@ -1,0 +1,20 @@
+Weekly Comfortable Region Ranking Dataset
+Copyright © Yahikoyama. All rights reserved.
+
+This dataset is provided for informational, personal, educational,
+and research purposes.
+
+The Weekly Comfortable Region Ranking, Comfort Score,
+and related rankings are original works developed by Yahikoyama.
+
+Commercial use, redistribution, republication, resale,
+or incorporation into commercial products or services
+requires prior permission from the copyright holder.
+
+This dataset is provided "as is" without warranty of any kind.
+
+Project Website:
+https://yahikoyama.github.io/weather2/
+
+Contact:
+https://github.com/yahikoyama/weather2
