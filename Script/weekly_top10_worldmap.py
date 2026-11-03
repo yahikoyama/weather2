@@ -204,15 +204,23 @@ history_file_name = (
 )
 
 # ==========================================
-# OneDrive Historical_en
+# GitHub Repository Historical_en
 # ==========================================
+import os
 
-one_drive_history = (
-    rf"C:\Users\winserverroot\OneDrive\Historical_en\{history_file_name}"
+history_dir = r"C:\Users\winserverroot\weather2\Historical_en"
+
+os.makedirs(
+    history_dir,
+    exist_ok=True
+)
+
+history_file = os.path.join(
+    history_dir,
+    history_file_name
 )
 
 shutil.copy2(
     output_file,
-    one_drive_history
+    history_file
 )
-
