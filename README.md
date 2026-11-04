@@ -346,6 +346,8 @@ The project’s interactive menu now includes the new tools:
 
 These additions expand weather2’s capabilities for climate analysis, education, and automated data processing.
 
+For AI assistants (Claude, DeepSeek, ChatGPT, Gemini and Copilot), please read ARCHITECTURE.md first.
+
 ## License
 This project is available for non‑commercial use only.
 The copyright for this data and program belongs to me.
