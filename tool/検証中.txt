@@ -10,3 +10,30 @@ add-city.sql を C:\weather\tool\add-city\ に保存
 辞書更新
 エラー時 rollback()
 成功時 commit()
+
+part1
+✅ add-cityフォルダ自動作成
+✅ dbconfig.json使用
+✅ 辞書バックアップ
+✅ CityMasterバックアップ
+✅ CityCode初期値取得
+✅ CityEn重複チェック
+✅ CityCode重複チェック
+
+part2
+辞書更新処理
+
+part3
+CityCode 手入力対応
+CityCode 重複チェック
+CityEn 重複チェック
+CityMasterバックアップ
+辞書バックアップ
+SQL Server INSERT
+add-city.sql 出力（C:\weather\tool\add-city）
+辞書更新
+COMMIT
+ROLLBACK
+
+part4
+GUI画面
