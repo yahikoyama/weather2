@@ -1,0 +1,12 @@
+最終仕様:
+
+CityCode 初期値 = MAX+1
+CityCode 手修正可能
+CityCode 重複チェック
+CityEn 重複チェック
+CityMaster_BK_yyyyMMdd_HHmmss 作成
+辞書バックアップ作成
+add-city.sql を C:\weather\tool\add-city\ に保存
+辞書更新
+エラー時 rollback()
+成功時 commit()
