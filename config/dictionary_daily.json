@@ -26,7 +26,6 @@
     "雲仙": "Unzen",
     "レイキャビク": "Reykjavik",
     "ジンマ": "Jimma",
-
     "ウットキアグビクバロウ": "Utqiagvik",
     "ロングイヤービーエン": "Longyearbyen",
     "ヌーク": "Nuuk",
@@ -45,14 +44,12 @@
     "ホノルルハワイ": "Honolulu, Hawaii",
     "リオデジャネイロ": "Rio de Janeiro",
     "リマ": "Lima",
-
     "ブエノスアイレス": "Buenos Aires",
     "インターラーケン": "Interlaken",
     "ナイロビ": "Nairobi",
     "ベルリン": "Berlin",
     "マチピチュ": "Machu Picchu",
     "クマシ": "Kumasi",
-
     "モスクワ": "Moscow",
     "ニューヨーク": "New York",
     "ロサンゼルス": "Los Angeles",
@@ -64,7 +61,6 @@
     "テヘラン": "Tehran",
     "イスタンブール": "Istanbul",
     "カイロ": "Cairo",
-
     "ロンドン": "London",
     "ストックホルム": "Stockholm",
     "キルナ": "Kiruna",
@@ -78,13 +74,9 @@
     "クライストチャーチ": "Christchurch",
     "アディスアベバ": "Addis Ababa",
     "キガリ": "Kigali",
-    "ケープタウン": "Cape Town"
-
-
-
-
+    "ケープタウン": "Cape Town",
+    "マカオ": "Macau"
   },
-
   "weather": {
     "曇り": "Cloudy",
     "曇りがち": "Mostly Cloudy",
@@ -94,7 +86,6 @@
     "雨": "Rain",
     "快晴": "Clear",
     "雲": "Clouds",
-
     "雨と雷": "Thunderstorm",
     "大雨と雷": "Thunderstorm",
     "弱い霧雨": "Drizzle",
@@ -122,7 +113,6 @@
     "砂塵": "Atmosphere",
     "濃霧": "Atmosphere"
   },
-
   "feeling": {
     "寒くてたまらない": "Extremely Cold",
     "寒い": "Cold",
@@ -133,7 +123,6 @@
     "半数が不快": "Half Feel Uncomfortable",
     "全員不快": "Everyone Feels Uncomfortable"
   },
-
   "labels": {
     "気象・不快指数 観測レポート": "Weather & Discomfort Index Report",
     "気象・Discomfort Index 観測レポート": "Weather & Discomfort Index Report",
@@ -147,6 +136,6 @@
     "国": "Country",
     "不快指数": "Discomfort Index",
     "評価": "Evaluation",
-"Weekly 平均気温・湿度レポート": "Weekly Average Temperature & Humidity Report"
+    "Weekly 平均気温・湿度レポート": "Weekly Average Temperature & Humidity Report"
   }
 }

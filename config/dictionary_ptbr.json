@@ -22,7 +22,6 @@
     "勝浦": "Katsuura",
     "東京": "Tokyo",
     "京都": "Kyoto",
-
     "ウットキアグビクバロウ": "Utqiagvik",
     "ロングイヤービーエン": "Longyearbyen",
     "ヌーク": "Nuuk",
@@ -41,7 +40,6 @@
     "ホノルルハワイ": "Honolulu, Hawaii",
     "リオデジャネイロ": "Rio de Janeiro",
     "リマ": "Lima",
-
     "奥日光": "Oku-Nikko",
     "雲仙": "Unzen",
     "レイキャビク": "Reykjavik",
@@ -52,7 +50,6 @@
     "ナイロビ": "Nairóbi",
     "ブエノスアイレス": "Buenos Aires",
     "インターラーケン": "Interlaken",
-
     "モスクワ": "Moscou",
     "ニューヨーク": "Nova York",
     "ロサンゼルス": "Los Angeles",
@@ -64,7 +61,6 @@
     "テヘラン": "Teerã",
     "イスタンブール": "Istambul",
     "カイロ": "Cairo",
-
     "ロンドン": "Londres",
     "ストックホルム": "Estocolmo",
     "キルナ": "Kiruna",
@@ -78,11 +74,9 @@
     "クライストチャーチ": "Christchurch",
     "アディスアベバ": "Adis Abeba",
     "キガリ": "Kigali",
-    "ケープタウン": "Cidade do Cabo"
-
-
+    "ケープタウン": "Cidade do Cabo",
+    "マカオ": "Macau"
   },
-
   "weather": {
     "曇り": "Nublado",
     "曇りがち": "Predominantemente nublado",
@@ -92,7 +86,6 @@
     "雨": "Chuva",
     "快晴": "Céu limpo",
     "雲": "Nuvens",
-
     "雨と雷": "Tempestade",
     "大雨と雷": "Tempestade",
     "弱い霧雨": "Garoa",
@@ -120,7 +113,6 @@
     "砂塵": "Poeira",
     "濃霧": "Nevoeiro"
   },
-
   "feeling": {
     "寒くてたまらない": "Extremamente frio",
     "寒い": "Frio",
@@ -131,7 +123,6 @@
     "半数が不快": "Metade sente desconforto",
     "全員不快": "Todos sentem desconforto"
   },
-
   "labels": {
     "気象・不快指数 観測レポート": "Relatório de Clima e Índice de Desconforto",
     "気象・Discomfort Index 観測レポート": "Relatório de Clima e Índice de Desconforto",
