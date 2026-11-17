@@ -35,7 +35,7 @@ country_fullname.json.20261117_193720.bak
 delete from CityMaster 
 where CityCode='4037'
 
-(2)ツールを使わなない手動追加 
+(2)ツールを使わなない都市の手動追加 
 
 0.CityMasterテーブルのバックアップ
 
