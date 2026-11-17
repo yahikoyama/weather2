@@ -2,18 +2,27 @@
 (1)ツールを使った都市の自動追加
 
 [add_city_gui.py](https://github.com/yahikoyama/weather2/tree/main/tool/add_city_gui.py)
+
 cd c:\weather\tool
+
 add_city_gui.py
+
 画面が表示されたら、
+
 4037Macau.txt
+
 のように登録データを用意し、テキストボックスにデータ張り付ける
+
 CityCodeはMAX+1が自動設定される　手動でも変更できる
 
 最後に RegisterCity　ボタンをクリックする
 
 テーブル、辞書ファイルが自動で更新される。
+
 変更前の辞書ファイルは 
+
 country_fullname.json.20261117_193720.bak
+
 のようにファイル名_日付_時間.bakで保存される
 
 (2)ツールを使わなない手動追加 
