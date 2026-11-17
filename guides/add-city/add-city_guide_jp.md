@@ -30,6 +30,11 @@ country_fullname.json.20261117_193720.bak
 
 のようにファイル名_日付_時間.bakで保存される
 
+テーブルから都市を削除したい場合は手動でSQLで削除してください
+
+delete from CityMaster 
+where CityCode='4037'
+
 (2)ツールを使わなない手動追加 
 
 0.CityMasterテーブルのバックアップ
