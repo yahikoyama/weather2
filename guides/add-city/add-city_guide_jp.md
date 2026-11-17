@@ -2,6 +2,8 @@
  
 (1)ツールを使った都市の自動追加
 
+tool/add_city_gui.py
+
 [add_city_gui.py](https://github.com/yahikoyama/weather2/tree/main/tool/add_city_gui.py)
 
 cd c:\weather\tool
