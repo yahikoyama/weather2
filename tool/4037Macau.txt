@@ -1,0 +1,13 @@
+City Code          : 4037
+City English Name  : Macau
+City Japanese Name : マカオ
+Country Code       : MO
+Country Full Name  : Macau
+Latitude           : 22.2333
+Longitude          : 113.5833
+Chinese Name       : 澳門
+Korean Name        : 마카오
+Russian Name       : Макао
+Vietnamese Name    : Ma Cao
+Arabic Name        : ماكاو
+Portuguese Name    : Macau
