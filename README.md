@@ -10,6 +10,7 @@ https://github.com/yahikoyama/weather2/tree/main/guides/add-city
 Add New City tool
 
 https://github.com/yahikoyama/weather2/tree/main/tool
+
 <img width="432" height="506" alt="image" src="https://github.com/user-attachments/assets/023ee638-066d-4c76-a2bb-9cce7c7f98db" />
 
 
