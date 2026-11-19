@@ -1,0 +1,13 @@
+City Code          : 4038
+City English Name  : Pyongyang
+City Japanese Name : 平壌
+Country Code       : KP
+Country Full Name  : North Korea
+Latitude           : 39.0392
+Longitude          : 125.7625
+Chinese Name       : 平壤
+Korean Name        : 평양
+Russian Name       : Пхеньян
+Vietnamese Name    : Binh Nhuong
+Arabic Name        : بيونغ يانغ
+Portuguese Name    : Pyongyang

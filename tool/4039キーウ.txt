@@ -1,0 +1,13 @@
+City Code          : 4039
+City English Name  : Kyiv
+City Japanese Name : キーウ
+Country Code       : UA
+Country Full Name  : Ukraine
+Latitude           : 50.4501
+Longitude          : 30.5234
+Chinese Name       : 基辅
+Korean Name        : 키이우
+Russian Name       : Киев
+Vietnamese Name    : Kyiv
+Arabic Name        : كييف
+Portuguese Name    : Kiev
