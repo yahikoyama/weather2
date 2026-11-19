@@ -11,6 +11,12 @@ add-city.sql を C:\weather\tool\add-city\ に保存
 エラー時 rollback()
 成功時 commit()
 
+追加(add_city_gui_2.py)
+registerをクリックし、登録後にCodeは＋１　
+その他の入力ボックスはすべてクリアする処理を追加
+
+
+
 part1
 ✅ add-cityフォルダ自動作成
 ✅ dbconfig.json使用
