@@ -727,48 +727,8 @@ def register_city():
         # --------------------------
         # COMMIT
         # --------------------------
-
         conn.commit()
-
         conn.close()
-
-# --------------------------
-# Next CityCode
-# --------------------------
-next_code = str(
-    int(city_code) + 1
-).zfill(4)
-
-# --------------------------
-# Clear Input Fields
-# --------------------------
-txt_city_code.delete(0, tk.END)
-txt_city_code.insert(0, next_code)
-
-txt_city_en.delete(0, tk.END)
-txt_city_jp.delete(0, tk.END)
-
-txt_country_code.delete(0, tk.END)
-txt_country_name.delete(0, tk.END)
-
-txt_latitude.delete(0, tk.END)
-txt_longitude.delete(0, tk.END)
-
-txt_zh.delete(0, tk.END)
-txt_ko.delete(0, tk.END)
-txt_ru.delete(0, tk.END)
-txt_vi.delete(0, tk.END)
-txt_ar.delete(0, tk.END)
-txt_pt.delete(0, tk.END)
-
-# カーソルをCity Englishへ
-txt_city_en.focus_set()
-
-
-
-
-
-
 
         messagebox.showinfo(
             "Completed",
@@ -782,8 +742,31 @@ txt_city_en.focus_set()
             f"Completed Successfully"
         )
 
-    except Exception as ex:
+        # --------------------------
+        # Clear Input Fields
+        # --------------------------
+        txt_city_code.delete(0, tk.END)
+        txt_city_code.insert(
+            0,
+            get_next_city_code_from_db()
+        )
 
+        txt_city_en.delete(0, tk.END)
+        txt_city_jp.delete(0, tk.END)
+        txt_country_code.delete(0, tk.END)
+        txt_country_name.delete(0, tk.END)
+        txt_latitude.delete(0, tk.END)
+        txt_longitude.delete(0, tk.END)
+        txt_zh.delete(0, tk.END)
+        txt_ko.delete(0, tk.END)
+        txt_ru.delete(0, tk.END)
+        txt_vi.delete(0, tk.END)
+        txt_ar.delete(0, tk.END)
+        txt_pt.delete(0, tk.END)
+
+        txt_city_en.focus_set()
+
+    except Exception as ex:
         try:
 
             if conn is not None:

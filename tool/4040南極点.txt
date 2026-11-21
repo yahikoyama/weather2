@@ -1,0 +1,13 @@
+City Code          : 4040
+City English Name  : South Pole
+City Japanese Name : 南極点
+Country Code       : AQ
+Country Full Name  : Antarctica
+Latitude           : -90.0000
+Longitude          : 0.0000
+Chinese Name       : 南极点
+Korean Name        : 남극점
+Russian Name       : Южный полюс
+Vietnamese Name    : Nam Cuc Diem
+Arabic Name        : القطب الجنوبي
+Portuguese Name    : Polo Sul

@@ -1,0 +1,13 @@
+City Code          : 4041
+City English Name  : North Pole
+City Japanese Name : 北極点
+Country Code       : AQ
+Country Full Name  : Arctic
+Latitude           : 90.0000
+Longitude          : 0.0000
+Chinese Name       : 北极点
+Korean Name        : 북극점
+Russian Name       : Северный полюс
+Vietnamese Name    : Bac Cuc Diem
+Arabic Name        : القطب الشمالي
+Portuguese Name    : Polo Norte
