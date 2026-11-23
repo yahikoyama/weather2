@@ -15,7 +15,7 @@ https://github.com/yahikoyama/weather2/tree/main/tool
 
 
 <a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
-<img width="1280" alt="Daily Weather Report Screenshot" src="https://github.com/user-attachments/assets/c794a36d-a4bf-4905-9ff1-9d7591c2480a" />
+<img width="613" height="418" alt="image" src="https://github.com/user-attachments/assets/a5cd85af-d433-49a4-9f61-0ba72b0ae522" />
 </a>
 # 🌦️ Daily Weather Reports (Auto-updated)
 
