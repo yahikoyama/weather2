@@ -1,0 +1,13 @@
+City Code          : 4043
+City English Name  : Date Line
+City Japanese Name : 日付変更線
+Country Code       : XX
+Country Full Name  : Pacific Ocean
+Latitude           : 0.0000
+Longitude          : 180.0000
+Chinese Name       : 国际日期变更线
+Korean Name        : 날짜변경선
+Russian Name       : Линия перемены дат
+Vietnamese Name    : Date Line
+Arabic Name        : خط التاريخ الدولي
+Portuguese Name    : Linha Internacional de Data

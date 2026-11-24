@@ -1,0 +1,13 @@
+City Code          : 4042
+City English Name  : Equator Zero
+City Japanese Name : 赤道ゼロポイント
+Country Code       : XX
+Country Full Name  : Atlantic Ocean
+Latitude           : 0.0000
+Longitude          : 0.0000
+Chinese Name       : 赤道零点
+Korean Name        : 적도 제로포인트
+Russian Name       : Экватор Нулевая Точка
+Vietnamese Name    : Equator Zero
+Arabic Name        : نقطة الصفر على خط الاستواء
+Portuguese Name    : Ponto Zero do Equador
