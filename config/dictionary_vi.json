@@ -76,7 +76,13 @@
     "アディスアベバ": "Addis Ababa",
     "キガリ": "Kigali",
     "ケープタウン": "Cape Town",
-    "マカオ": "Ma Cao"
+    "マカオ": "Ma Cao",
+    "平壌": "Binh Nhuong",
+    "キーウ": "Kyiv",
+    "南極点": "Nam Cuc Diem",
+    "北極点": "Bac Cuc Diem",
+    "赤道ゼロポイント": "Equator Zero",
+    "日付変更線": "Date Line"
   },
   "weather": {
     "曇り": "Nhiều mây",
@@ -136,6 +142,6 @@
     "天気": "Thời tiết",
     "国": "Quốc gia",
     "不快指数": "Chỉ số khó chịu",
-    "評価": "Đánh giá"
+    "極寒": "lạnh giá"
   }
 }

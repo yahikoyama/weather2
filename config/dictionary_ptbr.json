@@ -75,7 +75,13 @@
     "アディスアベバ": "Adis Abeba",
     "キガリ": "Kigali",
     "ケープタウン": "Cidade do Cabo",
-    "マカオ": "Macau"
+    "マカオ": "Macau",
+    "平壌": "Pyongyang",
+    "キーウ": "Kiev",
+    "南極点": "Polo Sul",
+    "北極点": "Polo Norte",
+    "赤道ゼロポイント": "Ponto Zero do Equador",
+    "日付変更線": "Linha Internacional de Data"
   },
   "weather": {
     "曇り": "Nublado",
@@ -135,7 +141,7 @@
     "天気": "Clima",
     "国": "País",
     "不快指数": "Índice de desconforto",
-    "評価": "Avaliação",
+    "極寒": "frio intenso",
     "Weekly 平均気温・湿度レポート": "Relatório semanal de temperatura e umidade"
   }
 }
