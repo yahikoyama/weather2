@@ -93,7 +93,8 @@ def get_eval(di, eval_rows):
     for row in eval_rows:
         if float(row[0]) <= di <= float(row[1]):
             return row[2]
-    return "評価なし"
+#    return "評価なし"
+     return "極寒"
 
 # ▼ 列幅自動計算
 def calc_width(rows, columns):
