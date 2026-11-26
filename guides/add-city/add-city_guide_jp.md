@@ -2,7 +2,7 @@
  
 (1)ツールを使った都市の自動追加
 
-tool/add_city_gui.py をc:\weather\tool\  にコピー
+tool/add_city_gui_2.py をc:\weather\tool\  にコピー
 
 [add_city_gui.py](https://github.com/yahikoyama/weather2/tree/main/tool/add_city_gui.py)
 
@@ -16,7 +16,7 @@ add_city_gui.py
 
 4037Macau.txt
 
-のように登録データを用意し、テキストボックスにデータ張り付ける
+のように登録データを用意し(AIに聞く)、テキストボックスにデータ張り付ける
 
 CityCodeはMAX+1が自動設定される　手動でも変更できる
 
@@ -34,6 +34,10 @@ country_fullname.json.20261117_193720.bak
 
 delete from CityMaster 
 where CityCode='4037'
+
+バックアップテーブルを削除したい場合は手動でSQLで削除してください（例）
+
+drop table CityMaster_BK_20261124_220204
 
 (2)ツールを使わなない都市の手動追加 
 
