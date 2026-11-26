@@ -5,6 +5,12 @@
 ## 👉 **Live Global Weather Report — EN / JP / RU / ZH / KO / VI / AR / PT‑BR**
 ### https://yahikoyama.github.io/weather2/
 
+
+
+<a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
+<img width="613" height="418" alt="image" src="https://github.com/user-attachments/assets/a5cd85af-d433-49a4-9f61-0ba72b0ae522" />
+</a>
+
 Add New City Guide
 
 https://github.com/yahikoyama/weather2/tree/main/guides/add-city
@@ -16,9 +22,6 @@ https://github.com/yahikoyama/weather2/tree/main/tool
 <img width="432" height="506" alt="image" src="https://github.com/user-attachments/assets/023ee638-066d-4c76-a2bb-9cce7c7f98db" />
 
 
-<a href="https://yahikoyama.github.io/weather2/weather_report_now_en.html">
-<img width="613" height="418" alt="image" src="https://github.com/user-attachments/assets/a5cd85af-d433-49a4-9f61-0ba72b0ae522" />
-</a>
 
 # 🌦️ Daily Weather Reports (Auto-updated)
 
