@@ -1,0 +1,14 @@
+City Code          : 4044
+City English Name  : Qaanaaq
+City Japanese Name : カーナーク
+Country Code       : GL
+Country Full Name  : Greenland
+Latitude           : 77.4667
+Longitude          : -69.2333
+Chinese Name       : 卡纳克
+Korean Name        : 카나크
+Russian Name       : Каанаак
+Vietnamese Name    : Qaanaaq
+Arabic Name        : كاناك
+Portuguese Name    : Qaanaaq
+
