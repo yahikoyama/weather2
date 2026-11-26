@@ -14,9 +14,9 @@ Step 2: Launch the Tool
 
 Open Command Prompt and run:
 
-cd C:\weather\tool
+`cd C:\weather\tool`
 
-add_city_gui_2.py
+`add_city_gui_2.py`
 
 
 Step 3: Prepare City Registration Data
