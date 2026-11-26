@@ -24,6 +24,7 @@ Open Command Prompt and run:
 Prepare a registration file such as:
 
 `4037Macau.txt`
+https://github.com/yahikoyama/weather2/blob/main/tool/4037Macau.txt
 
 (You can generate the content with AI assistance.)
 
