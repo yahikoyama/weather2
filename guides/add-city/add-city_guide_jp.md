@@ -4,13 +4,13 @@
 
 tool/add_city_gui_2.py をc:\weather\tool\  にコピー
 
-[add_city_gui.py](https://github.com/yahikoyama/weather2/tree/main/tool/add_city_gui.py)
+https://github.com/yahikoyama/weather2/blob/main/tool/add_city_gui_2.py
 
 コマンドプロンプト
 
 cd c:\weather\tool
 
-add_city_gui.py
+add_city_gui_2.py
 
 画面が表示されたら、
 
@@ -23,6 +23,8 @@ CityCodeはMAX+1が自動設定される　手動でも変更できる
 最後に RegisterCity　ボタンをクリックする
 
 テーブル、辞書ファイルが自動で更新される。
+
+登録が終わると入力ボックスがクリアされ、CityCodeが+1される。
 
 変更前の辞書ファイルは 
 
