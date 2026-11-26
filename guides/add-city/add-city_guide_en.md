@@ -1,6 +1,6 @@
 📝 How to Add a City (Updated)
 (1) Automatically Add a City Using the Tool
-Step 1: Copy the Tool
+## Step 1: Copy the Tool
 
 Copy tool/add_city_gui_2.py to:
 
@@ -10,7 +10,7 @@ Download:
 
 https://github.com/yahikoyama/weather2/blob/main/tool/add_city_gui_2.py
 
-Step 2: Launch the Tool
+## Step 2: Launch the Tool
 
 Open Command Prompt and run:
 
@@ -19,25 +19,25 @@ Open Command Prompt and run:
 `add_city_gui_2.py`
 
 
-Step 3: Prepare City Registration Data
+## Step 3: Prepare City Registration Data
 
 Prepare a registration file such as:
 
-4037Macau.txt
+`4037Macau.txt`
 
 (You can generate the content with AI assistance.)
 
 Paste the registration data into the text box displayed by the tool.
 
-Step 4: Register the City
+## Step 4: Register the City
 CityCode is automatically assigned as MAX + 1.
 You can manually change the CityCode if necessary.
 Click the RegisterCity button.
 
 The following items will be updated automatically:
 
-CityMaster table
-Dictionary files
+`CityMaster table`
+`Dictionary files`
 After Registration
 
 When registration completes:
@@ -50,7 +50,7 @@ Before any dictionary file is modified, a backup is created automatically.
 
 Example:
 
-country_fullname.json.20261117_193720.bak
+`country_fullname.json.20261117_193720.bak`
 
 Backup format:
 
@@ -60,8 +60,8 @@ Delete a City (Manual SQL)
 
 To delete a city from the table, run SQL manually:
 
-DELETE FROM CityMaster
-WHERE CityCode = '4037';
+`DELETE FROM CityMaster
+WHERE CityCode = '4037';`
 
 Delete a Backup Table (Manual SQL)
 
@@ -69,7 +69,7 @@ To remove an old backup table, run SQL manually.
 
 Example:
 
-DROP TABLE CityMaster_BK_20261124_220204;
+`DROP TABLE CityMaster_BK_20261124_220204;`
 
 
 (2) Manually Add a City (Without Using the Tool)
