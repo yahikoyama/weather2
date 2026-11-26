@@ -1,4 +1,6 @@
-# 🌍 Global Discomfort Index (Updated every 4 hours)  North Pole and Antarctica included
+# 🌍 Global Discomfort Index (Updated every 4 hours)  
+
+North Pole and Antarctica included
 
 ## 👉 **Live Global Weather Report — EN / JP / RU / ZH / KO / VI / AR / PT‑BR**
 ### https://yahikoyama.github.io/weather2/
