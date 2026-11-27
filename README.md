@@ -9,6 +9,7 @@ https://huggingface.co/datasets/yahikoyama/weather2-data/
 
 ## 👉 **Live Global Weather Report — EN / JP / RU / ZH / KO / VI / AR / PT‑BR**
 ### https://yahikoyama.github.io/weather2/
+https://yahikoyama.github.io/weather2/weather_report_now_en.html
 
 
 
