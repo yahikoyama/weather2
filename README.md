@@ -2,6 +2,9 @@
 
 ## North Pole and Antarctica included
 
+## Dataset
+The Weather2 dataset is available on Hugging Face:
+
 https://huggingface.co/datasets/yahikoyama/weather2-data/
 
 ## 👉 **Live Global Weather Report — EN / JP / RU / ZH / KO / VI / AR / PT‑BR**
