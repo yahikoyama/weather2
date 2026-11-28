@@ -1,0 +1,2 @@
+PowerShell -ExecutionPolicy RemoteSigned C:\weather\db_sql2csv\exec4.ps1 > C:\weather\db_sql2csv\CSV\Largest_All-Time_Temperature_Range_TOP10.csv
+start notepad.exe "C:\weather\db_sql2csv\CSV\Largest_All-Time_Temperature_Range_TOP10.csv"

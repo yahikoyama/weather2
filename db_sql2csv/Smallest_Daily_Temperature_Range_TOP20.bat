@@ -1,0 +1,2 @@
+PowerShell -ExecutionPolicy RemoteSigned C:\weather\db_sql2csv\exec6.ps1 > C:\weather\db_sql2csv\CSV\Smallest_Daily_Temperature_Range_TOP50.csv
+start notepad.exe "C:\weather\db_sql2csv\CSV\Smallest_Daily_Temperature_Range_TOP50.csv"
