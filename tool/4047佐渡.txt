@@ -1,0 +1,13 @@
+City Code          : 4047
+City English Name  : Sado
+City Japanese Name : 佐渡
+Country Code       : JP
+Country Full Name  : Japan
+Latitude           : 38.0187
+Longitude          : 138.3683
+Chinese Name       : 佐渡
+Korean Name        : 사도
+Russian Name       : Садо
+Vietnamese Name    : Sado
+Arabic Name        : سادو
+Portuguese Name    : Sado

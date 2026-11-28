@@ -1,0 +1,13 @@
+City Code          : 4048
+City English Name  : Abidjan
+City Japanese Name : アビジャン
+Country Code       : CI
+Country Full Name  : Côte d'Ivoire
+Latitude           : 5.3600
+Longitude          : -4.0083
+Chinese Name       : 阿比让
+Korean Name        : 아비장
+Russian Name       : Абиджан
+Vietnamese Name    : Abidjan
+Arabic Name        : أبيدجان
+Portuguese Name    : Abidjan

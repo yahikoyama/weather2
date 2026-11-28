@@ -1,0 +1,13 @@
+City Code          : 4049
+City English Name  : Accra
+City Japanese Name : アクラ
+Country Code       : GH
+Country Full Name  : Ghana
+Latitude           : 5.6037
+Longitude          : -0.1870
+Chinese Name       : 阿克拉
+Korean Name        : 아크라
+Russian Name       : Аккра
+Vietnamese Name    : Accra
+Arabic Name        : أكرا
+Portuguese Name    : Accra

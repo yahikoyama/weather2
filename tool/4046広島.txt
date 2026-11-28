@@ -1,0 +1,14 @@
+City Code          : 4046
+City English Name  : Hiroshima
+City Japanese Name : 広島
+Country Code       : JP
+Country Full Name  : Japan
+Latitude           : 34.3853
+Longitude          : 132.4553
+Chinese Name       : 广岛
+Korean Name        : 히로시마
+Russian Name       : Хиросима
+Vietnamese Name    : Hiroshima
+Arabic Name        : هيروشيما
+Portuguese Name    : Hiroshima
+
